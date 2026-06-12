@@ -19,8 +19,8 @@
 * [11. Mining Pool Template과 Factory 구조](mining-system/11_mining_pool_template-_factory_.md)
 * [12. 스톤별 한정 공급량](mining-system/12_-_-_.md)
 * [13. 채굴 주기의 설계](mining-system/13_-_-_.md)
-* [14. STONE 초기 발행량의 산정](mining-system/14_stone_-_-_.md)
-* [15. STONE의 100% 공개유통 구조](mining-system/15_stone-_100-_-_.md)
+* [14. STONX 초기 발행량의 산정](mining-system/14_stone_-_-_.md)
+* [15. STONX의 100% 공개유통 구조](mining-system/15_stone-_100-_-_.md)
 * [16. Base Mining Unit과 소액 참여 구조](mining-system/16_base_mining_unit-_-_-_.md)
 * [17. Target Pool Power와 장기 채굴 기간](mining-system/17_target_pool_power-_-_-_.md)
 * [18. 수치와 파라미터에 대한 해석](mining-system/18_-_-_-_.md)
@@ -49,7 +49,7 @@
 ## Protocol Architecture
 
 * [34. 탈중앙 채굴 구조](protocol-architecture/34_-_-_.md)
-* [35. 채굴 비용과 STONE 소각 구조](protocol-architecture/35_-_-_stone_-_.md)
+* [35. 채굴 비용과 STONX 소각 구조](protocol-architecture/35_-_-_stone_-_.md)
 * [36. 락업 감가상각 및 반환 구조](protocol-architecture/36_-_-_-_-_.md)
 * [37. 개발 구조의 선택](protocol-architecture/37_-_-_.md)
 * [38. 프로토콜 고정 원칙](protocol-architecture/38_-_-_.md)

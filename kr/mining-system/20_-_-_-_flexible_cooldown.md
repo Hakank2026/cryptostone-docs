@@ -2,7 +2,7 @@
 
 장기 참여자를 보상하기 위해 스테이킹 기간에 따른 Lock Multiplier를 적용할 수 있다.
 
-| Lock Type   | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONE | Cooldown |
+| Lock Type   | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONX | Cooldown |
 | ----------- | ----------- | ------------------------ | ------------- | -------------- | -------- |
 | Flexible    | 없음          | 1.00x                    | 0%            | 100%           | 7 days   |
 | Short Lock  | 90일         | 1.05x                    | 2.5%          | 97.5%          | 없음       |
@@ -24,4 +24,4 @@ Flexible Lock은 감가상각 소각이 없으나, 단기 유동성이 지나치
 
 락업 배수는 최대 1.25배로 제한된다. 이는 장기 참여자에게 합리적 보상을 제공하면서도 특정 대형 참여자가 과도하게 유리한 위치를 갖지 않도록 하기 위한 설계다.
 
-락업 기간 중에도 사용자의 PoM 값이 필요 임계값에 도달하면 Gem NFT를 claim할 수 있다. 즉, 락업은 STONE 반환 가능 시점을 제한하는 구조이지, Gem NFT claim 자체를 금지하는 구조가 아니다.
+락업 기간 중에도 사용자의 PoM 값이 필요 임계값에 도달하면 Gem NFT를 claim할 수 있다. 즉, 락업은 STONX 반환 가능 시점을 제한하는 구조이지, Gem NFT claim 자체를 금지하는 구조가 아니다.

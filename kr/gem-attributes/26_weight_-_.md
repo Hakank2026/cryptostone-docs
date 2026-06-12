@@ -17,13 +17,12 @@
 
 무게는 균등 확률로 생성되지 않는다. 현실 보석에서 큰 캐럿일수록 희귀한 것처럼, CryptoStone에서도 큰 무게일수록 낮은 확률로 생성된다.
 
-| Weight Range        | Probability | Rarity Tier |
-| ------------------- | ----------- | ----------- |
-| 0.10 \~ 0.99 CT     | 50.00%      | Common      |
-| 1.00 \~ 1.99 CT     | 25.00%      | Uncommon    |
-| 2.00 \~ 4.99 CT     | 15.00%      | Rare        |
-| 5.00 \~ 9.99 CT     | 6.00%       | Epic        |
-| 10.00 \~ 19.99 CT   | 2.50%       | Legendary   |
-| 20.00 \~ 49.99 CT   | 1.00%       | Mythic      |
-| 50.00 \~ 99.99 CT   | 0.40%       | Ancient     |
-| 100.00 \~ 200.00 CT | 0.10%       | Genesis     |
+| Weight Range       | Probability | Attribute Tier |
+| ------------------ | ----------- | -------------- |
+| 0.10 \~ 1.99 CT    | 75.00%      | Common         |
+| 2.00 \~ 4.99 CT    | 15.00%      | Rare           |
+| 5.00 \~ 9.99 CT    | 6.00%       | Epic           |
+| 10.00 \~ 49.99 CT  | 3.50%       | Legendary      |
+| 50.00 \~ 200.00 CT | 0.50%       | Genesis        |
+
+위 표의 Attribute Tier는 최종 Gem NFT 등급을 직접 확정하는 값이 아니라, Rarity Score와 Probability Rarity Index를 계산하기 위한 무게 속성의 희귀도 구간이다. 최종 Gem NFT 등급은 스톤 희소성, Weight, Color, Clarity, Cut의 조합을 종합하여 Common, Rare, Epic, Legendary, Genesis의 5개 등급으로 산정한다.

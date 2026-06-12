@@ -21,8 +21,8 @@
 * [11\_Mining\_Pool\_Template과\_Factory\_구조](mining-system/11_mining_pool_template-_factory_.md)
 * [12\_스톤별\_한정\_공급량](mining-system/12_-_-_.md)
 * [13\_채굴\_주기의\_설계](mining-system/13_-_-_.md)
-* [14\_STONE\_초기\_발행량의\_산정](mining-system/14_stone_-_-_.md)
-* [15\_STONE의\_100퍼센트\_공개유통\_구조](mining-system/15_stone-_100-_-_.md)
+* [14\_STONX\_초기\_발행량의\_산정](mining-system/14_stone_-_-_.md)
+* [15\_STONX의\_100퍼센트\_공개유통\_구조](mining-system/15_stone-_100-_-_.md)
 * [16\_Base\_Mining\_Unit과\_소액\_참여\_구조](mining-system/16_base_mining_unit-_-_-_.md)
 * [17\_Target\_Pool\_Power와\_장기\_채굴\_기간](mining-system/17_target_pool_power-_-_-_.md)
 * [18\_수치와\_파라미터에\_대한\_해석](mining-system/18_-_-_-_.md)
@@ -51,12 +51,12 @@
 ## Protocol Architecture
 
 * [34\_탈중앙\_채굴\_구조](protocol-architecture/34_-_-_.md)
-* [35\_채굴\_비용과\_STONE\_소각\_구조](protocol-architecture/35_-_-_stone_-_.md)
-* [38\_프로토콜\_고정\_원칙](protocol-architecture/38_-_-_.md)
-* [37\_개발\_구조의\_선택](protocol-architecture/37_-_-_.md)
+* [35\_채굴\_비용과\_STONX\_소각\_구조](protocol-architecture/35_-_-_stone_-_.md)
 * [36\_락업\_감가상각\_및\_반환\_구조](protocol-architecture/36_-_-_-_-_.md)
-* [40\_이미지와\_메타데이터의\_위치](protocol-architecture/40_-_-_.md)
+* [37\_개발\_구조의\_선택](protocol-architecture/37_-_-_.md)
+* [38\_프로토콜\_고정\_원칙](protocol-architecture/38_-_-_.md)
 * [39\_보안\_대응과\_탈중앙성의\_균형](protocol-architecture/39_-_-_-_.md)
+* [40\_이미지와\_메타데이터의\_위치](protocol-architecture/40_-_-_.md)
 
 ## Ecosystem & Future
 
@@ -66,7 +66,3 @@
 * [44\_법률\_및\_투자성\_유의사항](ecosystem-and-future/44_-_-_-_.md)
 * [45\_프로젝트의\_의의](ecosystem-and-future/45_-_.md)
 * [46\_결론](ecosystem-and-future/46_.md)
-
-## DEVELOPER HUB
-
-* [Page 7](developer-hub/page-7.md)

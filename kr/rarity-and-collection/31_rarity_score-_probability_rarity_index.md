@@ -27,12 +27,12 @@ $$
 
 | Attribute      | Max Score |
 | -------------- | --------- |
-| Stone Scarcity |           |
-| Weight         |           |
-| Color          |           |
-| Clarity        |           |
-| Cut            |           |
-| Total          |           |
+| Stone Scarcity | 20        |
+| Weight         | 20        |
+| Color          | 20        |
+| Clarity        | 20        |
+| Cut            | 20        |
+| Total          | 100       |
 
 Stone Scarcity Score는 스톤별 총 발행량을 기준으로 계산된다.
 
@@ -79,4 +79,14 @@ $$
 
 이러한 조합은 Rarity Score상 높은 점수를 받을 뿐 아니라, Probability Rarity Index에서도 매우 높은 희귀도를 갖게 된다.
 
-CryptoStone은 이 두 지표를 함께 사용함으로써 수집자가 직관적으로 이해할 수 있는 점수 체계와 데이터 기반으로 검증 가능한 희귀도 체계를 동시에 제공한다.
+Rarity Score는 최종 등급 산정의 사용자 친화적 기준으로 사용된다. 기본 등급 구간은 다음과 같이 설정할 수 있다.
+
+| Final Tier | Rarity Score Range | 역할 |
+| ---------- | ------------------ | ---- |
+| Common     | 0 \~ 39            | 가장 흔한 보석군, 제련 재료와 기본 수집층 |
+| Rare       | 40 \~ 59           | 일반 채굴 결과보다 희소한 중간 수집층 |
+| Epic       | 60 \~ 79           | 연간 채굴 경험에서 의미 있는 성공 구간 |
+| Legendary  | 80 \~ 94           | 매우 희귀한 고가치 수집 구간 |
+| Genesis    | 95 \~ 100          | 극단적 조합 또는 초기 채굴 고유성이 반영된 최상위 구간 |
+
+CryptoStone은 Rarity Score와 Probability Rarity Index를 함께 사용함으로써 수집자가 직관적으로 이해할 수 있는 점수 체계와 데이터 기반으로 검증 가능한 희귀도 체계를 동시에 제공한다.
