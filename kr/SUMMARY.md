@@ -22,7 +22,7 @@
 * [12 스톤별 한정 공급량](mining-system/12_-_-_.md)
 * [13 채굴 주기의 설계](mining-system/13_-_-_.md)
 * [14 STONX 초기 발행량의 산정](mining-system/14_stone_-_-_.md)
-* [15 STONX의 100퍼센트 공개유통 구조](mining-system/15_stone-_100-_-_.md)
+* [15 STONX의 공개형 배분 구조](mining-system/15_stone-_100-_-_.md)
 * [16 Base Mining Unit과 소액 참여 구조](mining-system/16_base_mining_unit-_-_-_.md)
 * [17 Target Pool Power와 장기 채굴 기간](mining-system/17_target_pool_power-_-_-_.md)
 * [18 수치와 파라미터에 대한 해석](mining-system/18_-_-_-_.md)
