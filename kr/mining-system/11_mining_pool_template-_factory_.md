@@ -1,4 +1,4 @@
-# 11 Mining Pool Template과 Factory 구조
+# 11 Pool Template과 Factory
 
 12개의 Mining Pool Contract는 서로 다른 로직을 가진 별도 개발물이 아니다. 모든 풀은 동일하게 감사된 Mining Pool Template을 기반으로 배포된다. 각 풀은 동일한 핵심 로직을 사용하되, 다음 파라미터만 다르게 설정된다.
 

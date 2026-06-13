@@ -1,4 +1,4 @@
-# 21 Proof of Mining PoM의 누적
+# 21 PoM 누적
 
 CryptoStone은 단순한 포인트 또는 크레딧 방식이 아니라, 비트코인의 Proof-of-Work 개념을 디지털 보석 채굴 구조에 맞게 추상화한 Proof of Mining, PoM 모델을 사용한다.
 

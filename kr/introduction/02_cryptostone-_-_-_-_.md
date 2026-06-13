@@ -1,4 +1,4 @@
-# 02 CryptoStone을 이해하는 가장 단순한 방식
+# 02 CryptoStone 개요
 
 CryptoStone은 디지털 보석을 채굴하는 온체인 프로토콜이다. 사용자는 STONX를 원하는 보석 마이닝 풀에 투입하고, 시간이 지나 Proof of Mining, PoM 값이 충분히 누적되면 Gem NFT를 claim할 수 있다. 채굴된 NFT는 단순 이미지가 아니라, 스톤 종류, 무게, 색상, 투명도, 컷팅, 희귀도 점수, 채굴 시점이 기록된 고유한 디지털 보석이다.
 

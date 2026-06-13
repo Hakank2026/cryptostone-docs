@@ -1,4 +1,4 @@
-# 41 생태계 확장 모듈과 Gem Refinement
+# 41 생태계 확장과 제련
 
 CryptoStone의 핵심 프로토콜은 STONX, 12개의 스톤별 마이닝 풀, Proof of Mining, 그리고 Gem NFT로 구성된다. CryptoStone 생태계는 이 핵심 채굴 구조 위에 Marketplace, Arena, Ranking System, Collection Quest, Gem Refinement 같은 확장 모듈을 결합하여 디지털 보석의 사용성과 거래성을 넓힌다.
 
