@@ -1,4 +1,4 @@
-# 20\_장기\_참여\_보정과\_Flexible\_Cooldown
+# 20 장기 참여 보정과 Flexible Cooldown
 
 장기 참여자를 보상하기 위해 스테이킹 기간에 따른 Lock Multiplier를 적용할 수 있다.
 

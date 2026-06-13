@@ -1,4 +1,4 @@
-# 31\_Rarity\_Score와\_Probability\_Rarity\_Index
+# 31 Rarity Score와 Probability Rarity Index
 
 CryptoStone은 각 보석의 희귀도를 수치화하기 위해 두 가지 지표를 사용한다.
 

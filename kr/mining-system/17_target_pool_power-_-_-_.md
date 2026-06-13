@@ -1,4 +1,4 @@
-# 17\_Target\_Pool\_Power와\_장기\_채굴\_기간
+# 17 Target Pool Power와 장기 채굴 기간
 
 CryptoStone의 Target Pool Power는 전체 STONX 공급량이 아니라, 실제로 마이닝에 참여할 것으로 예상되는 유효 스테이킹 물량을 기준으로 산정한다.
 

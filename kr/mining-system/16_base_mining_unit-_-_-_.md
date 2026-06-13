@@ -1,4 +1,4 @@
-# 16\_Base\_Mining\_Unit과\_소액\_참여\_구조
+# 16 Base Mining Unit과 소액 참여 구조
 
 CryptoStone의 기본 참여 단위는 다음과 같이 설정한다.
 
