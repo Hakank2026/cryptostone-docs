@@ -1,4 +1,4 @@
-# CRYPTO STONE WP v2.9 VN
+# CRYPTO STONE WP v3.0 VN
 
 Bitcoin đã hình thành một khái niệm tài sản mới gọi là vàng kỹ thuật số nhờ nguồn cung giới hạn, quy tắc khai thác công khai, mạng lưới phi tập trung và cấu trúc giao dịch mà bất kỳ ai cũng có thể kiểm chứng, dù không được bảo chứng trực tiếp bằng vàng vật lý. Ý nghĩa cốt lõi của Bitcoin là sự khan hiếm và quyền sở hữu trong môi trường số có thể được triển khai bằng mã nguồn và mạng lưới, không cần phụ thuộc vào một tổ chức phát hành hay cơ quan trung tâm.
 

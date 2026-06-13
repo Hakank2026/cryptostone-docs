@@ -1,4 +1,4 @@
-# CRYPTO STONE WP v2.9 IN
+# CRYPTO STONE WP v3.0 IN
 
 Bitcoin membentuk konsep aset baru yang dikenal sebagai emas digital melalui pasokan terbatas, aturan mining yang terbuka, jaringan terdesentralisasi, dan struktur transaksi yang dapat diverifikasi oleh siapa pun, meskipun tidak didukung langsung oleh emas fisik. Makna utama Bitcoin adalah bahwa kelangkaan dan kepemilikan digital dapat diwujudkan melalui kode dan jaringan tanpa bergantung pada penerbit atau lembaga pusat tertentu.
 

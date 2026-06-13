@@ -1,6 +1,6 @@
 # Table of contents
 
-* [CRYPTO STONE WP v2.9 VN](README.md)
+* [CRYPTO STONE WP v3.0 VN](README.md)
 * [INDEX](index.md)
 
 ## Giới thiệu

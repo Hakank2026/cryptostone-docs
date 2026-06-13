@@ -1,9 +1,4 @@
-﻿# SUMMARY
-
-## Summary
-
-* [CRYPTOSTONE WHITEPAPER v2.9 CN](./)
-* [目录](index.md)
+# Table of contents
 
 ## 介绍
 

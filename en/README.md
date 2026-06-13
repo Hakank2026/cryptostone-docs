@@ -1,4 +1,4 @@
-# CRYPTO STONE WP v2.9 EN
+# CRYPTO STONE WP v3.0 EN
 
 Bitcoin formed a new asset concept known as digital gold through limited supply, public mining rules, a decentralized network, and a transaction structure that anyone can verify, even though it is not directly backed by physical gold. The essential significance of Bitcoin is that digital scarcity and ownership can be implemented through code and a network without relying on a specific issuer or central institution.
 

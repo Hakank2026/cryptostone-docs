@@ -1,3 +1,3 @@
-# README
+# CRYPTOSTONE WHITEPAPER v3.0 CN
 
 去中心化环境下的数字宝石资产研究

@@ -1,9 +1,4 @@
-# SUMMARY
-
-## Summary
-
-* [CRYPTO STONE WP v2.9 JP](./)
-* [INDEX](index.md)
+# Table of contents
 
 ## INTRODUCTION
 
