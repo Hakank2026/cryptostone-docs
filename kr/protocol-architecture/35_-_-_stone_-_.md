@@ -4,12 +4,14 @@ CryptoStone에서 STONX는 단순한 결제 수단이 아니라 디지털 보석
 
 개발자는 STONX의 소각 구조가 토큰 가격 상승을 보장하기 위한 장치가 아니라, 디지털 보석 채굴에 필요한 자원 소비와 희소성 구조를 표현하기 위한 장치라고 본다.
 
-CryptoStone의 STONX 소각은 크게 두 가지 경우에 발생할 수 있다.
+CryptoStone의 기본 STONX 소각 구조는 크게 두 가지 경우에 발생할 수 있다.
 
 | 소각 유형         | 발생 시점               | 목적              |
 | ------------- | ------------------- | --------------- |
 | Claim Burn    | Gem NFT를 claim하는 시점 | 채굴 비용과 희소성 표현   |
 | Maturity Burn | 락업 종료 후 unstake 시점  | 마이닝 자원의 감가상각 표현 |
+
+위 두 가지는 CryptoStone의 기본 소각 구조다. 다만 생태계가 확장되면 STONX 소각 메커니즘은 추가될 수 있다. 예를 들어 Marketplace 수수료 일부 소각, Arena 또는 게임형 모듈의 entry fee/settlement 소각, Gem Refinement 실행 비용 소각 등이 추가 소각 경로가 될 수 있다. 이러한 확장 소각은 핵심 채굴 규칙을 훼손하지 않는 범위에서 별도 컨트랙트와 공개 규칙으로 정의되어야 한다.
 
 Gem NFT를 claim할 때 발생하는 소각량 (B\_{claim,j})은 다음 공식으로 계산된다.
 
@@ -18,6 +20,8 @@ B_{claim,j} = \beta \times S_j
 $$
 
 여기서 (\beta)는 Base Claim Burn이고, (S\_j)는 해당 스톤의 Scarcity Multiplier이다.
+
+Claim Burn은 모든 풀에서 고정 2 STONX가 아니다. 기본값은 2 STONX이지만, 각 스톤 풀의 Scarcity Multiplier에 따라 실제 소각량이 달라진다. 예를 들어 특정 풀이 2x 구간이면 claim 시 4 STONX, 4x 구간이면 8 STONX가 소각된다. 따라서 Claim Burn은 풀별 채굴 진행도와 난이도를 반영하는 동적 소각 비용이다.
 
 초기 기준값은 다음과 같이 설정한다.
 
