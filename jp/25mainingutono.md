@@ -1,4 +1,4 @@
-# 25\_マイニング速度と供給枯渇の非線形構造
+﻿# 25\_マイニング速度と供給枯渇の非線形構造
 
 CryptoStoneのマイニング構造は、単純な線形ミンティングモデルではない。各ストーンは、独立した供給量、マイニング周期、プール難易度、希少性倍率を持ち、採掘進行率が高まるほど希少性倍率によって採掘速度が鈍化する。
 
@@ -13,15 +13,15 @@ $$
 ストーンプール (j) の単位時間当たりの予想採掘量 (\lambda\_j) は、概念的に次のように表現できる。
 
 $$
-\lambda_j = P_{eff,j} \div (B \times T_j \times S_j)
+\lambda_j = P_{eff,j} \div (M_{ref} \times T_j \times S_j)
 $$
 
-ここで、(B) はBase Mining Unit、(T\_j) はストーン別Base Mining Interval、(S\_j) はScarcity Multiplierである。
+ここで、(M\_{ref}) はProtocol Reference Power、(T\_j) はストーン別Base Mining Interval、(S\_j) はScarcity Multiplierである。Base Mining Unitは最小参加単位であり、長期的な採掘速度はProtocol Reference PowerとTarget Pool Powerによって補正される。
 
 特定ストーンが採掘進行率 (q) に到達するために必要な時間は、次のような非線形モデルで表現できる。
 
 $$
-Time_j(q) = (N_j \times B \times T_j \div P_{eff,j}) \times \int_0^q S_j(x)\,dx
+Time_j(q) = (N_j \times M_{ref} \times T_j \div P_{eff,j}) \times \int_0^q S_j(x)\,dx
 $$
 
 この数式は、CryptoStoneの採掘構造が線形的に枯渇するモデルではなく、ストーンの残存供給量が減少するほど徐々に遅くなる非線形採掘モデルであることを示している。

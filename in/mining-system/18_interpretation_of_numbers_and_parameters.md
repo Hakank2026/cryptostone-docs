@@ -1,20 +1,20 @@
-# 18\_interpretation\_of\_numbers\_and\_parameters
+# 18 Interpretasi angka dan parameter
 
-The stone-specific supplies, base mining intervals, Mining Power formulas, PoM thresholds, halving multipliers, Weight·Color·Clarity·Cut probability tables, and Rarity Score formulas presented in this whitepaper are not absolute standards that perfectly replicate the real gemstone ecosystem.
+Supply berdasarkan stone, Base Mining Interval, formula Mining Power, ambang PoM, halving multiplier, tabel probabilitas Weight·Color·Clarity·Cut, dan formula Rarity Score yang disajikan dalam whitepaper ini bukan standar absolut yang meniru ekosistem batu permata nyata secara sempurna.
 
-These numbers are initial reference parameters designed for the following purposes.
+Angka-angka ini adalah parameter referensi awal yang dirancang untuk tujuan berikut.
 
-| Purpose                             | Description                                                              |
-| ----------------------------------- | ------------------------------------------------------------------------ |
-| Expression of digital scarcity      | Expresses gemstone scarcity in an on-chain environment                   |
-| Implementation of mining difficulty | Implements mining difficulty and supply limits through smart contracts   |
-| Relative scarcity distinction       | Designs comparative scarcity differences by stone type                   |
-| Collectible value distinction       | Improves understanding of collectibles through rarity and tier structure |
-| Long-term supply control            | Manages supply speed through halving and difficulty increases            |
-| Participation scalability           | Accommodates both small participants and large-scale participants        |
+| Tujuan | Deskripsi |
+| ------ | --------- |
+| Ekspresi kelangkaan digital | Mengekspresikan kelangkaan batu permata dalam lingkungan on-chain |
+| Implementasi difficulty mining | Menerapkan difficulty mining dan batas supply melalui smart contract |
+| Pembeda kelangkaan relatif | Merancang perbedaan kelangkaan komparatif berdasarkan Stone Type |
+| Pembeda nilai koleksi | Meningkatkan pemahaman collectible melalui struktur rarity dan tier |
+| Kontrol supply jangka panjang | Mengelola kecepatan supply melalui halving dan peningkatan difficulty |
+| Skalabilitas partisipasi | Mengakomodasi peserta kecil maupun peserta berskala besar |
 
-Therefore, the values in this whitepaper cannot be considered to perfectly reflect all price formation factors, appraisal standards, distribution structures, supply and demand, cultural values, physical storage costs, or appraisal institution evaluation models of the real gemstone market.
+Karena itu, nilai dalam whitepaper ini tidak dapat dianggap merefleksikan secara sempurna seluruh faktor pembentukan harga, standar appraisal, struktur distribusi, supply dan demand, nilai budaya, biaya penyimpanan fisik, atau model evaluasi lembaga appraisal dalam pasar batu permata nyata.
 
-CryptoStone does not seek to replicate the real gemstone market as it is. It is a project to implement the core characteristics of gemstones - scarcity, grading, mineability, and collectibility - in a decentralized digital environment.
+CryptoStone tidak berupaya mereplikasi pasar batu permata nyata apa adanya. CryptoStone adalah proyek untuk menerapkan karakteristik inti batu permata - kelangkaan, grading, mineability, dan collectibility - dalam lingkungan digital terdesentralisasi.
 
-The author considers the values in this whitepaper not as arbitrary figures, but as initial reference values for explaining and experimenting with the concept of decentralized digital gemstones. They may evolve into more refined models through future research, market response, community review, technical verification, and legal review. However, once the protocol is officially deployed and core rules are finalized, the pre-determined core values must not be arbitrarily changed by the operator.
+Pengembang menganggap nilai dalam whitepaper ini bukan angka sewenang-wenang, melainkan nilai referensi awal untuk menjelaskan dan bereksperimen dengan konsep batu permata digital terdesentralisasi. Nilai tersebut dapat berkembang menjadi model yang lebih halus melalui riset masa depan, respons pasar, tinjauan komunitas, verifikasi teknis, dan kajian hukum. Namun, setelah protokol resmi dideploy dan aturan inti difinalisasi, nilai inti yang telah ditentukan sebelumnya tidak boleh diubah secara sewenang-wenang oleh operator.

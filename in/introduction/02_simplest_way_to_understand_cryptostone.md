@@ -1,16 +1,16 @@
-# 02\_simplest\_way\_to\_understand\_cryptostone
+# 02 Cara paling sederhana memahami CryptoStone
 
-CryptoStone is an on-chain protocol for mining digital gemstones. A user deposits STONE into the gemstone mining pool of their choice, and once enough Proof of Mining, or PoM, has accumulated over time, the user can claim a Gem NFT. The mined NFT is not a simple image, but a unique digital gemstone containing recorded attributes such as stone type, weight, color, clarity, cut, rarity score, and mining time.
+CryptoStone adalah protokol on-chain untuk mining batu permata digital. Pengguna menyetor STONX ke gemstone mining pool pilihannya; setelah Proof of Mining, atau PoM, terkumpul cukup seiring waktu, pengguna dapat claim Gem NFT. NFT yang ditambang bukan gambar sederhana, melainkan batu permata digital unik yang berisi atribut tercatat seperti Stone Type, weight, color, clarity, cut, Rarity Score, dan mining time.
 
-Users can choose from 12 stone pools, including diamond, ruby, sapphire, and emerald. Each stone has a different supply, mining interval, and halving structure. As mining progresses, the remaining supply decreases and the scarcity multiplier increases.
+Pengguna dapat memilih dari 12 stone pool, termasuk diamond, ruby, sapphire, dan emerald. Setiap stone memiliki supply, mining interval, dan struktur halving yang berbeda. Seiring mining berjalan, supply tersisa berkurang dan Scarcity Multiplier meningkat.
 
-The core experience of CryptoStone is simple:
+Pengalaman inti CryptoStone sederhana:
 
-* STONE is deposited into a digital mine.
-* Over time, Mining Power accumulates as Proof of Mining, PoM.
-* When the required PoM threshold is reached, a Gem NFT can be claimed.
-* Which gemstone appears is determined by publicly disclosed probabilities and verifiable randomness.
+* STONX disetor ke tambang digital.
+* Seiring waktu, Mining Power terakumulasi sebagai Proof of Mining, PoM.
+* Saat ambang PoM yang diperlukan tercapai, Gem NFT dapat diclaim.
+* Batu yang muncul ditentukan oleh probabilitas publik dan randomness yang dapat diverifikasi.
 
-In other words, CryptoStone aims to be a “mined digital gemstone,” not a “purchased NFT.” Users do not simply buy an image. They mine their own digital gemstone within publicly disclosed rules and fixed probability structures.
+Dengan kata lain, CryptoStone bertujuan menjadi “batu permata digital yang ditambang”, bukan “NFT yang dibeli”. Pengguna tidak sekadar membeli gambar. Mereka menambang batu permata digital miliknya sendiri dalam aturan publik dan struktur probabilitas tetap.
 
-After mining, Gem NFTs can be connected to various ecosystem utility modules, such as holding, exploration, trading, and refinement. However, these expansion functions do not replace the core mining structure. They are optional ecosystem modules designed to expand the utility and collectibility of mined digital gemstones.
+Setelah mining, Gem NFT dapat terhubung dengan berbagai module utility ekosistem seperti holding, exploration, trading, dan refinement. Namun, fungsi ekspansi ini tidak menggantikan struktur mining inti. Fungsi tersebut adalah module ekosistem opsional untuk memperluas utility dan collectibility batu permata digital yang telah ditambang.

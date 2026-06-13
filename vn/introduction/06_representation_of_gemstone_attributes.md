@@ -1,16 +1,16 @@
-# 06\_representation\_of\_gemstone\_attributes
+# 06 Biểu đạt thuộc tính đá quý
 
-The value of a gemstone is not determined merely by its type. Even among diamonds, market value differs depending on weight, color, clarity, and cut.
+Giá trị của một viên đá quý không chỉ được quyết định bởi loại đá. Ngay cả trong cùng nhóm kim cương, giá trị thị trường cũng khác nhau tùy theo trọng lượng, màu sắc, độ tinh khiết và giác cắt.
 
-To represent these gemstone attributes in a digital environment, CryptoStone assigns the following four core attributes to each Gem NFT.
+Để biểu đạt các thuộc tính này trong môi trường số, CryptoStone gán bốn thuộc tính cốt lõi sau cho mỗi Gem NFT.
 
-| Attribute | Meaning                           |
-| --------- | --------------------------------- |
-| Weight    | The weight of the gemstone        |
-| Color     | The color grade of the gemstone   |
-| Clarity   | The clarity grade of the gemstone |
-| Cut       | The cut grade of the gemstone     |
+| Thuộc tính | Ý nghĩa |
+| ---------- | ------- |
+| Weight | Trọng lượng của viên đá |
+| Color | Cấp màu của viên đá |
+| Clarity | Cấp độ tinh khiết của viên đá |
+| Cut | Cấp giác cắt của viên đá |
 
-These four attributes are determined at the time of mining and cannot be changed after issuance. This digitally implements a structure similar to how real gemstones are evaluated based on individual attributes after appraisal.
+Bốn thuộc tính này được xác định tại thời điểm khai thác và không thể thay đổi sau khi phát hành. Điều này triển khai bằng kỹ thuật số một cấu trúc tương tự cách đá quý thật được đánh giá dựa trên thuộc tính riêng sau khi thẩm định.
 
-In CryptoStone, each NFT is not merely a token pointing to an image file. It is a digital asset that directly holds gemstone attribute values. Images, 3D models, and visual card formats may serve as auxiliary elements for user experience, but the essence of a CryptoStone NFT lies in the attribute data recorded on-chain.
+Trong CryptoStone, mỗi NFT không chỉ là một token trỏ tới một file hình ảnh. Nó là một tài sản kỹ thuật số trực tiếp nắm giữ giá trị thuộc tính đá quý. Hình ảnh, mô hình 3D và định dạng thẻ trực quan có thể đóng vai trò bổ trợ cho trải nghiệm người dùng, nhưng bản chất của CryptoStone NFT nằm ở dữ liệu thuộc tính được ghi on-chain.

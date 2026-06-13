@@ -1,38 +1,38 @@
-# 23\_adjustment\_of\_pool\_difficulty
+# 23 Penyesuaian Pool Difficulty
 
-If the number of participants increases and total Mining Power grows, gemstones may be mined too quickly. To prevent this, each pool adjusts difficulty based on total Mining Power.
+Jika jumlah peserta meningkat dan total Mining Power bertambah, batu permata dapat ditambang terlalu cepat. Untuk mencegah hal ini, setiap pool menyesuaikan difficulty berdasarkan total Mining Power.
 
-If the total Mining Power of stone pool (j) is (P\_j), the Target Pool Power is (P\_j^\*), and pool difficulty is (D\_j), then it is calculated as follows:
+Jika total Mining Power dari stone pool (j) adalah (P\_j), Target Pool Power adalah (P\_j^\*), dan Pool Difficulty adalah (D\_j), maka dihitung sebagai berikut:
 
 $$
 D_j = \max(1, P_j \div P_j^*)
 $$
 
-The reference value of CryptoStone is as follows:
+Nilai referensi CryptoStone adalah sebagai berikut:
 
 $$
 P_j^* = 40,000,000 \text{ Power}
 $$
 
-Examples are as follows.
+Contoh:
 
-| Target Pool Power | Total Pool Mining Power | Calculation                                 | Pool Difficulty |
-| ----------------- | ----------------------: | ------------------------------------------- | --------------: |
-| 40,000,000        |              20,000,000 | 20,000,000 ÷ 40,000,000 = 0.5 → max(1, 0.5) |            1.0x |
-| 40,000,000        |              40,000,000 | 40,000,000 ÷ 40,000,000 = 1.0               |            1.0x |
-| 40,000,000        |              80,000,000 | 80,000,000 ÷ 40,000,000 = 2.0               |            2.0x |
-| 40,000,000        |             200,000,000 | 200,000,000 ÷ 40,000,000 = 5.0              |            5.0x |
+| Target Pool Power | Total Pool Mining Power | Calculation | Pool Difficulty |
+| ----------------- | ----------------------: | ----------- | --------------: |
+| 40,000,000 | 20,000,000 | 20,000,000 ÷ 40,000,000 = 0.5 → max(1, 0.5) | 1.0x |
+| 40,000,000 | 40,000,000 | 40,000,000 ÷ 40,000,000 = 1.0 | 1.0x |
+| 40,000,000 | 80,000,000 | 80,000,000 ÷ 40,000,000 = 2.0 | 2.0x |
+| 40,000,000 | 200,000,000 | 200,000,000 ÷ 40,000,000 = 5.0 | 5.0x |
 
-The reason for applying the `max(1, ·)` structure is to prevent difficulty from falling below 1.0x even when total Mining Power is lower than the Target Pool Power. In other words, it prevents mining speed from becoming excessively faster than the reference speed even in early stages when participation is low.
+Alasan menerapkan struktur `max(1, ·)` adalah mencegah difficulty turun di bawah 1.0x meskipun total Mining Power lebih rendah dari Target Pool Power. Dengan kata lain, struktur ini mencegah kecepatan mining menjadi terlalu cepat dibandingkan kecepatan referensi pada tahap awal ketika partisipasi masih rendah.
 
-Conversely, when total Mining Power exceeds the Target Pool Power, Pool Difficulty increases proportionally. For example, if the total Mining Power of a specific pool increases to 80,000,000 Power, Pool Difficulty becomes 2.0x. In this case, the time required for the same user to mine one NFT also approximately doubles.
+Sebaliknya, ketika total Mining Power melebihi Target Pool Power, Pool Difficulty meningkat secara proporsional. Misalnya, jika total Mining Power suatu pool naik menjadi 80,000,000 Power, Pool Difficulty menjadi 2.0x. Dalam kondisi ini, waktu yang diperlukan pengguna yang sama untuk menambang satu NFT juga kira-kira menjadi dua kali lipat.
 
-In smart contract implementation, BPS can be used to avoid decimal operations.
+Dalam implementasi smart contract, BPS dapat digunakan untuk menghindari operasi desimal.
 
 $$
 D_{j,\mathrm{BPS}} = \max(10,000, P_j \times 10,000 \div P_j^*)
 $$
 
-Here, 10,000 BPS = 1.0x.
+Di sini, 10,000 BPS = 1.0x.
 
-This structure allows overall mining speed to adjust naturally as participation increases, and prevents the supply of each stone from being depleted too quickly.
+Struktur ini memungkinkan kecepatan mining keseluruhan menyesuaikan secara alami seiring meningkatnya partisipasi, serta mencegah supply tiap stone habis terlalu cepat.

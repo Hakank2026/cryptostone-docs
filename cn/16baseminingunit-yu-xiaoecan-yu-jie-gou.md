@@ -1,29 +1,29 @@
-# 16\_Base\_Mining\_Unit\_与小额参与结构
+# 16 Base Mining Unit
 
-CryptoStone 的基准挖矿单位设定如下：
+**Base Mining Unit = 1,000 STONX**
 
-**Base Mining Unit = 100,000 STONE**
+Base Mining Unit 是用户参与挖矿池的最小基准单位。它用于防止过低单位造成无意义的参与碎片化，同时让普通用户能够以可负担的规模开始累积 Proof of Mining，即 PoM。Base Mining Unit 并不保证短期 claim。
 
-不过，这并不是最低参与数量。Base Mining Unit 是用于计算挖矿速度和难度的基准单位。
+CryptoStone 采用 PoM 累积结构，使尽可能多的用户能够参与挖矿。用户可以从 1,000 STONX 起参与挖矿池，并根据质押数量和时间比例累积 PoM。
 
-CryptoStone 采用 PoM 累积结构，使尽可能多的用户能够参与挖矿。用户即使持有少于 100,000 STONE 的数量，也可以参与挖矿池，并按质押数量和时间比例累积 PoM 值。
+示例:
 
-当用户累积的 PoM 值大于或等于该矿池所需 PoM 阈值 (R\_j) 时，即可 claim Gem NFT。
+| 质押数量 | 相对挖矿速度 |
+| -------- | ------------ |
+| 1,000 STONX | 1x |
+| 5,000 STONX | 5x |
+| 10,000 STONX | 10x |
+| 50,000 STONX | 50x |
 
-$$
-PoM_{i,j}(t) \ge R_j
-$$
+长期供应速度并不只由 Base Mining Unit 决定。CryptoStone 在 1,000 STONX 基本参与单位之外，同时使用各池的 Target Pool Power、Protocol Reference Power、Pool Difficulty、Scarcity Multiplier，使全部 Gem NFT 供应在较长周期内逐步被挖出。
 
-例如，在 Diamond Pool 初始条件下，假设 Pool Difficulty 和 Scarcity Multiplier 均为 1x，则情况如下：
+在初始 Garnet 参考模型下:
 
-| Active Stake  | 挖掘 1 个 Diamond NFT 的预计时间 |
-| ------------- | ------------------------ |
-| 100,000 STONE | 约 2.55 天                 |
-| 10,000 STONE  | 约 25.5 天                 |
-| 5,000 STONE   | 约 51 天                   |
-| 1,000 STONE   | 约 255 天                  |
-| 100 STONE     | 约 6.98 年                 |
+| 质押数量 | 预计 claim 间隔 |
+| -------- | --------------- |
+| 1,000 STONX | 约 197 天 |
+| 5,000 STONX | 约 39 天 |
+| 10,000 STONX | 约 20 天 |
+| 50,000 STONX | 约 4 天 |
 
-这一结构既为高挖矿算力用户提供更快的挖矿机会，也使小额参与者能够长期累积 PoM 并最终 claim Gem NFT。
-
-本文作者认为，该结构对于 CryptoStone 的生态扩展非常重要。NFT 的稀缺性应通过总发行量、属性概率和减半结构来维持，而用户参与度则应通过低进入门槛和 PoM 累积结构来扩大。
+这一结构让 1,000 STONX 的基础参与者也能累积 PoM，让中等规模参与者获得月度级别的挖矿体验，并让高 Mining Power 用户获得更频繁的 claim 机会。不过，Mining Power 只影响 claim 频率，并不会让用户直接选择 Gem NFT 的等级或属性。

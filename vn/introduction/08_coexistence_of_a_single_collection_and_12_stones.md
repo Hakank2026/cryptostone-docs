@@ -1,30 +1,30 @@
-# 08\_coexistence\_of\_a\_single\_collection\_and\_12\_stones
+# 08 Sự cùng tồn tại của một collection và 12 loại đá
 
-CryptoStone does not separate the 12 stones into individual NFT collections. All gemstones are issued from one Gem NFT contract.
+CryptoStone không tách 12 loại đá thành các NFT collection riêng biệt. Tất cả đá quý được phát hành từ một Gem NFT contract duy nhất.
 
-However, each NFT is distinguished by the `stoneType` attribute.
+Tuy nhiên, mỗi NFT được phân biệt bằng thuộc tính `stoneType`.
 
-| Token ID | Stone Type | Weight  | Color | Clarity | Cut    |
-| -------- | ---------- | ------- | ----- | ------- | ------ |
-| #10291   | Diamond    | 3.42 CT | D     | VVS1    | 6 Star |
-| #58102   | Ruby       | 8.13 CT | G     | VS2     | 4 Star |
-| #77410   | Sapphire   | 1.25 CT | E     | IF      | 5 Star |
+| Token ID | Stone Type | Weight | Color | Clarity | Cut |
+| -------- | ---------- | ------ | ----- | ------- | --- |
+| #10291 | Diamond | 3.42 CT | D | VVS1 | 6 Star |
+| #58102 | Ruby | 8.13 CT | G | VS2 | 4 Star |
+| #77410 | Sapphire | 1.25 CT | E | IF | 5 Star |
 
-This structure has the following advantages.
+Cấu trúc này có các lợi thế sau.
 
-| Advantage                           | Description                                                                               |
-| ----------------------------------- | ----------------------------------------------------------------------------------------- |
-| Unified collection                  | Maintains the single collection identity of CryptoStone.                                  |
-| Concentrated transaction data       | Prevents collection value and transaction data from being fragmented across marketplaces. |
-| Easier rarity management            | Allows all gemstones to be compared within one rarity ranking system.                     |
-| Preservation of stone individuality | Expresses the independence of each gemstone through the `stoneType` attribute.            |
-| Supply limitation                   | The NFT contract can verify maximum supply by stone.                                      |
+| Lợi thế | Mô tả |
+| ------- | ----- |
+| Collection thống nhất | Duy trì nhận diện một collection duy nhất của CryptoStone. |
+| Dữ liệu giao dịch tập trung | Ngăn giá trị collection và dữ liệu giao dịch bị phân mảnh trên nhiều marketplace. |
+| Quản lý rarity dễ hơn | Cho phép so sánh tất cả đá quý trong một hệ thống xếp hạng rarity. |
+| Bảo toàn cá tính từng stone | Biểu đạt sự độc lập của từng loại đá thông qua thuộc tính `stoneType`. |
+| Giới hạn nguồn cung | NFT contract có thể kiểm chứng nguồn cung tối đa theo từng stone. |
 
-The NFT contract separately manages issuance quantity by stone.
+NFT contract quản lý riêng số lượng phát hành theo từng stone.
 
 ```
 maxSupplyByStone[Diamond] = 110,000
 mintedByStone[Diamond] < maxSupplyByStone[Diamond]
 ```
 
-Therefore, even if an issuance request comes from the Diamond Pool, no further Diamond NFTs can be issued once the maximum Diamond supply has been reached.
+Do đó, ngay cả khi yêu cầu phát hành đến từ Diamond Pool, Diamond NFT cũng không thể được phát hành thêm khi nguồn cung tối đa của Diamond đã đạt giới hạn.

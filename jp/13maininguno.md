@@ -1,8 +1,8 @@
-# 13\_マイニング周期の設計
+﻿# 13\_マイニング周期の設計
 
 各ストーンは、それぞれ異なる基本マイニング周期を持つ。
 
-| Stone      | Base Mining Interval |
+| STONX      | Base Mining Interval |
 | ---------- | -------------------: |
 | Garnet     |          170,000 sec |
 | Amethyst   |          160,000 sec |

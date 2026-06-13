@@ -1,86 +1,81 @@
-# 41\_ecosystem\_expansion\_modules\_and\_gem\_refinement
+# 41 Ekspansi Ekosistem dan Gem Refinement
 
-The core protocol of CryptoStone consists of STONE, 12 stone-specific mining pools, Proof of Mining, and Gem NFTs. However, the CryptoStone ecosystem is not limited to the core mining structure. In the future, it can expand into various utility functions through additional smart contracts or expansion modules connected to existing contracts. These expansion functions may include Marketplace, Ranking System, Collection Quest, and Gem Refinement.
+CryptoStone dapat memperluas utility Gem NFT melalui Marketplace, Arena, dan Gem Refinement tanpa menggantikan struktur mining inti.
 
-Gem Refinement is one of these ecosystem expansion modules, designed as an optional post-mining utility structure that allows mined Gem NFTs to be used again. Gem Refinement is not an unlimited additional NFT issuance structure, but a supply compression mechanism in which two Gem NFTs with the same stoneType are combined to create one Refined Gem NFT of the same stoneType.
+Marketplace mendukung price discovery dan transfer kepemilikan untuk Gem NFT yang telah ditambang. Pengguna dapat list Gem NFT yang mereka tambang atau refine, sementara pembeli dapat memilih target koleksi berdasarkan stone type, grade, Rarity Score, attributes, tokenId, riwayat trading, dan status media. Marketplace tidak menjamin rarity itu sendiri; marketplace adalah tempat harga pasar terbentuk berdasarkan atribut yang dipublikasikan dan provenance on-chain.
 
-```
-2 Gem NFTs
-+ small STONE use or burn
--> Parent Gem NFTs Burned
--> 1 Refined Gem NFT Issued
-```
+Arena adalah module bergaya game yang memperluas utility Gem NFT. Pengguna dapat menggunakan Gem NFT sebagai entry seed atau participation credential dan bergabung ke meja Duel, Battle, atau Arena melalui entry fee berbasis STONX. Arena menambahkan konteks penggunaan di luar koleksi, tetapi tidak secara langsung mengubah probabilitas mining atau grade NFT.
 
-Each time a refinement is executed, the two parent Gem NFTs are burned or made permanently unrecoverable, and only one new Refined Gem NFT is issued. Therefore, the total circulating NFT supply decreases by one.
+Gem Refinement adalah struktur utility pascamining opsional yang memungkinkan Gem NFT hasil mining digunakan kembali. Ini bukan sistem penerbitan tambahan tanpa batas. Sebaliknya, dua Gem NFT dengan `stoneType` yang sama digabung untuk membuat satu Refined Gem NFT dengan `stoneType` yang sama, membentuk mekanisme supply compression.
 
-```
-2 Gem NFTs Burned -> 1 Refined Gem NFT Issued
-Net Circulating NFT Supply = -1
-```
+Struktur refinement dasar adalah:
 
-In the initial Gem Refinement model, it is desirable to allow only same-stone refinement. For example, two Diamond Gem NFTs can be refined into one Refined Diamond Gem NFT, and two Ruby Gem NFTs can be refined into one Refined Ruby Gem NFT. Cross-stone refinement can make the stone-specific supply, scarcity, halving, and mining difficulty structures complicated, so it is appropriate to exclude it from the initial model.
+| Input | Output | Supply Change |
+| ----- | ------ | ------------- |
+| 2 Gem NFT dari stone yang sama | 1 Refined Gem NFT dari stone yang sama | Total supply NFT berkurang 1 |
 
-| Item                | Principle                                 |
-| ------------------- | ----------------------------------------- |
-| Required materials  | 2 Gem NFTs with the same stoneType        |
-| Additional cost     | Small STONE use or burn                   |
-| Parent NFT handling | Burned or made permanently unrecoverable  |
-| Result              | 1 Refined Gem NFT with the same stoneType |
-| Generation info     | Recorded as Gen1 or Refined Generation    |
-| Supply effect       | Decrease in total circulating NFT supply  |
-| Issuance authority  | Limited to the Refining Contract          |
-| Admin Mint          | None                                      |
-| Randomness          | Uses a verifiable randomness structure    |
+Saat satu refinement dieksekusi, dua parent Gem NFT diburn atau dibuat tidak dapat dipulihkan, dan hanya satu Refined Gem NFT baru yang dibuat. Karena itu, total circulating NFT supply berkurang satu.
 
-The base tier of a Refined Gem NFT can be calculated based on the higher tier among the two parent Gem NFTs.
+Contoh:
 
-$$T_{base} = \max(T_1, T_2)$$
+* Garnet #102 + Garnet #481 -> Refined Garnet #9001
+* Ruby #220 + Ruby #841 -> Refined Ruby #9102
 
-Here, (T\_1) and (T\_2) are the tiers of the two parent Gem NFTs, and (T\_{base}) is the base tier used to determine the refinement result.
+Dalam model awal, Gem Refinement sebaiknya hanya mengizinkan refinement sesama stone. Misalnya, dua Garnet Gem NFT dapat menjadi satu Refined Garnet Gem NFT, dan dua Ruby Gem NFT dapat menjadi satu Refined Ruby Gem NFT. Cross-stone refinement dapat membuat struktur supply, scarcity, halving, dan mining difficulty terlalu kompleks, sehingga tepat untuk dikecualikan dari model awal.
 
-The tier structure can be simplified as follows.
+Gem Refinement dapat membuat Gem NFT baru dengan:
 
-| Tier Level | Tier      |
-| ---------- | --------- |
-| 1          | Common    |
-| 2          | Rare      |
-| 3          | Epic      |
-| 4          | Legendary |
+* Rarity Score lebih tinggi,
+* metadata generasi refinement,
+* catatan parent tokenId,
+* efek visual tambahan,
+* dan jumlah supply lebih rendah.
 
-The refinement result is designed so that the probability of receiving the same tier as the base tier is the highest. The probability of dropping by one tier is kept very low. Even if an upgrade occurs, it is limited to a maximum of 1 to 2 tiers. Also, lower tiers have relatively higher upgrade possibilities, while higher tiers have lower upgrade possibilities, protecting the scarcity of high-grade Gem NFTs.
+Namun, refinement tidak boleh dirancang untuk menjamin upgrade berhasil tanpa syarat. Lebih baik memasukkan hasil berbasis probabilitas agar supply compression, ketegangan koleksi, dan use case untuk NFT tier rendah dapat hidup bersama.
 
-An example of the basic threshold using a BPS-style random value (U) from 0 to 9,999 is as follows.
+Hasil refinement dapat didasarkan pada tier yang lebih tinggi dari dua parent Gem NFT.
 
-$$U \in [0, 9,999]$$
+$$
+T_{base} = \max(T_1, T_2)
+$$
 
-10,000 BPS = 100%
+Di sini, (T\_1) dan (T\_2) adalah tier dari dua parent Gem NFT, dan (T\_{base}) adalah tier referensi untuk menentukan hasil refinement.
 
-| Base Tier | -1 Tier | Same Tier | +1 Tier | +2 Tier |
-| --------- | ------- | --------- | ------- | ------- |
-| Common    | None    | 68.0%     | 27.0%   | 5.0%    |
-| Rare      | 1.0%    | 76.0%     | 20.0%   | 3.0%    |
-| Epic      | 1.5%    | 88.5%     | 10.0%   | None    |
-| Legendary | 2.0%    | 98.0%     | None    | None    |
+Rarity tier disatukan menjadi lima grade: Common, Rare, Epic, Legendary, dan Genesis.
 
-In this structure, Common and Rare have relatively higher upgrade possibilities through refinement, while upgrade probabilities decrease significantly from Epic onward. Legendary is treated as the highest tier in the refinement model, and no further upgrade is allowed. This structure maintains the excitement of refinement while preventing excessive creation of high-grade NFTs.
+| Tier Index | Tier |
+| ---------- | ---- |
+| 0 | Common |
+| 1 | Rare |
+| 2 | Epic |
+| 3 | Legendary |
+| 4 | Genesis |
 
-When the tier gap between the two parent Gem NFTs is large, the upgrade probability can be additionally adjusted. The tier gap (G) is defined as follows.
+Hasil refinement sebaiknya paling sering tetap berada pada base tier. Probabilitas downgrade harus rendah, dan upgrade, ketika terjadi, harus dibatasi satu atau dua tier. NFT tier rendah dapat memiliki probabilitas upgrade relatif lebih tinggi, sementara NFT tier tinggi harus memiliki probabilitas upgrade lebih rendah untuk melindungi scarcity tier tinggi.
 
-$$G = |T_1 - T_2|$$
+Contoh model probabilitas awal:
 
-| Tier Gap (G) | Upgrade Modifier | Processing Principle                                            |
-| ------------ | ---------------- | --------------------------------------------------------------- |
-| 0            | 100%             | Same-tier refinement. Basic probability applied                 |
-| 1            | 70%              | Adjacent-tier refinement. Upgrade probability partially reduced |
-| 2            | 35%              | Large tier gap. Upgrade probability greatly reduced             |
-| 3 or more    | Restricted       | Refinement may be restricted in the initial model               |
+| Base Tier | Downgrade | Same Tier | +1 Tier | +2 Tier |
+| --------- | --------: | --------: | ------: | ------: |
+| Common | None | 68.0% | 27.0% | 5.0% |
+| Rare | 1.0% | 76.0% | 20.0% | 3.0% |
+| Epic | 1.5% | 88.0% | 10.0% | 0.5% |
+| Legendary | 2.0% | 97.0% | 1.0% | None |
+| Genesis | Limited | Limited | Limited | Limited |
 
-The upgrade probability can be adjusted as follows.
+Genesis diperlakukan sebagai tier koleksi tertinggi. Dalam model awal, sebaiknya penggunaannya sebagai material refinement dibatasi. Struktur ini menjaga excitement refinement sambil mencegah penciptaan NFT high-grade yang berlebihan.
 
-$$\text{Adjusted Upgrade Probability} = \text{Base Upgrade Probability} \times \text{Upgrade Modifier}$$
+Jika refinement antar parent tier berbeda diizinkan, probabilitas hasil dapat disesuaikan berdasarkan tier gap.
 
-The upgrade probability reduced by the adjustment is added to the probability of remaining at the same tier. This limits attempts to repeatedly combine one high-tier Gem NFT with low-tier Gem NFTs to create higher-tier results.
+$$
+\Delta T = |T_1 - T_2|
+$$
 
-The Refining Contract performs ownership verification, same-stone verification, tier gap verification, STONE use or burn, parent NFT burn, randomness request, and Refined Gem NFT issuance request. A Refined Gem NFT must not be created by arbitrary operator issuance. It should only be created when the Refining Contract verifies the predefined conditions.
+| Tier Gap | Adjustment Coefficient | Meaning |
+| -------- | ---------------------: | ------- |
+| 0 | 100% | Refinement tier sama; probabilitas dasar berlaku |
+| 1 | 70% | Refinement tier berdekatan; probabilitas upgrade sedikit berkurang |
+| 2 | 40% | Gap tier besar; probabilitas upgrade berkurang signifikan |
+| 3 or more | Limited | Dapat dibatasi pada model awal |
 
-Gem Refinement does not replace the basic mining structure of CryptoStone. It is an optional module designed to expand the utility, collectibility, and trading demand of Gem NFTs after mining. In the future, CryptoStone may gradually expand the digital gemstone ecosystem through Gem Refinement and other expansion modules.
+Melalui refinement, Gem NFT grade rendah tidak sekadar ditinggalkan. Mereka dapat berfungsi sebagai bahan baku supply compression. Gem NFT grade tinggi tetap langka, sementara NFT grade rendah memperoleh utility sebagai input refinement. Ini memberi CryptoStone struktur sirkulasi internal untuk Gem NFT.

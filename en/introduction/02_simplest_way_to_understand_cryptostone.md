@@ -1,12 +1,12 @@
-# 02\_simplest\_way\_to\_understand\_cryptostone
+﻿# 02\_simplest\_way\_to\_understand\_cryptostone
 
-CryptoStone is an on-chain protocol for mining digital gemstones. A user deposits STONE into the gemstone mining pool of their choice, and once enough Proof of Mining, or PoM, has accumulated over time, the user can claim a Gem NFT. The mined NFT is not a simple image, but a unique digital gemstone containing recorded attributes such as stone type, weight, color, clarity, cut, rarity score, and mining time.
+CryptoStone is an on-chain protocol for mining digital gemstones. A user deposits STONX into the gemstone mining pool of their choice, and once enough Proof of Mining, or PoM, has accumulated over time, the user can claim a Gem NFT. The mined NFT is not a simple image, but a unique digital gemstone containing recorded attributes such as Stone Type, weight, color, clarity, cut, rarity score, and mining time.
 
-Users can choose from 12 stone pools, including diamond, ruby, sapphire, and emerald. Each stone has a different supply, mining interval, and halving structure. As mining progresses, the remaining supply decreases and the scarcity multiplier increases.
+Users can choose from 12 stone pools, including diamond, ruby, sapphire, and emerald. Each STONX has a different supply, mining interval, and halving structure. As mining progresses, the remaining supply decreases and the scarcity multiplier increases.
 
 The core experience of CryptoStone is simple:
 
-* STONE is deposited into a digital mine.
+* STONX is deposited into a digital mine.
 * Over time, Mining Power accumulates as Proof of Mining, PoM.
 * When the required PoM threshold is reached, a Gem NFT can be claimed.
 * Which gemstone appears is determined by publicly disclosed probabilities and verifiable randomness.

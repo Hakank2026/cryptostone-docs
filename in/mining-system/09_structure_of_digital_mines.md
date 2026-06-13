@@ -1,35 +1,35 @@
-# 09\_structure\_of\_digital\_mines
+# 09 Struktur tambang digital
 
-In CryptoStone, each stone is regarded as an independent digital mine.
+Dalam CryptoStone, setiap stone dianggap sebagai tambang digital independen.
 
-| Pool            | Description           |
-| --------------- | --------------------- |
-| Garnet Pool     | Mines Garnet NFTs     |
-| Amethyst Pool   | Mines Amethyst NFTs   |
-| Aquamarine Pool | Mines Aquamarine NFTs |
-| Diamond Pool    | Mines Diamond NFTs    |
-| Emerald Pool    | Mines Emerald NFTs    |
-| Pearl Pool      | Mines Pearl NFTs      |
-| Ruby Pool       | Mines Ruby NFTs       |
-| Spinel Pool     | Mines Spinel NFTs     |
-| Sapphire Pool   | Mines Sapphire NFTs   |
-| Opal Pool       | Mines Opal NFTs       |
-| Topaz Pool      | Mines Topaz NFTs      |
-| Zircon Pool     | Mines Zircon NFTs     |
+| Pool | Deskripsi |
+| ---- | --------- |
+| Garnet Pool | Menambang Garnet NFT |
+| Amethyst Pool | Menambang Amethyst NFT |
+| Aquamarine Pool | Menambang Aquamarine NFT |
+| Diamond Pool | Menambang Diamond NFT |
+| Emerald Pool | Menambang Emerald NFT |
+| Pearl Pool | Menambang Pearl NFT |
+| Ruby Pool | Menambang Ruby NFT |
+| Spinel Pool | Menambang Spinel NFT |
+| Sapphire Pool | Menambang Sapphire NFT |
+| Opal Pool | Menambang Opal NFT |
+| Topaz Pool | Menambang Topaz NFT |
+| Zircon Pool | Menambang Zircon NFT |
 
-Each mining pool uses the same STONE Token but has different mining conditions.
+Setiap mining pool menggunakan STONX Token yang sama, tetapi memiliki kondisi mining yang berbeda.
 
-| Item                 | Meaning                                      |
-| -------------------- | -------------------------------------------- |
-| Stone Type           | The type of gemstone mined from the pool     |
-| Max Supply           | The maximum issuance quantity of that stone  |
-| Base Mining Interval | Basic mining interval                        |
-| Target Pool Power    | Reference mining power                       |
-| Current Pool Power   | Current mining power accumulated in the pool |
-| Minted Supply        | Quantity mined so far                        |
-| Pool Difficulty      | Difficulty based on total participation      |
-| Scarcity Multiplier  | Halving-based scarcity multiplier            |
+| Item | Makna |
+| ---- | ----- |
+| Stone Type | Jenis batu permata yang ditambang dari pool |
+| Max Supply | Jumlah penerbitan maksimum stone tersebut |
+| Base Mining Interval | Interval mining dasar |
+| Target Pool Power | Mining Power referensi |
+| Current Pool Power | Mining Power saat ini yang terakumulasi dalam pool |
+| Minted Supply | Jumlah yang telah ditambang sejauh ini |
+| Pool Difficulty | Difficulty berdasarkan total partisipasi |
+| Scarcity Multiplier | Multiplier kelangkaan berbasis halving |
 
-Just as diamond mines and ruby mines have different reserves in the real world, each stone in CryptoStone has different total quantity and mining difficulty. Mining many Diamonds does not increase the difficulty of Ruby. Ruby nearing depletion does not reduce the supply of Sapphire.
+Seperti tambang diamond dan tambang ruby di dunia nyata memiliki cadangan berbeda, setiap stone dalam CryptoStone memiliki total jumlah dan difficulty mining yang berbeda. Menambang banyak Diamond tidak menaikkan difficulty Ruby. Ruby yang mendekati deplesi juga tidak mengurangi supply Sapphire.
 
-Each stone has its own independent digital reserves and mining structure.
+Setiap stone memiliki cadangan digital dan struktur mining independennya sendiri.

@@ -1,86 +1,81 @@
-# 41\_ecosystem\_expansion\_modules\_and\_gem\_refinement
+# 41 Mở rộng hệ sinh thái và Gem Refinement
 
-The core protocol of CryptoStone consists of STONE, 12 stone-specific mining pools, Proof of Mining, and Gem NFTs. However, the CryptoStone ecosystem is not limited to the core mining structure. In the future, it can expand into various utility functions through additional smart contracts or expansion modules connected to existing contracts. These expansion functions may include Marketplace, Ranking System, Collection Quest, and Gem Refinement.
+CryptoStone có thể mở rộng utility của Gem NFT thông qua Marketplace, Arena và Gem Refinement mà không thay thế cấu trúc mining cốt lõi.
 
-Gem Refinement is one of these ecosystem expansion modules, designed as an optional post-mining utility structure that allows mined Gem NFTs to be used again. Gem Refinement is not an unlimited additional NFT issuance structure, but a supply compression mechanism in which two Gem NFTs with the same stoneType are combined to create one Refined Gem NFT of the same stoneType.
+Marketplace hỗ trợ price discovery và chuyển quyền sở hữu cho Gem NFT đã khai thác. Người dùng có thể list Gem NFT mà họ đã khai thác hoặc tinh luyện, còn người mua có thể chọn đối tượng sưu tầm dựa trên stone type, grade, Rarity Score, attributes, tokenId, lịch sử giao dịch và trạng thái media. Marketplace không tự bảo đảm rarity; nó là nơi giá thị trường được hình thành dựa trên thuộc tính đã công bố và provenance on-chain.
 
-```
-2 Gem NFTs
-+ small STONE use or burn
--> Parent Gem NFTs Burned
--> 1 Refined Gem NFT Issued
-```
+Arena là module kiểu game mở rộng utility của Gem NFT. Người dùng có thể dùng Gem NFT như entry seed hoặc participation credential và tham gia các bàn Duel, Battle hoặc Arena thông qua entry fee bằng STONX. Arena thêm bối cảnh sử dụng vượt ra ngoài sưu tầm, nhưng không trực tiếp thay đổi xác suất mining hoặc grade của NFT.
 
-Each time a refinement is executed, the two parent Gem NFTs are burned or made permanently unrecoverable, and only one new Refined Gem NFT is issued. Therefore, the total circulating NFT supply decreases by one.
+Gem Refinement là cấu trúc utility tùy chọn sau mining, cho phép Gem NFT đã khai thác được sử dụng lại. Đây không phải hệ thống phát hành bổ sung không giới hạn. Thay vào đó, hai Gem NFT có cùng `stoneType` được kết hợp để tạo một Refined Gem NFT có cùng `stoneType`, hình thành cơ chế nén nguồn cung.
 
-```
-2 Gem NFTs Burned -> 1 Refined Gem NFT Issued
-Net Circulating NFT Supply = -1
-```
+Cấu trúc refinement cơ bản:
 
-In the initial Gem Refinement model, it is desirable to allow only same-stone refinement. For example, two Diamond Gem NFTs can be refined into one Refined Diamond Gem NFT, and two Ruby Gem NFTs can be refined into one Refined Ruby Gem NFT. Cross-stone refinement can make the stone-specific supply, scarcity, halving, and mining difficulty structures complicated, so it is appropriate to exclude it from the initial model.
+| Input | Output | Supply Change |
+| ----- | ------ | ------------- |
+| 2 Gem NFT cùng stone | 1 Refined Gem NFT cùng stone | Tổng nguồn cung NFT giảm 1 |
 
-| Item                | Principle                                 |
-| ------------------- | ----------------------------------------- |
-| Required materials  | 2 Gem NFTs with the same stoneType        |
-| Additional cost     | Small STONE use or burn                   |
-| Parent NFT handling | Burned or made permanently unrecoverable  |
-| Result              | 1 Refined Gem NFT with the same stoneType |
-| Generation info     | Recorded as Gen1 or Refined Generation    |
-| Supply effect       | Decrease in total circulating NFT supply  |
-| Issuance authority  | Limited to the Refining Contract          |
-| Admin Mint          | None                                      |
-| Randomness          | Uses a verifiable randomness structure    |
+Khi một lần refinement được thực hiện, hai Gem NFT cha bị burn hoặc trở nên không thể khôi phục, và chỉ một Refined Gem NFT mới được tạo. Vì vậy, tổng nguồn cung NFT lưu hành giảm một đơn vị.
 
-The base tier of a Refined Gem NFT can be calculated based on the higher tier among the two parent Gem NFTs.
+Ví dụ:
 
-$$T_{base} = \max(T_1, T_2)$$
+* Garnet #102 + Garnet #481 -> Refined Garnet #9001
+* Ruby #220 + Ruby #841 -> Refined Ruby #9102
 
-Here, (T\_1) and (T\_2) are the tiers of the two parent Gem NFTs, and (T\_{base}) is the base tier used to determine the refinement result.
+Trong mô hình ban đầu, Gem Refinement nên ưu tiên chỉ cho phép refinement cùng stone. Ví dụ, hai Garnet Gem NFT có thể trở thành một Refined Garnet Gem NFT, và hai Ruby Gem NFT có thể trở thành một Refined Ruby Gem NFT. Cross-stone refinement có thể làm cấu trúc nguồn cung, khan hiếm, halving và độ khó mining trở nên quá phức tạp, nên phù hợp để loại khỏi mô hình ban đầu.
 
-The tier structure can be simplified as follows.
+Gem Refinement có thể tạo một Gem NFT mới với:
 
-| Tier Level | Tier      |
-| ---------- | --------- |
-| 1          | Common    |
-| 2          | Rare      |
-| 3          | Epic      |
-| 4          | Legendary |
+* Rarity Score cao hơn,
+* metadata thế hệ refinement,
+* hồ sơ parent tokenId,
+* hiệu ứng hình ảnh bổ sung,
+* và nguồn cung thấp hơn.
 
-The refinement result is designed so that the probability of receiving the same tier as the base tier is the highest. The probability of dropping by one tier is kept very low. Even if an upgrade occurs, it is limited to a maximum of 1 to 2 tiers. Also, lower tiers have relatively higher upgrade possibilities, while higher tiers have lower upgrade possibilities, protecting the scarcity of high-grade Gem NFTs.
+Tuy nhiên, refinement không nên được thiết kế để bảo đảm nâng cấp thành công vô điều kiện. Tốt hơn là bao gồm kết quả dựa trên xác suất để supply compression, áp lực sưu tầm và use case cho NFT cấp thấp cùng tồn tại.
 
-An example of the basic threshold using a BPS-style random value (U) from 0 to 9,999 is as follows.
+Kết quả refinement có thể dựa trên tier cao hơn trong hai Gem NFT cha.
 
-$$U \in [0, 9,999]$$
+$$
+T_{base} = \max(T_1, T_2)
+$$
 
-10,000 BPS = 100%
+Ở đây, (T\_1) và (T\_2) là tier của hai Gem NFT cha, còn (T\_{base}) là tier tham chiếu để xác định kết quả refinement.
 
-| Base Tier | -1 Tier | Same Tier | +1 Tier | +2 Tier |
-| --------- | ------- | --------- | ------- | ------- |
-| Common    | None    | 68.0%     | 27.0%   | 5.0%    |
-| Rare      | 1.0%    | 76.0%     | 20.0%   | 3.0%    |
-| Epic      | 1.5%    | 88.5%     | 10.0%   | None    |
-| Legendary | 2.0%    | 98.0%     | None    | None    |
+Rarity tier được thống nhất thành năm cấp: Common, Rare, Epic, Legendary và Genesis.
 
-In this structure, Common and Rare have relatively higher upgrade possibilities through refinement, while upgrade probabilities decrease significantly from Epic onward. Legendary is treated as the highest tier in the refinement model, and no further upgrade is allowed. This structure maintains the excitement of refinement while preventing excessive creation of high-grade NFTs.
+| Tier Index | Tier |
+| ---------- | ---- |
+| 0 | Common |
+| 1 | Rare |
+| 2 | Epic |
+| 3 | Legendary |
+| 4 | Genesis |
 
-When the tier gap between the two parent Gem NFTs is large, the upgrade probability can be additionally adjusted. The tier gap (G) is defined as follows.
+Kết quả refinement nên thường xuyên giữ nguyên ở tier cơ sở. Xác suất downgrade nên thấp, và khi upgrade xảy ra, nên giới hạn ở một hoặc hai cấp. NFT tier thấp có thể có xác suất upgrade tương đối cao hơn, trong khi NFT tier cao cần có xác suất upgrade thấp hơn để bảo vệ sự khan hiếm của cấp cao.
 
-$$G = |T_1 - T_2|$$
+Ví dụ mô hình xác suất ban đầu:
 
-| Tier Gap (G) | Upgrade Modifier | Processing Principle                                            |
-| ------------ | ---------------- | --------------------------------------------------------------- |
-| 0            | 100%             | Same-tier refinement. Basic probability applied                 |
-| 1            | 70%              | Adjacent-tier refinement. Upgrade probability partially reduced |
-| 2            | 35%              | Large tier gap. Upgrade probability greatly reduced             |
-| 3 or more    | Restricted       | Refinement may be restricted in the initial model               |
+| Base Tier | Downgrade | Same Tier | +1 Tier | +2 Tier |
+| --------- | --------: | --------: | ------: | ------: |
+| Common | None | 68.0% | 27.0% | 5.0% |
+| Rare | 1.0% | 76.0% | 20.0% | 3.0% |
+| Epic | 1.5% | 88.0% | 10.0% | 0.5% |
+| Legendary | 2.0% | 97.0% | 1.0% | None |
+| Genesis | Limited | Limited | Limited | Limited |
 
-The upgrade probability can be adjusted as follows.
+Genesis được xem là tier sưu tầm cao nhất. Trong mô hình ban đầu, nên giới hạn việc sử dụng Genesis làm vật liệu refinement. Cấu trúc này giữ lại sự hấp dẫn của refinement trong khi ngăn việc tạo quá nhiều NFT cấp cao.
 
-$$\text{Adjusted Upgrade Probability} = \text{Base Upgrade Probability} \times \text{Upgrade Modifier}$$
+Nếu cho phép refinement giữa các parent tier khác nhau, xác suất kết quả có thể được điều chỉnh dựa trên khoảng cách tier.
 
-The upgrade probability reduced by the adjustment is added to the probability of remaining at the same tier. This limits attempts to repeatedly combine one high-tier Gem NFT with low-tier Gem NFTs to create higher-tier results.
+$$
+\Delta T = |T_1 - T_2|
+$$
 
-The Refining Contract performs ownership verification, same-stone verification, tier gap verification, STONE use or burn, parent NFT burn, randomness request, and Refined Gem NFT issuance request. A Refined Gem NFT must not be created by arbitrary operator issuance. It should only be created when the Refining Contract verifies the predefined conditions.
+| Tier Gap | Adjustment Coefficient | Meaning |
+| -------- | ---------------------: | ------- |
+| 0 | 100% | Refinement cùng tier; áp dụng xác suất cơ sở |
+| 1 | 70% | Refinement tier liền kề; xác suất upgrade giảm nhẹ |
+| 2 | 40% | Khoảng cách tier lớn; xác suất upgrade giảm đáng kể |
+| 3 or more | Limited | Có thể bị giới hạn trong mô hình ban đầu |
 
-Gem Refinement does not replace the basic mining structure of CryptoStone. It is an optional module designed to expand the utility, collectibility, and trading demand of Gem NFTs after mining. In the future, CryptoStone may gradually expand the digital gemstone ecosystem through Gem Refinement and other expansion modules.
+Thông qua refinement, Gem NFT cấp thấp không đơn giản bị bỏ lại. Chúng có thể hoạt động như nguyên liệu cho supply compression. Gem NFT cấp cao vẫn khan hiếm, còn NFT cấp thấp có thêm utility làm input refinement. Điều này tạo cho CryptoStone một cấu trúc lưu thông nội bộ cho Gem NFT.

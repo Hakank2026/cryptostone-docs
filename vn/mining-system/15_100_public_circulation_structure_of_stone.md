@@ -1,28 +1,35 @@
-# 15\_100\_public\_circulation\_structure\_of\_stone
+# 15 Cấu trúc phân bổ STONX
 
-In CryptoStone, STONE is the single mining resource used to participate in digital gemstone mining. The author believes that the distribution structure of STONE should follow a public market structure where anyone can access it under the same conditions, rather than a structure that gives prior rights to specific insiders. This aligns with the philosophy of CryptoStone.
+Trong CryptoStone, STONX là tài nguyên khai thác duy nhất dùng để tham gia khai thác đá quý kỹ thuật số. Nhà phát triển cho rằng việc phân phối STONX nên theo cấu trúc thị trường mở có thể tiếp cận dưới các quy tắc minh bạch, thay vì cấu trúc trao quyền phân bổ đặc biệt cho một nhóm nội bộ cụ thể.
 
-Therefore, STONE follows a 100% public circulation structure. This means that STONE is not pre-allocated to specific parties, but circulates through public DEX liquidity, allowing anyone to acquire it under the same public market conditions.
+Theo đó, STONX được thiết kế như một mô hình phân bổ hướng ra thị trường, không có team allocation, founder reserve hay hidden insider allocation. Tổng nguồn cung được phân bổ cho DEX liquidity, direct sale, strategic ecosystem partners và listing hoặc liquidity preparation.
 
-| Item                   | Structure                                                                                   |
-| ---------------------- | ------------------------------------------------------------------------------------------- |
-| Total Supply           | 1,200,000,000 STONE                                                                         |
-| Distribution Principle | 100% public circulation                                                                     |
-| Market Access          | Public DEX liquidity                                                                        |
-| Additional Mint        | None                                                                                        |
-| Access Rule            | Anyone can acquire under the same public market conditions                                  |
-| Primary Utility        | Participation in mining pools for Gem NFT mining                                            |
-| Mechanism              | Acquire STONE -> Stake -> Generate Mining Power -> Accumulate PoM -> Claim Gem NFT          |
-| Supply Trust           | Supply, pool structure, probability tables, and claim conditions are verifiable by contract |
+| Hạng mục | Cấu trúc |
+| -------- | -------- |
+| Total Supply | 1,200,000,000 STONX |
+| Team Allocation | None |
+| Founder Reserve | None |
+| Hidden Insider Allocation | None |
+| Additional Mint | None |
+| Primary Utility | Tham gia mining pool để khai thác Gem NFT |
+| Mechanism | Acquire STONX -> Stake -> Generate Mining Power -> Accumulate PoM -> Claim Gem NFT |
+| Supply Trust | Nguồn cung, cấu trúc pool, bảng xác suất và điều kiện claim có thể kiểm chứng qua contract và dữ liệu công khai |
 
-Users can acquire STONE in the public market and deposit it into the stone mining pool of their choice. The user then generates Mining Power based on the staked STONE, and accumulates Proof of Mining, PoM, over time. Once the accumulated PoM reaches the required threshold of the corresponding pool, the user can claim a Gem NFT.
+## 15.1 Allocation
 
-In this structure, the DEX is the public entry path to access STONE, while the mining pools are the actual use case of STONE. In other words, the purpose of STONE is not simple holding or speculative circulation, but functioning as a protocol resource for participating in digital gemstone mining.
+| Allocation | Ratio | TGE Unlock | Lock / Vesting | Rationale |
+| ---------- | ----: | ---------- | -------------- | --------- |
+| DEX Liquidity Reserve | 50% | Cung cấp theo từng giai đoạn trong phạm vi cần thiết cho thanh khoản ban đầu | LP lock hoặc burn dài hạn; phần còn lại dùng dần cho mở rộng thanh khoản | Bảo đảm lối vào on-chain công khai lớn nhất |
+| Direct Sale Pool | 20% | Bán công khai trong giới hạn sale contract | Lượng chưa bán vẫn nằm trong pool và được giải phóng dần | Tạo lối lấy STONX trực tiếp để tham gia mining |
+| Strategic / VC Allocation | 10% | 0% hoặc mở khóa ban đầu giới hạn | 6-month cliff + 24-month linear vesting | Dành cho sàn giao dịch, hạ tầng và đối tác chiến lược hệ sinh thái |
+| Listing / Liquidity Reserve | 20% | Chỉ dùng khi cần cho listing preparation và market making | Quản lý ví công khai, dùng đúng mục đích, thực hiện theo giai đoạn | Hỗ trợ thanh khoản sàn tập trung, chiến dịch và ổn định thị trường |
 
-The foundation or early ecosystem contributors may also acquire STONE under the same conditions in the public market, rather than through a separate pre-allocation. This approach minimizes privileged early control by specific entities and aligns the standard of protocol participation with the public market and on-chain rules.
+DEX Liquidity Reserve nhận tỷ trọng lớn nhất vì STONX cần được tiếp cận chủ yếu qua thị trường công khai. Direct Sale Pool giúp người dùng mới có thể lấy STONX cần thiết cho mining mà không phải đi qua quy trình giao dịch phức tạp. Strategic / VC Allocation được giới hạn cho đối tác mở rộng hệ sinh thái, và vesting dài hạn giúp giảm áp lực bán ngắn hạn. Listing / Liquidity Reserve là quỹ dự trữ có mục đích rõ ràng cho listing, market making, chiến dịch và ổn định thị trường.
 
-For a 100% public circulation structure to gain trust, the initial liquidity supply method, LP handling method, contract permissions, and impossibility of additional issuance must be clearly disclosed. Initial liquidity is formed through a public DEX pool, and it is desirable that the handling method of the initial LP tokens be publicly disclosed as long-term lock-up or burn. This reduces concerns about liquidity withdrawal and increases trust in the public market access structure of STONE.
+Người dùng có thể lấy STONX qua thị trường công khai hoặc direct sale rồi gửi vào stone mining pool họ chọn. Sau đó họ tạo Mining Power từ STONX đã stake và tích lũy Proof of Mining, PoM, theo thời gian. Khi PoM tích lũy đạt ngưỡng cần thiết của pool tương ứng, người dùng có thể claim Gem NFT.
 
-Even when the foundation or early contributors acquire STONE, they should do so under the same public market conditions without any separate pre-allocation, and major holding wallets should preferably be disclosed so that they can be verified on-chain. This structure does not deny the existence of a foundation. Rather, it expresses the principle that the foundation should also participate under the same rules as the public market, rather than through privileged allocation outside the protocol.
+Trong cấu trúc này, DEX và Direct Sale là lối vào công khai để lấy STONX, còn mining pool là use case thực sự của STONX. Nói cách khác, STONX không chỉ được thiết kế để nắm giữ hoặc lưu thông đầu cơ; nó hoạt động như một tài nguyên giao thức để tham gia khai thác đá quý kỹ thuật số.
 
-The trust of CryptoStone is formed not by pre-allocated holdings of a specific party, but by fixed total supply, 100% public circulation, immutable mining rules, verifiable PoM structure, and transparency of on-chain data.
+Để cấu trúc phân bổ mở này có được niềm tin, phương thức cung cấp thanh khoản ban đầu, cách xử lý LP, quyền contract, tính không thể phát hành thêm và các ví dự trữ chính cần được công bố rõ ràng. LP token ban đầu nên được lock dài hạn hoặc burn. Điều này giảm lo ngại về rút thanh khoản và củng cố niềm tin vào mô hình tiếp cận thị trường mở của STONX.
+
+Niềm tin của CryptoStone không hình thành từ phân bổ đặc quyền cho một bên cụ thể, mà từ tổng nguồn cung cố định, không có team allocation, quy tắc mining bất biến, cấu trúc PoM có thể kiểm chứng và minh bạch on-chain.

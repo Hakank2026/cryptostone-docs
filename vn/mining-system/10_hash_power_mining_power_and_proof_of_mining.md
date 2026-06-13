@@ -1,36 +1,36 @@
-# 10\_hash\_power\_mining\_power\_and\_proof\_of\_mining
+# 10 Hash Power, Mining Power và Proof of Mining
 
-In Bitcoin, miners obtain the probability of creating blocks through hash power. The higher the hash power, the higher the likelihood of discovering a block. However, hash power cannot arbitrarily change Bitcoin’s overall issuance rules or difficulty structure. In other words, hash power is not authority to change network rules, but a computational resource for obtaining more mining opportunities within fixed rules.
+Trong Bitcoin, miner có xác suất tạo block thông qua hash power. Hash power càng cao thì khả năng tìm được block càng lớn. Tuy nhiên, hash power không thể tùy ý thay đổi quy tắc phát hành hay cấu trúc độ khó của Bitcoin. Nói cách khác, hash power không phải quyền lực để thay đổi quy tắc mạng lưới, mà là tài nguyên tính toán để có thêm cơ hội khai thác trong các quy tắc cố định.
 
-CryptoStone abstracts this concept into a digital gemstone mining structure. In CryptoStone, the concept corresponding to hash power is **Mining Power**, and the work amount accumulated by Mining Power over time is **Proof of Mining**, or **PoM**.
+CryptoStone trừu tượng hóa khái niệm này thành cấu trúc khai thác đá quý kỹ thuật số. Trong CryptoStone, khái niệm tương ứng với hash power là **Mining Power**, và khối lượng công việc tích lũy theo thời gian bởi Mining Power là **Proof of Mining**, hay **PoM**.
 
-| Bitcoin                 | CryptoStone              |
-| ----------------------- | ------------------------ |
-| Hash Power              | Mining Power             |
-| Proof of Work           | Proof of Mining, PoM     |
-| ASIC / Mining Equipment | Staked STONE             |
-| Block Reward            | Gem NFT                  |
-| Network Difficulty      | Pool Difficulty          |
-| Halving                 | Scarcity Multiplier      |
-| BTC Issuance            | Gem NFT Issuance         |
-| Miner                   | STONE Staker / Gem Miner |
+| Bitcoin | CryptoStone |
+| ------- | ----------- |
+| Hash Power | Mining Power |
+| Proof of Work | Proof of Mining, PoM |
+| ASIC / Mining Equipment | STONX đã stake |
+| Block Reward | Gem NFT |
+| Network Difficulty | Pool Difficulty |
+| Halving | Scarcity Multiplier |
+| BTC Issuance | Gem NFT Issuance |
+| Miner | STONX Staker / Gem Miner |
 
-PoM is not a separately transferable or tradable token. PoM is an on-chain work amount indicator recorded by the contract based on the user’s mining participation and the passage of time. PoM is also not a network consensus algorithm. In CryptoStone, PoM is an internal protocol value used to determine whether a user has reached the condition to claim a Gem NFT from a specific stone pool.
+PoM không phải token có thể chuyển nhượng hoặc giao dịch riêng. PoM là chỉ số khối lượng công việc on-chain được contract ghi nhận dựa trên mức tham gia khai thác và thời gian trôi qua của người dùng. PoM cũng không phải thuật toán đồng thuận mạng lưới. Trong CryptoStone, PoM là giá trị nội bộ của giao thức dùng để xác định liệu người dùng đã đạt điều kiện claim Gem NFT từ một stone pool cụ thể hay chưa.
 
-When user (i) stakes an amount of STONE ((s\_{i,j})) into stone pool ((j)), and the lock-up multiplier is ((L\_i)), the user’s Mining Power ((P\_{i,j})) is defined as follows.
+Khi người dùng (i) stake lượng STONX ((s\_{i,j})) vào stone pool ((j)), và lock-up multiplier là ((L\_i)), Mining Power của người dùng ((P\_{i,j})) được định nghĩa như sau.
 
 $$
 P_{i,j} = s_{i,j} \times L_i
 $$
 
-The user’s PoM value accumulates over time as follows.
+Giá trị PoM của người dùng tích lũy theo thời gian như sau.
 
 $$
 PoM_{i,j}(t + \Delta t) = PoM_{i,j}(t) + P_{i,j} \times \Delta t
 $$
 
-Here, (PoM\_{i,j}(t)) is the Proof of Mining value accumulated by user ((i)) in stone pool ((j)) up to time ((t)).
+Ở đây, (PoM\_{i,j}(t)) là giá trị Proof of Mining mà người dùng ((i)) đã tích lũy trong stone pool ((j)) cho đến thời điểm ((t)).
 
-PoM accumulates independently for each stone pool. For example, PoM accumulated in the Diamond Pool can only be used to claim a Diamond NFT, and cannot be converted into PoM for the Ruby Pool or Sapphire Pool. This structure protects the independence, scarcity, and mining difficulty of each stone pool.
+PoM tích lũy độc lập theo từng stone pool. Ví dụ, PoM tích lũy trong Diamond Pool chỉ có thể dùng để claim Diamond NFT, không thể chuyển thành PoM của Ruby Pool hoặc Sapphire Pool. Cấu trúc này bảo vệ tính độc lập, sự khan hiếm và độ khó khai thác của từng stone pool.
 
-A user with higher Mining Power can reach the required PoM threshold more quickly, but cannot arbitrarily increase the probability of receiving a rarer gemstone or select a specific gemstone grade.
+Người dùng có Mining Power cao hơn có thể đạt ngưỡng PoM cần thiết nhanh hơn, nhưng không thể tùy ý tăng xác suất nhận đá quý hiếm hơn hoặc chọn một cấp độ đá cụ thể.

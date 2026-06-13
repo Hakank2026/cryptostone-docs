@@ -1,29 +1,29 @@
-# 16\_Base\_Mining\_Unitと少額参加構造
+# 16 Base Mining Unit
 
-CryptoStoneの基準マイニング単位は次のように設定する。
+**Base Mining Unit = 1,000 STONX**
 
-**Base Mining Unit = 100,000 STONE**
+Base Mining Unitは、ユーザーがマイニングプールに参加するための最小基準単位である。過度に小さい単位によって無意味な参加が分散することを防ぎつつ、一般ユーザーが負担可能な規模でProof of Mining、PoMの蓄積を始められるようにする参加基準である。Base Mining Unitは短期claimを保証する基準ではない。
 
-ただし、これは最低参加数量ではない。Base Mining Unitは、採掘速度と難易度を計算するための基準単位である。
+CryptoStoneは、できるだけ多くのユーザーが採掘に参加できるようPoM蓄積構造を採用する。ユーザーは1,000 STONX単位からマイニングプールに参加でき、ステーキング数量と時間に比例してPoMを蓄積する。
 
-CryptoStoneは、可能な限り多くのユーザーが採掘に参加できるよう、PoM蓄積構造を採用する。ユーザーは100,000 STONE未満の数量でもマイニングプールに参加でき、ステーキング数量と時間に比例してPoM値を蓄積する。
+例:
 
-ユーザーは、蓄積PoM値が当該プールの必要PoM閾値 $R\_j$ 以上になったとき、Gem NFTをclaimできる。
+| ステーキング数量 | 相対採掘速度 |
+| ---------------- | ------------ |
+| 1,000 STONX | 1x |
+| 5,000 STONX | 5x |
+| 10,000 STONX | 10x |
+| 50,000 STONX | 50x |
 
-$$
-PoM_{i,j}(t) \ge R_j
-$$
+長期供給速度はBase Mining Unitだけで決まるものではない。CryptoStoneは1,000 STONXの基本参加単位とは別に、プール別Target Pool Power、Protocol Reference Power、Pool Difficulty、Scarcity Multiplierを組み合わせ、全体のGem NFT供給が長期間にわたり段階的に採掘されるよう設計する。
 
-たとえばDiamond Poolの初期条件において、Pool DifficultyとScarcity Multiplierがいずれも1xであると仮定すると、次のようになる。
+初期Garnet基準モデルでは次のように考えられる。
 
-| Active Stake  | Diamond NFT 1個の予想採掘時間 |
-| ------------- | --------------------- |
-| 100,000 STONE | 約2.55日                |
-| 10,000 STONE  | 約25.5日                |
-| 5,000 STONE   | 約51日                  |
-| 1,000 STONE   | 約255日                 |
-| 100 STONE     | 約6.98年                |
+| ステーキング数量 | 予想claim間隔 |
+| ---------------- | ------------- |
+| 1,000 STONX | 約197日 |
+| 5,000 STONX | 約39日 |
+| 10,000 STONX | 約20日 |
+| 50,000 STONX | 約4日 |
 
-この構造は、高マイニングパワーユーザーには速い採掘機会を提供しながら、少額参加者も長期的にPoM値を蓄積してGem NFTをclaimできるようにする。
-
-筆者は、この構造がCryptoStoneのエコシステム拡張にとって非常に重要であると考える。NFTの希少性は総発行量、属性確率、半減期構造によって維持し、ユーザー参加性は低い参入障壁とPoM蓄積構造によって拡大すべきだからである。
+この構造は、1,000 STONXの基本参加者もPoMを蓄積できるようにし、中規模参加者には月単位の採掘体験を、高マイニングパワーユーザーにはより頻繁なclaim機会を提供する。ただし、Mining Powerはclaim頻度にのみ影響し、Gem NFTの等級や属性を直接選択させるものではない。

@@ -1,29 +1,30 @@
-# 16\_base\_mining\_unit\_and\_small\_scale\_participation\_structure
+# 16 Base Mining Unit
 
-The reference mining unit of CryptoStone is set as follows.
+CryptoStone menetapkan unit partisipasi dasar sebagai berikut.
 
-**Base Mining Unit = 100,000 STONE**
+**Base Mining Unit = 1,000 STONX**
 
-However, this is not the minimum participation amount. The Base Mining Unit is a reference unit used to calculate mining speed and difficulty.
+Base Mining Unit adalah unit referensi minimum yang diperlukan agar pengguna dapat berpartisipasi dalam mining pool. Unit ini mencegah fragmentasi partisipasi yang tidak bermakna akibat deposit terlalu kecil, sambil tetap memungkinkan pengguna umum mulai mengakumulasi Proof of Mining, atau PoM, pada skala yang dapat diakses. Base Mining Unit bukan janji bahwa claim dapat dilakukan dalam jangka pendek.
 
-CryptoStone adopts a PoM accumulation structure so that as many users as possible can participate in mining. Users can participate in mining pools with less than 100,000 STONE, and PoM accumulates in proportion to the staked amount and time.
+CryptoStone mengadopsi model akumulasi PoM agar banyak pengguna dapat berpartisipasi dalam mining. Pengguna dapat masuk ke mining pool mulai dari 1,000 STONX dan mengakumulasi PoM sebanding dengan jumlah stake dan waktu.
 
-A user can claim a Gem NFT when the accumulated PoM value becomes equal to or greater than the required PoM threshold ((R\_j)) of that pool.
+Pengguna dapat claim Gem NFT ketika PoM terakumulasi mencapai atau melebihi ambang yang diperlukan (R\_j) dari pool terkait.
 
 $$
 PoM_{i,j}(t) \ge R_j
 $$
 
-For example, assuming that both Pool Difficulty and Scarcity Multiplier are 1x in the initial condition of the Diamond Pool, the estimated mining time is as follows.
+Kecepatan supply jangka panjang tidak ditentukan oleh Base Mining Unit saja. CryptoStone menggabungkan unit partisipasi 1,000 STONX dengan Target Pool Power, Protocol Reference Power, Pool Difficulty, dan Scarcity Multiplier agar total supply Gem NFT ditambang secara bertahap dalam jangka panjang.
 
-| Active Stake  | Estimated Time to Mine 1 Diamond NFT |
-| ------------- | ------------------------------------ |
-| 100,000 STONE | about 2.55 days                      |
-| 10,000 STONE  | about 25.5 days                      |
-| 5,000 STONE   | about 51 days                        |
-| 1,000 STONE   | about 255 days                       |
-| 100 STONE     | about 6.98 years                     |
+Dalam model awal Garnet Pool, dengan asumsi Pool Difficulty dan Scarcity Multiplier keduanya 1x serta Protocol Reference Power 100,000 Power, estimasi interval claim dapat dipahami sebagai berikut.
 
-This structure gives high-Mining Power users faster mining opportunities while also allowing small participants to accumulate PoM over the long term and claim Gem NFTs.
+| Active Stake | Estimasi interval claim untuk 1 Garnet NFT |
+| ------------ | ------------------------------------------ |
+| 1,000 STONX | Sekitar 197 hari |
+| 4,800 STONX | Sekitar 41 hari |
+| 6,000 STONX | Sekitar 32.8 hari |
+| 100,000 STONX | Sekitar 1.97 hari |
 
-The author considers this structure very important for the expansion of the CryptoStone ecosystem. NFT scarcity should be maintained through total supply, attribute probabilities, and halving structure, while user participation should be expanded through low entry barriers and PoM accumulation.
+Struktur ini memungkinkan peserta dasar dengan 1,000 STONX tetap mengakumulasi PoM, memberikan pengalaman mining bulanan bagi peserta skala menengah, dan memberi peluang claim lebih sering bagi pengguna dengan Mining Power tinggi. Mining Power hanya memengaruhi frekuensi claim; Mining Power tidak memberi pengguna kemampuan memilih grade atau atribut Gem NFT.
+
+Pengembang menganggap struktur ini penting bagi ekspansi ekosistem CryptoStone. Kelangkaan NFT harus dijaga melalui total supply, probabilitas atribut, dan struktur halving, sementara partisipasi pengguna harus diperluas melalui hambatan masuk yang rendah dan model akumulasi PoM.

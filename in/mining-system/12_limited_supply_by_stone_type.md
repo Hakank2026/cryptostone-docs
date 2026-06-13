@@ -1,36 +1,36 @@
-# 12\_limited\_supply\_by\_stone\_type
+# 12 Pasokan terbatas berdasarkan Stone Type
 
-The 12 stones of CryptoStone each have different total issuance quantities. This structure gives primary scarcity to the stone type itself.
+12 stone CryptoStone masing-masing memiliki total penerbitan yang berbeda. Struktur ini memberikan kelangkaan primer pada Stone Type itu sendiri.
 
-| Month     | Stone      | Meaning    | Max Supply |
-| --------- | ---------- | ---------- | ---------: |
-| January   | Garnet     | Friendship |    160,000 |
-| February  | Amethyst   | Sincerity  |    170,000 |
-| March     | Aquamarine | Happiness  |    180,000 |
-| April     | Diamond    | Love       |    110,000 |
-| May       | Emerald    | Luck       |    120,000 |
-| June      | Pearl      | Wealth     |    150,000 |
-| July      | Ruby       | Peace      |    130,000 |
-| August    | Spinel     | Wisdom     |    190,000 |
-| September | Sapphire   | Truth      |    140,000 |
-| October   | Opal       | Hope       |    200,000 |
-| November  | Topaz      | Health     |    210,000 |
-| December  | Zircon     | Victory    |    220,000 |
+| Bulan | STONX | Makna | Max Supply |
+| ----- | ----- | ----- | ---------: |
+| January | Garnet | Friendship | 160,000 |
+| February | Amethyst | Sincerity | 170,000 |
+| March | Aquamarine | Happiness | 180,000 |
+| April | Diamond | Love | 110,000 |
+| May | Emerald | Luck | 120,000 |
+| June | Pearl | Wealth | 150,000 |
+| July | Ruby | Peace | 130,000 |
+| August | Spinel | Wisdom | 190,000 |
+| September | Sapphire | Truth | 140,000 |
+| October | Opal | Hope | 200,000 |
+| November | Topaz | Health | 210,000 |
+| December | Zircon | Victory | 220,000 |
 
-The maximum total supply of Gem NFTs is as follows.
+Supply maksimum total Gem NFT adalah sebagai berikut.
 
 **Total Gem NFT Max Supply = 1,980,000**
 
-Diamond has the lowest supply, while Zircon has the highest supply. Therefore, stone type itself becomes one element of scarcity.
+Diamond memiliki supply terendah, sedangkan Zircon memiliki supply tertinggi. Karena itu, Stone Type itu sendiri menjadi salah satu elemen kelangkaan.
 
-From a global collection perspective, the supply share of a specific stone (j) can be expressed as follows.
+Dari perspektif collection global, porsi supply stone tertentu (j) dapat dinyatakan sebagai berikut.
 
 $$
-P_{stone,j} = N_j \div N_{total}
+P_{STONX,j} = N_j \div N_{total}
 $$
 
-Here, (N\_j) is the maximum supply of a specific stone, and (N\_{total}) is the maximum total supply of all Gem NFTs. This value may be used as a basic value to explain the relative scarcity of stone types in the probability-based rarity indicator described later.
+Di sini, (N\_j) adalah supply maksimum stone tertentu, dan (N\_{total}) adalah supply maksimum total seluruh Gem NFT. Nilai ini dapat digunakan sebagai nilai dasar untuk menjelaskan kelangkaan relatif Stone Type dalam indikator rarity berbasis probabilitas yang dijelaskan kemudian.
 
-The total Gem NFT supply of CryptoStone does not mean a simple issuance quantity of a rare NFT collection. It refers to the total reserves of a long-term mining-based digital gemstone asset group composed of 12 stone pools and multi-layered attribute combinations. Scarcity is not determined solely by total quantity. Stone type, mining time, halving stage, Weight, Color, Clarity, Cut, tokenId, and Probability Rarity Index all interact.
+Total supply Gem NFT CryptoStone bukan sekadar jumlah penerbitan sebuah koleksi NFT langka. Ini adalah cadangan total dari kelompok aset batu permata digital berbasis mining jangka panjang yang terdiri dari 12 stone pool dan kombinasi atribut berlapis. Kelangkaan tidak ditentukan hanya oleh total jumlah. Stone Type, mining time, tahap halving, Weight, Color, Clarity, Cut, tokenId, dan Probability Rarity Index semuanya saling berinteraksi.
 
-Therefore, the total supply of 1,980,000 in CryptoStone should be interpreted not as a mass issuance structure for a short-term minting event, but as the total reserves of a digital gemstone ecosystem designed so that various participants can mine different stone and attribute combinations over a long period of time.
+Karena itu, total supply 1,980,000 dalam CryptoStone harus dipahami bukan sebagai struktur penerbitan massal untuk event minting jangka pendek, melainkan sebagai total cadangan ekosistem batu permata digital yang dirancang agar berbagai peserta dapat menambang stone dan kombinasi atribut berbeda dalam jangka panjang.

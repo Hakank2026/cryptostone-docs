@@ -1,13 +1,13 @@
-# 01\_introduction
+# 01 Giới thiệu
 
-In the real world, gemstones have long functioned as stores of value, decorative assets, collectible assets, and symbolic assets. The value of gemstones does not arise merely from their physical existence. Gemstone value is formed through mining difficulty, limited reserves, processing precision, grade differences, collecting demand, and cultural symbolism.
+Trong thế giới thực, đá quý từ lâu đã đóng vai trò là tài sản lưu trữ giá trị, tài sản trang sức, tài sản sưu tầm và tài sản mang tính biểu tượng. Giá trị của đá quý không chỉ đến từ sự tồn tại vật lý của nó. Giá trị đó được hình thành bởi độ khó khai thác, trữ lượng giới hạn, độ tinh xảo trong gia công, khác biệt về cấp độ, nhu cầu sưu tầm và ý nghĩa văn hóa.
 
-In particular, gemstones such as diamonds, rubies, sapphires, and emeralds can have completely different values even when they belong to the same gemstone type, depending on the attributes of each individual stone. A gemstone with higher weight, superior color, greater clarity, and more precise cutting has higher scarcity. This structure shows that gemstones are not fungible commodities, but non-fungible assets whose value changes according to individual attributes.
+Đặc biệt, các loại đá như kim cương, ruby, sapphire và emerald có thể có giá trị hoàn toàn khác nhau ngay cả khi thuộc cùng một loại đá, tùy theo thuộc tính của từng viên. Một viên có trọng lượng lớn hơn, màu sắc tốt hơn, độ tinh khiết cao hơn và giác cắt chính xác hơn sẽ có mức khan hiếm cao hơn. Cấu trúc này cho thấy đá quý không phải hàng hóa đồng nhất, mà là tài sản không thể thay thế có giá trị thay đổi theo thuộc tính riêng.
 
-Blockchain technology provides a foundation for expressing such non-fungible attributes in a digital environment. However, the existing NFT market has mostly developed around expressing ownership or access rights to images, game items, memberships, or external content. In such cases, the value of the NFT can become dependent on external images, central servers, specific platforms, or operating entities.
+Công nghệ blockchain cung cấp nền tảng để biểu đạt các thuộc tính không thể thay thế đó trong môi trường số. Tuy nhiên, thị trường NFT hiện tại chủ yếu phát triển quanh việc chứng minh quyền sở hữu hoặc quyền truy cập vào hình ảnh, vật phẩm game, membership hoặc nội dung bên ngoài. Trong các trường hợp đó, giá trị NFT có thể phụ thuộc vào hình ảnh bên ngoài, máy chủ trung tâm, nền tảng cụ thể hoặc chủ thể vận hành.
 
-CryptoStone proposes a different direction. CryptoStone is not an NFT designed to prove external images or centralized server content. Rather, it is a digital gemstone asset in which the NFT itself holds gemstone attribute data, and the attributes themselves express scarcity and collectible value.
+CryptoStone đề xuất một hướng khác. CryptoStone không phải NFT được thiết kế để chứng minh hình ảnh bên ngoài hay nội dung máy chủ tập trung. Thay vào đó, nó là tài sản đá quý kỹ thuật số, nơi chính NFT nắm giữ dữ liệu thuộc tính đá quý, và các thuộc tính đó biểu đạt sự khan hiếm cùng giá trị sưu tầm.
 
-If Bitcoin created the narrative of digital gold, and Litecoin was called digital silver, CryptoStone presents a new asset category: digital gemstones that are mined and refined on smart contracts.
+Nếu Bitcoin tạo nên câu chuyện vàng kỹ thuật số, và Litecoin từng được gọi là bạc kỹ thuật số, CryptoStone đề xuất một danh mục tài sản mới: đá quý kỹ thuật số được khai thác và tinh luyện bằng smart contract.
 
-Through this whitepaper, the author does not seek to transfer physical ownership of real gemstones onto the blockchain, but to describe how the scarcity and attribute-based value of gemstones can be implemented in a decentralized digital environment.
+Thông qua whitepaper này, nhà phát triển không tìm cách đưa quyền sở hữu đá quý vật lý lên blockchain. Mục tiêu là mô tả cách sự khan hiếm và giá trị dựa trên thuộc tính của đá quý có thể được triển khai trong một môi trường kỹ thuật số phi tập trung.

@@ -1,28 +1,28 @@
-# 14\_calculation\_of\_the\_initial\_stone\_supply
+# 14 Perhitungan pasokan awal STONX
 
-CryptoStone does not issue 12 separate tokens for each stone type. It uses one STONE Token.
+CryptoStone tidak menerbitkan 12 token terpisah untuk setiap Stone Type. CryptoStone menggunakan satu STONX Token.
 
-The initial total supply is set as follows.
+Total supply awal ditetapkan sebagai berikut.
 
-* STONE Initial Total Supply = 1,200,000,000 STONE
+* STONX Initial Total Supply = 1,200,000,000 STONX
 * Additional Mint = None
 
-The reason for setting STONE at 1,200,000,000 is not simply to expand the number of tokens. CryptoStone aims for a structure in which more than 100,000 users can participate in mining pools at various scales. For this, a unit structure is needed that allows small participants, medium-scale participants, and high-Mining Power participants to participate naturally.
+Alasan menetapkan STONX sebesar 1,200,000,000 bukan sekadar memperbesar jumlah token. CryptoStone menargetkan struktur di mana lebih dari 100,000 pengguna dapat berpartisipasi dalam mining pool pada berbagai skala. Untuk itu diperlukan struktur unit yang memungkinkan peserta kecil, peserta menengah, dan peserta dengan Mining Power tinggi berpartisipasi secara alami.
 
-With a structure of 1,200,000,000 STONE, even assuming more than 100,000 participants, a natural participation UX in units of several thousand STONE can be designed. This lowers the entry barrier for small participants, provides a practical mining participation unit for mid-scale participants, and enables long-term mining strategies for high-Mining Power participants.
+Dengan struktur 1,200,000,000 STONX, bahkan jika diasumsikan lebih dari 100,000 peserta, UX partisipasi alami dalam unit beberapa ribu STONX dapat dirancang. Ini menurunkan hambatan masuk bagi peserta kecil, menyediakan unit partisipasi mining yang praktis untuk peserta menengah, dan memungkinkan strategi mining jangka panjang bagi peserta dengan Mining Power tinggi.
 
-Therefore, the issuance of 1.2 billion tokens should be interpreted not as an indiscriminate increase in supply, but as a unit design to accommodate a broader user base and the Proof of Mining structure.
+Karena itu, penerbitan 1.2 miliar token harus dipahami bukan sebagai peningkatan supply tanpa batas, tetapi sebagai desain unit untuk mengakomodasi basis pengguna yang lebih luas dan struktur Proof of Mining.
 
-Expected Active Mining Ratio = approximately 30% \~ 40%
-
-$$
-1,200,000,000 \ \text{STONE} \times 40\% = 480,000,000 \ \text{Active Mining STONE}
-$$
-
-Based on 100,000 participants, the average active stake is as follows.
+Expected Active Mining Ratio = sekitar 30% \~ 40%
 
 $$
-480,000,000 \ \text{STONE} \div 100,000 \ \text{users} = 4,800 \ \text{STONE per user}
+1,200,000,000 \ \text{STONX} \times 40\% = 480,000,000 \ \text{Active Mining STONX}
 $$
 
-In other words, the 1,200,000,000 STONE structure is designed to accommodate a large participant base while allowing small participants to access the mining ecosystem.
+Berdasarkan 100,000 peserta, average active stake adalah sebagai berikut.
+
+$$
+480,000,000 \ \text{STONX} \div 100,000 \ \text{users} = 4,800 \ \text{STONX per user}
+$$
+
+Dengan kata lain, struktur 1,200,000,000 STONX dirancang untuk menampung basis peserta besar sekaligus memungkinkan peserta kecil mengakses ekosistem mining.

@@ -1,6 +1,6 @@
-# 26\_digitalization\_of\_the\_weight\_attribute
+# 26 Weight Attribute
 
-Weight uses CT, or carat, as the common unit for all stones. However, the weight value of each gemstone is randomly generated.
+Weight uses CT, or carat, as the common unit for all stones. The weight value of each gemstone is generated randomly.
 
 * Minimum Weight = 0.10 CT
 * Maximum Weight = 200.00 CT
@@ -15,15 +15,14 @@ The smart contract does not store decimals directly. Instead, it stores values a
 | 10.50 CT         | 1050                  |
 | 200.00 CT        | 20000                 |
 
-Weight is not generated with equal probability. Just as larger carat gemstones are rarer in the real world, larger weights are generated with lower probability in CryptoStone.
+Weight is not generated with equal probability. As larger carat gemstones are rarer in the real world, larger weights are generated with lower probability in CryptoStone.
 
-| Weight Range        | Probability | Rarity Tier | Score |
-| ------------------- | ----------- | ----------- | ----- |
-| 0.10 \~ 0.99 CT     | 50.00%      | Common      | 2     |
-| 1.00 \~ 1.99 CT     | 25.00%      | Uncommon    | 5     |
-| 2.00 \~ 4.99 CT     | 15.00%      | Rare        | 9     |
-| 5.00 \~ 9.99 CT     | 6.00%       | Epic        | 13    |
-| 10.00 \~ 19.99 CT   | 2.50%       | Legendary   | 17    |
-| 20.00 \~ 49.99 CT   | 1.00%       | Mythic      | 20    |
-| 50.00 \~ 99.99 CT   | 0.40%       | Ancient     | 23    |
-| 100.00 \~ 200.00 CT | 0.10%       | Genesis     | 25    |
+| Weight Range       | Probability | Score |
+| ------------------ | ----------- | ----: |
+| 0.10 ~ 1.99 CT     | 75.00%      |     0 |
+| 2.00 ~ 4.99 CT     | 15.00%      |     5 |
+| 5.00 ~ 9.99 CT     | 6.00%       |    10 |
+| 10.00 ~ 49.99 CT   | 3.50%       |    16 |
+| 50.00 ~ 200.00 CT  | 0.50%       |    20 |
+
+The Score in the table is not a direct final Gem NFT tier. It is the Weight attribute score used to calculate Rarity Score and Probability Rarity Index. The final Gem NFT tier is determined by combining Pool Supply Score, Weight, Color, Clarity, and Cut into the five-tier system: Common, Rare, Epic, Legendary, and Genesis.

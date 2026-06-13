@@ -1,24 +1,24 @@
-# 11\_mining\_pool\_template\_and\_factory\_structure
+# 11 Mining Pool Template dan Factory
 
-The 12 Mining Pool Contracts are not separate developments with different logic. All pools are deployed based on the same audited Mining Pool Template. Each pool uses the same core logic, while only the following parameters are set differently.
+12 Mining Pool Contract bukan pengembangan terpisah dengan logika berbeda. Semua pool dideploy berdasarkan Mining Pool Template yang sama dan telah diaudit. Setiap pool menggunakan logika inti yang sama, sementara hanya parameter berikut yang berbeda.
 
-| Parameter          | Description                                             |
-| ------------------ | ------------------------------------------------------- |
-| stoneType          | The stone type mined from that pool                     |
-| maxSupply          | The maximum issuance quantity of that stone             |
-| baseMiningInterval | Basic mining interval                                   |
-| targetPoolPower    | Reference mining power                                  |
-| scarcitySchedule   | Halving structure by stone                              |
-| poolAddress        | Authorized issuance address allowed by the NFT contract |
+| Parameter | Deskripsi |
+| --------- | --------- |
+| stoneType | Stone Type yang ditambang dari pool tersebut |
+| maxSupply | Jumlah penerbitan maksimum stone tersebut |
+| baseMiningInterval | Interval mining dasar |
+| targetPoolPower | Mining Power referensi |
+| scarcitySchedule | Struktur halving berdasarkan stone |
+| poolAddress | Alamat penerbitan yang diizinkan oleh NFT contract |
 
-For this purpose, CryptoStone may use a Pool Factory structure. The Pool Factory creates the 12 stone-specific pools based on the same Mining Pool Template, and fixes the core parameters of each pool after deployment.
+Untuk tujuan ini, CryptoStone dapat menggunakan struktur Pool Factory. Pool Factory membuat 12 pool khusus stone berdasarkan Mining Pool Template yang sama dan mengunci parameter inti setiap pool setelah deployment.
 
-| Advantage              | Description                                                                        |
-| ---------------------- | ---------------------------------------------------------------------------------- |
-| Code consistency       | All 12 pools use the same logic.                                                   |
-| Audit efficiency       | Security audits can focus on one Pool Template.                                    |
-| Risk reduction         | Reduces the possibility of exceptional bugs caused by different code in each pool. |
-| Parameter transparency | Differences between pools arise only from publicly disclosed fixed values.         |
-| Scalability            | The same structure can be used when adding new stone pools in the future.          |
+| Keunggulan | Deskripsi |
+| ---------- | --------- |
+| Konsistensi kode | Semua 12 pool menggunakan logika yang sama. |
+| Efisiensi audit | Audit keamanan dapat fokus pada satu Pool Template. |
+| Pengurangan risiko | Mengurangi kemungkinan bug pengecualian akibat kode berbeda pada tiap pool. |
+| Transparansi parameter | Perbedaan antarpool hanya berasal dari nilai tetap yang dipublikasikan. |
+| Skalabilitas | Struktur yang sama dapat digunakan saat menambah stone pool baru di masa depan. |
 
-Thus, CryptoStone maintains the economic structure of “12 independent mines” while increasing stability and transparency by using the same verifiable smart contract template in development.
+Dengan demikian, CryptoStone mempertahankan struktur ekonomi “12 tambang independen” sambil meningkatkan stabilitas dan transparansi melalui smart contract template yang sama dan dapat diverifikasi.

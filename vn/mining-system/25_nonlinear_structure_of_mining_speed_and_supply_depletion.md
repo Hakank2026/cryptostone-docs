@@ -1,31 +1,31 @@
-# 25\_nonlinear\_structure\_of\_mining\_speed\_and\_supply\_depletion
+# 25 Cấu trúc phi tuyến của tốc độ mining và cạn kiệt nguồn cung
 
 ## Depletion
 
-CryptoStone’s mining structure is not a simple linear issuance model. Each stone has an independent supply, mining interval, pool difficulty, and scarcity multiplier, and as mining progress increases, mining speed slows due to the scarcity multiplier.
+Cấu trúc mining của CryptoStone không phải mô hình phát hành tuyến tính đơn giản. Mỗi stone có nguồn cung, chu kỳ mining, Pool Difficulty và Scarcity Multiplier độc lập; khi tiến độ mining tăng lên, tốc độ mining chậm lại do Scarcity Multiplier.
 
-If the effective Mining Power of stone pool $(j)$ is $(P\_{eff,j})$, it can be expressed as follows:
+Nếu Mining Power hiệu dụng của stone pool $(j)$ là $(P\_{eff,j})$, có thể biểu diễn như sau:
 
 $$
 P_{eff,j} = \min(P_j, P_j^*)
 $$
 
-This means that when total Mining Power is below Target Pool Power, actual participating power affects mining speed, and when total Mining Power exceeds Target Pool Power, the effective mining speed is limited through difficulty increase.
+Điều này có nghĩa khi tổng Mining Power thấp hơn Target Pool Power, sức mạnh tham gia thực tế ảnh hưởng đến tốc độ mining; còn khi tổng Mining Power vượt Target Pool Power, tốc độ mining hiệu dụng bị giới hạn thông qua việc tăng độ khó.
 
-The expected mining quantity per unit time of stone pool $(j)$, $(\lambda\_j)$, can conceptually be expressed as follows:
-
-$$
-\lambda_j = P_{eff,j} \div (B \times T_j \times S_j)
-$$
-
-Here, $(B)$ is the Base Mining Unit, $(T\_j)$ is the Base Mining Interval of the stone, and $(S\_j)$ is the Scarcity Multiplier.
-
-The time required for a specific stone to reach mining progress $(q)$ can be expressed as the following nonlinear model:
+Sản lượng mining kỳ vọng trên một đơn vị thời gian của stone pool $(j)$, $(\lambda\_j)$, có thể được biểu diễn khái niệm như sau:
 
 $$
-Time_j(q) = (N_j \times B \times T_j \div P_{eff,j}) \times \int_0^q S_j(x)\,dx
+\lambda_j = P_{eff,j} \div (M_{ref} \times T_j \times S_j)
 $$
 
-This formula shows that CryptoStone’s mining structure is not a model that depletes linearly, but a nonlinear mining model in which the mining speed gradually slows as the remaining supply of the stone decreases.
+Ở đây, $(M\_{ref})$ là Protocol Reference Power, $(T\_j)$ là Base Mining Interval của stone, và $(S\_j)$ là Scarcity Multiplier. Base Mining Unit là đơn vị tham gia tối thiểu; tốc độ mining dài hạn được hiệu chỉnh bằng Protocol Reference Power và Target Pool Power.
 
-Therefore, Gem NFTs may be mined relatively actively in the early stage, but after the 90% stage, the Scarcity Multiplier increases and the mining speed of the remaining supply slows significantly.
+Thời gian cần để một stone cụ thể đạt tiến độ mining $(q)$ có thể được biểu diễn bằng mô hình phi tuyến sau:
+
+$$
+Time_j(q) = (N_j \times M_{ref} \times T_j \div P_{eff,j}) \times \int_0^q S_j(x)\,dx
+$$
+
+Công thức này cho thấy cấu trúc mining của CryptoStone không phải mô hình cạn kiệt tuyến tính, mà là mô hình mining phi tuyến trong đó tốc độ mining chậm dần khi nguồn cung còn lại của stone giảm xuống.
+
+Vì vậy, Gem NFT có thể được khai thác tương đối tích cực ở giai đoạn đầu, nhưng sau mốc 90%, Scarcity Multiplier tăng lên và tốc độ mining của phần nguồn cung còn lại chậm đi đáng kể.

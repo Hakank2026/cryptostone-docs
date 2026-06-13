@@ -1,8 +1,8 @@
-# 23\_adjustment\_of\_pool\_difficulty
+﻿# 23\_adjustment\_of\_pool\_difficulty
 
 If the number of participants increases and total Mining Power grows, gemstones may be mined too quickly. To prevent this, each pool adjusts difficulty based on total Mining Power.
 
-If the total Mining Power of stone pool (j) is (P\_j), the Target Pool Power is (P\_j^\*), and pool difficulty is (D\_j), then it is calculated as follows:
+If the total Mining Power of STONX pool (j) is (P\_j), the Target Pool Power is (P\_j^\*), and pool difficulty is (D\_j), then it is calculated as follows:
 
 $$
 D_j = \max(1, P_j \div P_j^*)
@@ -35,4 +35,4 @@ $$
 
 Here, 10,000 BPS = 1.0x.
 
-This structure allows overall mining speed to adjust naturally as participation increases, and prevents the supply of each stone from being depleted too quickly.
+This structure allows overall mining speed to adjust naturally as participation increases, and prevents the supply of each STONX from being depleted too quickly.

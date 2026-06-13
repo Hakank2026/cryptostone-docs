@@ -1,22 +1,22 @@
-# 21\_accumulation\_of\_proof\_of\_mining\_pom
+# 21 Akumulasi Proof of Mining, PoM
 
-CryptoStone uses a Proof of Mining, or PoM, model that abstracts Bitcoin’s Proof-of-Work concept into a digital gemstone mining structure, rather than a simple point or credit system.
+CryptoStone menggunakan model Proof of Mining, atau PoM, yang mengabstraksikan konsep Proof-of-Work Bitcoin ke dalam struktur mining batu permata digital, bukan sistem poin atau kredit sederhana.
 
-PoM refers to the mining work amount accumulated over time by a user staking STONE in a specific stone pool. PoM is not a separately transferable or tradable token, but an on-chain work amount indicator recorded by the contract based on the user’s mining participation and the passage of time.
+PoM mengacu pada jumlah kerja mining yang terakumulasi seiring waktu oleh pengguna yang stake STONX pada stone pool tertentu. PoM bukan token terpisah yang dapat ditransfer atau diperdagangkan, melainkan indikator jumlah kerja on-chain yang dicatat contract berdasarkan partisipasi mining pengguna dan berjalannya waktu.
 
-The PoM value of user `(i)` for specific stone pool `(j)` accumulates over time as follows.
+Nilai PoM pengguna `(i)` untuk stone pool tertentu `(j)` terakumulasi seiring waktu sebagai berikut.
 
 $$
 PoM_{i,j}(t + \Delta t) = PoM_{i,j}(t) + P_{i,j} \times \Delta t
 $$
 
-For example, the Mining Power of a user who stakes 100,000 STONE into the Diamond Pool under Flexible conditions is as follows.
+Misalnya, Mining Power pengguna yang stake 100,000 STONX ke Diamond Pool dengan kondisi Flexible adalah sebagai berikut.
 
 $$
 P_{i,Diamond} = 100,000 \times 1.00 = 100,000
 $$
 
-If the user waits for 100,000 seconds, the accumulated PoM is as follows.
+Jika pengguna menunggu selama 100,000 detik, PoM yang terakumulasi adalah sebagai berikut.
 
 $$
 PoM = 100,000 \times 100,000
@@ -26,24 +26,24 @@ $$
 PoM = 10,000,000,000
 $$
 
-When the user’s accumulated PoM reaches or exceeds the required PoM threshold of the corresponding pool, the user can claim a Gem NFT.
+Ketika PoM terakumulasi pengguna mencapai atau melebihi ambang PoM yang diperlukan dari pool terkait, pengguna dapat claim Gem NFT.
 
 $$
-PoM_{i,j}(t) \geq R_j
+PoM_{i,j}(t) \ge R_j
 $$
 
-When a Gem NFT is claimed, the required threshold `(R_j)` is deducted from the user’s PoM value in that pool.
+Saat Gem NFT diclaim, ambang yang diperlukan `(R_j)` dikurangkan dari nilai PoM pengguna di pool tersebut.
 
 $$
 PoM_{i,j,new} = PoM_{i,j,old} - R_j
 $$
 
-This structure prevents excess PoM accumulated above the threshold from being unnecessarily lost. For example, if the required PoM threshold is 22,000,000,000 and the user holds 23,000,000,000 PoM when claiming a Gem NFT, then 1,000,000,000 PoM remains after the claim and is preserved for the next mining cycle.
+Struktur ini mencegah PoM berlebih di atas ambang hilang secara tidak perlu. Misalnya, jika ambang PoM yang diperlukan adalah 22,000,000,000 dan pengguna memiliki 23,000,000,000 PoM saat claim Gem NFT, maka 1,000,000,000 PoM tersisa setelah claim dan disimpan untuk siklus mining berikutnya.
 
-PoM accumulates independently for each stone pool. PoM accumulated in the Diamond Pool can only be used to claim Diamond NFTs, and cannot be converted into PoM for the Ruby Pool or Sapphire Pool. This structure protects the independence, scarcity, and mining difficulty of each stone pool.
+PoM terakumulasi secara independen untuk setiap stone pool. PoM yang terakumulasi di Diamond Pool hanya dapat digunakan untuk claim Diamond NFT dan tidak dapat dikonversi menjadi PoM untuk Ruby Pool atau Sapphire Pool. Struktur ini melindungi independensi, kelangkaan, dan difficulty mining setiap stone pool.
 
-Even if a user unstakes STONE from a specific pool, the already accumulated PoM may remain recorded in that pool. However, after unstaking, the user’s Mining Power in that pool becomes 0, so no additional PoM accumulates. If the user stakes STONE again in the same pool, new PoM accumulates on top of the existing PoM.
+Walaupun pengguna unstake STONX dari pool tertentu, PoM yang telah terakumulasi dapat tetap tercatat di pool tersebut. Namun, setelah unstake, Mining Power pengguna di pool itu menjadi 0, sehingga tidak ada PoM tambahan yang terakumulasi. Jika pengguna stake STONX lagi di pool yang sama, PoM baru terakumulasi di atas PoM yang sudah ada.
 
-If a user stakes additional STONE in the same pool, the existing PoM remains, and only the Mining Power after the additional staking increases. Conversely, if the staking amount is reduced, the existing PoM remains, but the future accumulation speed decreases.
+Jika pengguna menambah stake STONX di pool yang sama, PoM yang ada tetap dipertahankan dan hanya Mining Power setelah penambahan stake yang meningkat. Sebaliknya, jika jumlah stake dikurangi, PoM yang ada tetap, tetapi kecepatan akumulasi masa depan menurun.
 
-PoM cannot be transferred externally or traded, and cannot be moved to another stone pool. This is because PoM is not an asset itself, but a work amount indicator accumulated by a specific user through actual mining participation in a specific pool.
+PoM tidak dapat ditransfer keluar atau diperdagangkan, dan tidak dapat dipindahkan ke stone pool lain. Ini karena PoM bukan aset itu sendiri, melainkan indikator jumlah kerja yang dikumpulkan oleh pengguna tertentu melalui partisipasi mining nyata di pool tertentu.

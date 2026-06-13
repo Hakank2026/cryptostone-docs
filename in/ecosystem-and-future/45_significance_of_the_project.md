@@ -1,15 +1,15 @@
-# 45\_significance\_of\_the\_project
+# 45 Signifikansi proyek
 
-The significance of CryptoStone can be summarized in three points.
+Signifikansi CryptoStone dapat diringkas dalam tiga poin.
 
-First, CryptoStone proposes that NFTs can move beyond ownership of external content and become attribute-based assets themselves. While many existing NFTs depend on images or platforms, CryptoStone seeks to strengthen the asset nature of NFTs by directly holding gemstone attributes as on-chain data.
+Pertama, CryptoStone mengusulkan bahwa NFT dapat melampaui kepemilikan konten eksternal dan menjadi aset berbasis atribut itu sendiri. Sementara banyak NFT yang ada bergantung pada gambar atau platform, CryptoStone berupaya memperkuat sifat aset NFT dengan langsung memegang atribut batu permata sebagai data on-chain.
 
-Second, CryptoStone brings gemstone scarcity and grading structures into the digital environment. In the real world, the value of gemstones differs according to weight, color, clarity, and cut. CryptoStone implements this through probability tables, mining difficulty, halving, and supply limits.
+Kedua, CryptoStone membawa struktur kelangkaan dan grading batu permata ke lingkungan digital. Di dunia nyata, nilai batu permata berbeda menurut weight, color, clarity, dan cut. CryptoStone menerapkan hal ini melalui tabel probabilitas, mining difficulty, halving, dan batas supply.
 
-Third, CryptoStone expands the concept of decentralized mining into a new asset domain after Bitcoin. If Bitcoin digitalized the scarcity of gold and Litecoin formed the narrative of digital silver, CryptoStone digitalizes the scarcity and collectibility of gemstones.
+Ketiga, CryptoStone memperluas konsep mining terdesentralisasi setelah Bitcoin ke domain aset baru. Jika Bitcoin mendigitalisasi kelangkaan emas dan Litecoin membentuk narasi perak digital, CryptoStone mendigitalisasi kelangkaan dan collectibility batu permata.
 
-In addition, CryptoStone proposes an ecosystem structure in which mined Gem NFTs do not remain merely as holding assets, but can expand into refinement, trading, ranking, and collecting activities. This shows that NFT value can expand beyond simple images or rarity into usage history, refinement generation, supply compression history, and ecosystem utility.
+Selain itu, CryptoStone mengusulkan struktur ekosistem di mana Gem NFT yang ditambang tidak hanya menjadi aset holding, tetapi dapat berkembang ke refinement, trading, ranking, dan aktivitas koleksi. Ini menunjukkan bahwa nilai NFT dapat melampaui gambar atau rarity sederhana menuju usage history, refinement generation, supply compression history, dan utility ekosistem.
 
-CryptoStone does not claim to replace real gemstones. CryptoStone is a project that reinterprets the asset concept of gemstones in a digital environment.
+CryptoStone tidak mengklaim menggantikan batu permata nyata. CryptoStone adalah proyek yang menafsirkan kembali konsep aset batu permata dalam lingkungan digital.
 
-The author believes that such an attempt can contribute to blockchain technology expressing abstract values and attribute-based assets from the real world in a digital environment, beyond simple financial transactions.
+Pengembang percaya bahwa upaya seperti ini dapat berkontribusi pada kemampuan teknologi blockchain untuk mengekspresikan nilai abstrak dan aset berbasis atribut dari dunia nyata dalam lingkungan digital, melampaui transaksi finansial sederhana.

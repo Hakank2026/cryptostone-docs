@@ -1,46 +1,49 @@
-# 22\_required\_pom\_threshold
+# 22 Ngưỡng PoM cần thiết
 
-The PoM threshold required to mine one gemstone is determined by the Base Mining Unit, the base mining interval of each stone, pool difficulty, and scarcity multiplier.
+Ngưỡng PoM cần thiết để khai thác một viên đá được quyết định bởi Protocol Reference Power, Base Mining Interval của từng stone, Pool Difficulty và Scarcity Multiplier.
 
-If the base mining interval of stone (j) is (T\_j), the Base Mining Unit is (B), pool difficulty is (D\_j), and scarcity multiplier is (S\_j), then the required PoM threshold (R\_j) is defined as follows:
+Nếu Base Mining Interval của stone (j) là (T\_j), Protocol Reference Power là (M\_{ref}), Pool Difficulty là (D\_j), và Scarcity Multiplier là (S\_j), thì ngưỡng PoM cần thiết (R\_j) được định nghĩa như sau:
 
 $$
-R_j = B \times T_j \times D_j \times S_j
+R_j = M_{ref} \times T_j \times D_j \times S_j
 $$
 
-The reference values of CryptoStone are as follows:
+Các giá trị tham chiếu của CryptoStone như sau:
 
-* (B = 100{,}000) STONE
+* Base Mining Unit = 1,000 STONX
+* Protocol Reference Power = 100,000 Power
 * Target Pool Power = 40,000,000 Power
 
-For example, if the base mining interval of the Diamond Pool is 220,000 seconds and both Pool Difficulty and Scarcity Multiplier are 1x, the calculation is as follows:
+Base Mining Unit là đơn vị tham gia tối thiểu, còn Protocol Reference Power là power tham chiếu dùng để hiệu chỉnh tốc độ mining. Bằng cách tách hai giá trị này, CryptoStone có thể duy trì cả đơn vị tham gia dễ tiếp cận và khả năng kiểm soát nguồn cung dài hạn.
+
+Ví dụ, nếu Base Mining Interval của Garnet Pool là 170,000 giây và Pool Difficulty cùng Scarcity Multiplier đều là 1x, phép tính như sau:
 
 $$
-R_{\text{Diamond}} = 100{,}000 \times 220{,}000 \times 1 \times 1
+R_{\text{Garnet}} = 100{,}000 \times 170{,}000 \times 1 \times 1
 $$
 
 $$
-R_{\text{Diamond}} = 22{,}000{,}000{,}000 \text{ PoM}
+R_{\text{Garnet}} = 17{,}000{,}000{,}000 \text{ PoM}
 $$
 
-When the Mining Power of user (i) is (P\_{i,j}), the estimated time required for that user to claim one NFT of stone (j) can be expressed as follows:
+Khi Mining Power của người dùng (i) là (P\_{i,j}), thời gian dự kiến để người dùng đó claim một NFT của stone (j) có thể được biểu diễn như sau:
 
 $$
 E[T_{i,j}] = R_j \div P_{i,j}
 $$
 
-For example, when a user stakes 100,000 STONE into the Diamond Pool under Flexible conditions:
+Ví dụ, khi người dùng stake 6,000 STONX vào Garnet Pool theo điều kiện Flexible:
 
 $$
-E[T_{i,\text{Diamond}}] = 22{,}000{,}000{,}000 \div 100{,}000
-$$
-
-$$
-= 220{,}000 \text{ seconds}
+E[T_{i,\text{Garnet}}] = 17{,}000{,}000{,}000 \div 6{,}000
 $$
 
 $$
-\approx 2.55 \text{ days}
+= 2{,}833{,}333 \text{ giây}
 $$
 
-In other words, under initial conditions, a user staking 100,000 STONE can claim approximately one Diamond NFT every 2.55 days.
+$$
+\approx 32.8 \text{ ngày}
+$$
+
+Nói cách khác, trong điều kiện ban đầu, người dùng stake 6,000 STONX có thể claim khoảng một Garnet NFT trong vòng xấp xỉ một tháng. Người dùng stake ít hơn sẽ tích lũy PoM chậm hơn, còn người dùng stake nhiều hơn sẽ đạt điều kiện claim nhanh hơn.

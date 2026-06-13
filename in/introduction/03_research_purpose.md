@@ -1,22 +1,22 @@
-# 03\_research\_purpose
+# 03 Tujuan Penelitian
 
-The purpose of CryptoStone is not to replicate real gemstones as they are, nor to digitize ownership of physical gemstones. The purpose of this project is to bring the structural characteristics of real gemstones - mineability, limitation, grading, scarcity, and collectibility - into a digital environment.
+Tujuan CryptoStone bukan mereplikasi batu permata nyata apa adanya, dan bukan pula mendigitalisasi kepemilikan batu permata fisik. Tujuan proyek ini adalah membawa karakteristik struktural batu permata nyata - mineability, limitation, grading, scarcity, dan collectibility - ke lingkungan digital.
 
-CryptoStone begins with the following question.
+CryptoStone dimulai dari pertanyaan berikut.
 
-> If Bitcoin could become digital gold without being directly backed by gold,
+> Jika Bitcoin dapat menjadi emas digital tanpa didukung langsung oleh emas,
 >
-> can the scarcity, grading, and collectibility of gemstones also be implemented as independent assets in a decentralized digital environment?
+> apakah kelangkaan, grading, dan collectibility batu permata juga dapat diterapkan sebagai aset mandiri dalam lingkungan digital terdesentralisasi?
 
-The author proposes one technical, economic, and philosophical design for this question in this whitepaper.
+Pengembang mengusulkan satu desain teknis, ekonomi, dan filosofis untuk pertanyaan ini dalam whitepaper ini.
 
-| Purpose                              | Description                                                                                                     |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| Digitalization of attributes         | Structures gemstone weight, color, clarity, and cut as on-chain attributes.                                     |
-| Implementation of mining process     | Implements the gemstone mining process through smart contracts.                                                 |
-| Fixed supply                         | Fixes the maximum supply and scarcity structure for each stone in advance.                                      |
-| Decentralized participation          | Allows anyone to participate in mining pools without a central server.                                          |
-| Prevention of attribute manipulation | Prevents the operator from arbitrarily manipulating gemstone grades or attributes.                              |
-| Formation of collectible value       | Creates a structure where rare attribute combinations can be recognized as valuable in the collectibles market. |
-| Ecosystem expansion                  | Connects to later utility modules such as Marketplace, Gem Refinement, Ranking System, and Collection Quest.    |
-| Long-term scalability                | Establishes a foundation that can expand into an Appchain or Mainnet in the future.                             |
+| Tujuan | Deskripsi |
+| ------ | --------- |
+| Digitalisasi atribut | Menstrukturkan weight, color, clarity, dan cut batu permata sebagai atribut on-chain. |
+| Implementasi proses mining | Menerapkan proses mining batu permata melalui smart contract. |
+| Fixed supply | Menetapkan supply maksimum dan struktur kelangkaan tiap stone sejak awal. |
+| Partisipasi terdesentralisasi | Memungkinkan siapa pun berpartisipasi dalam mining pool tanpa server pusat. |
+| Pencegahan manipulasi atribut | Mencegah operator memanipulasi grade atau atribut batu permata secara sewenang-wenang. |
+| Pembentukan nilai koleksi | Menciptakan struktur agar kombinasi atribut langka dapat dikenali sebagai bernilai di pasar koleksi. |
+| Ekspansi ekosistem | Terhubung ke module utility berikutnya seperti Marketplace, Gem Refinement, Ranking System, dan Collection Quest. |
+| Skalabilitas jangka panjang | Membentuk fondasi yang dapat berkembang menjadi Appchain atau Mainnet di masa depan. |

@@ -1,15 +1,15 @@
-# 43\_future\_direction
+# 43 Định hướng tương lai
 
-CryptoStone should initially use an EVM-compatible smart contract network as the Launch Network and begin with a structure consisting of STONE Token, Gem NFT, and Mining Pool Contracts. At this stage, the focus should be on verifying the core elements of the protocol: staking, Mining Power calculation, PoM accumulation, stone-specific halving, gemstone attribute generation, and Gem NFT issuance.
+CryptoStone ban đầu nên sử dụng một mạng smart contract tương thích EVM làm Launch Network và bắt đầu với cấu trúc gồm STONX Token, Gem NFT và Mining Pool Contracts. Ở giai đoạn này, trọng tâm là kiểm chứng các yếu tố cốt lõi của giao thức: staking, tính Mining Power, tích lũy PoM, halving theo từng stone, sinh thuộc tính đá quý và phát hành Gem NFT.
 
-Afterward, it will be necessary to expand user-friendly tools such as a mining dashboard, Mining Simulator, PoM Dashboard, Gem Explorer, Rarity Explorer, Refinery Console, stone-specific transaction data, and NFT marketplace functions. The value of CryptoStone arises from market understanding of collectibility and data transparency, so a data layer where anyone can check gemstone rarity, transaction history, floor price by stone, and high-grade gemstone rankings is important.
+Sau đó, cần mở rộng các công cụ thân thiện với người dùng như mining dashboard, Mining Simulator, PoM Dashboard, Gem Explorer, Rarity Explorer, Refinery Console, dữ liệu giao dịch theo STONX và chức năng NFT marketplace. Giá trị của CryptoStone đến từ sự hiểu biết của thị trường về tính sưu tầm và minh bạch dữ liệu, nên một lớp dữ liệu nơi bất kỳ ai cũng có thể kiểm tra độ hiếm của đá quý, lịch sử giao dịch, floor price theo STONX và xếp hạng đá cấp cao là rất quan trọng.
 
-As the ecosystem grows, expansion modules such as Marketplace, Gem Refinement, Ranking System, and Collection Quest can be gradually introduced. Each expansion module must not damage the core mining structure, and must maintain the core Gem NFT supply and PoM-based mining principles.
+Khi hệ sinh thái phát triển, các module mở rộng như Marketplace, Gem Refinement, Ranking System và Collection Quest có thể được giới thiệu dần. Mỗi module mở rộng không được làm tổn hại cấu trúc mining cốt lõi và phải duy trì nguồn cung Gem NFT cốt lõi cùng nguyên tắc mining dựa trên PoM.
 
-In the long term, CryptoStone can expand beyond a simple smart contract project into a dedicated Appchain or Mainnet. In that case, STONE can function beyond a simple mining token and become a gas token or native asset of the network, while Gem NFTs can become basic digital assets of the CryptoStone network.
+Trong dài hạn, CryptoStone có thể mở rộng vượt ra ngoài một dự án smart contract đơn giản thành Appchain hoặc Mainnet chuyên dụng. Khi đó, STONX có thể vượt vai trò mining token đơn thuần để trở thành gas token hoặc native asset của mạng, còn Gem NFT có thể trở thành tài sản kỹ thuật số cơ bản của mạng CryptoStone.
 
-If CryptoStone expands into the CryptoStone Mainnet in the future, Gem NFTs will function as native digital gemstones of the CryptoStone ecosystem, beyond assets issued on an external network.
+Nếu CryptoStone mở rộng sang CryptoStone Mainnet trong tương lai, Gem NFT sẽ hoạt động như đá quý kỹ thuật số native của hệ sinh thái CryptoStone, vượt ra ngoài tài sản phát hành trên mạng bên ngoài.
 
-Development into an independent CryptoStone Mainnet can also be considered. In that case, independent validators, open-source nodes, native mining modules, on-chain randomness modules, its own marketplace, and public protocol improvement procedures will be required. However, a mainnet should not be pursued simply because it is technically possible to create a chain. It should be pursued only after sufficient users, liquidity, validators, and developer ecosystem have formed.
+Việc phát triển thành CryptoStone Mainnet độc lập cũng có thể được cân nhắc. Khi đó, cần có validator độc lập, node mã nguồn mở, module mining native, module randomness on-chain, marketplace riêng và quy trình cải tiến giao thức công khai. Tuy nhiên, mainnet không nên được theo đuổi chỉ vì về mặt kỹ thuật có thể tạo một chain. Nó chỉ nên được theo đuổi sau khi đã hình thành đủ người dùng, thanh khoản, validator và hệ sinh thái developer.
 
-The long-term direction of CryptoStone is not to operate a single NFT collection, but to form a new on-chain asset category called digital gemstones.
+Định hướng dài hạn của CryptoStone không phải vận hành một NFT collection duy nhất, mà là hình thành một danh mục tài sản on-chain mới gọi là đá quý kỹ thuật số.

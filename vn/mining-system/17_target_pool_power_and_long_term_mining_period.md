@@ -1,13 +1,13 @@
-# 17\_target\_pool\_power\_and\_long\_term\_mining\_period
+# 17 Target Pool Power và chu kỳ khai thác dài hạn
 
-CryptoStone’s Target Pool Power is calculated based not on the total STONE supply, but on the effective staking amount expected to actually participate in mining.
+Target Pool Power của CryptoStone không được tính dựa trên toàn bộ nguồn cung STONX, mà dựa trên lượng staking hiệu dụng dự kiến thực sự tham gia mining.
 
-* Target Pool Power = 40,000,000 Power per Pool
+* Target Pool Power = 40,000,000 Power cho mỗi pool
 * 12 Pools Total Target Power = 480,000,000 Power
 
-This reflects the assumption that approximately 40% of the total STONE supply of 1,200,000,000 may participate in the mining ecosystem over the long term.
+Điều này phản ánh giả định rằng khoảng 40% tổng nguồn cung STONX là 1,200,000,000 có thể tham gia hệ sinh thái mining trong dài hạn.
 
-If the total Mining Power of a specific pool (j) is (P\_j), and its Target Pool Power is (P\_j^\*), the total pool power is defined as follows.
+Nếu tổng Mining Power của một pool cụ thể (j) là (P\_j), và Target Pool Power của pool đó là (P\_j^\*), tổng pool power được định nghĩa như sau.
 
 $$
 P_j = \Sigma P_{i,j}
@@ -17,8 +17,8 @@ $$
 P_j^* = 40,000,000
 $$
 
-Assuming that participants increase by 10,000 each year, approximately 100,000 users participate after 10 years, and the average active stake is around 4,800 STONE, it may take approximately 8 to 9 years for about 90% of the total Gem NFT supply to be mined.
+Giả định số người tham gia tăng thêm 10,000 mỗi năm, sau 10 năm có khoảng 100,000 người tham gia và active stake trung bình khoảng 4,800 STONX, thì có thể mất khoảng 8 đến 9 năm để khoảng 90% tổng nguồn cung Gem NFT được khai thác.
 
-Due to the halving structure, the mining speed after the 90% stage becomes even slower. Therefore, it may take more than 12 years for 100% of the total Gem NFT supply to be fully mined.
+Do cấu trúc halving, tốc độ khai thác sau mốc 90% sẽ chậm hơn nữa. Vì vậy, việc khai thác 100% tổng nguồn cung Gem NFT có thể mất hơn 12 năm.
 
-This period estimate is not intended to predict any specific return rate or price. It is a model to explain that CryptoStone aims to be a decentralized mining ecosystem in which digital gemstones are gradually mined over a long period of time, rather than a short-term NFT minting event.
+Ước tính thời gian này không nhằm dự đoán bất kỳ tỷ suất lợi nhuận hay giá cụ thể nào. Nó là mô hình để giải thích rằng CryptoStone hướng tới một hệ sinh thái mining phi tập trung, nơi đá quý kỹ thuật số được khai thác dần trong thời gian dài, thay vì một sự kiện mint NFT ngắn hạn.

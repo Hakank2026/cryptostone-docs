@@ -1,16 +1,16 @@
-# 02\_simplest\_way\_to\_understand\_cryptostone
+# 02 Cách đơn giản nhất để hiểu CryptoStone
 
-CryptoStone is an on-chain protocol for mining digital gemstones. A user deposits STONE into the gemstone mining pool of their choice, and once enough Proof of Mining, or PoM, has accumulated over time, the user can claim a Gem NFT. The mined NFT is not a simple image, but a unique digital gemstone containing recorded attributes such as stone type, weight, color, clarity, cut, rarity score, and mining time.
+CryptoStone là một giao thức on-chain để khai thác đá quý kỹ thuật số. Người dùng gửi STONX vào gemstone mining pool mà họ chọn; khi Proof of Mining, hay PoM, tích lũy đủ theo thời gian, người dùng có thể claim một Gem NFT. NFT được khai thác không phải là một hình ảnh đơn giản, mà là một viên đá quý kỹ thuật số độc nhất chứa các thuộc tính được ghi nhận như Stone Type, trọng lượng, màu sắc, độ tinh khiết, giác cắt, Rarity Score và thời điểm khai thác.
 
-Users can choose from 12 stone pools, including diamond, ruby, sapphire, and emerald. Each stone has a different supply, mining interval, and halving structure. As mining progresses, the remaining supply decreases and the scarcity multiplier increases.
+Người dùng có thể chọn trong 12 stone pool, bao gồm diamond, ruby, sapphire và emerald. Mỗi stone có nguồn cung, chu kỳ khai thác và cấu trúc halving khác nhau. Khi khai thác tiến triển, nguồn cung còn lại giảm dần và Scarcity Multiplier tăng lên.
 
-The core experience of CryptoStone is simple:
+Trải nghiệm cốt lõi của CryptoStone rất đơn giản:
 
-* STONE is deposited into a digital mine.
-* Over time, Mining Power accumulates as Proof of Mining, PoM.
-* When the required PoM threshold is reached, a Gem NFT can be claimed.
-* Which gemstone appears is determined by publicly disclosed probabilities and verifiable randomness.
+* STONX được gửi vào một mỏ kỹ thuật số.
+* Theo thời gian, Mining Power tích lũy thành Proof of Mining, PoM.
+* Khi đạt ngưỡng PoM cần thiết, người dùng có thể claim Gem NFT.
+* Viên đá xuất hiện được quyết định bởi xác suất công khai và randomness có thể kiểm chứng.
 
-In other words, CryptoStone aims to be a “mined digital gemstone,” not a “purchased NFT.” Users do not simply buy an image. They mine their own digital gemstone within publicly disclosed rules and fixed probability structures.
+Nói cách khác, CryptoStone hướng tới “đá quý kỹ thuật số được khai thác”, không phải “NFT được mua”. Người dùng không chỉ mua một hình ảnh; họ khai thác viên đá kỹ thuật số của mình trong các quy tắc công khai và cấu trúc xác suất cố định.
 
-After mining, Gem NFTs can be connected to various ecosystem utility modules, such as holding, exploration, trading, and refinement. However, these expansion functions do not replace the core mining structure. They are optional ecosystem modules designed to expand the utility and collectibility of mined digital gemstones.
+Sau khi khai thác, Gem NFT có thể được kết nối với nhiều module tiện ích của hệ sinh thái như nắm giữ, khám phá, giao dịch và refinement. Tuy nhiên, các chức năng mở rộng này không thay thế cấu trúc khai thác cốt lõi. Chúng là những module tùy chọn nhằm mở rộng tiện ích và giá trị sưu tầm của đá quý kỹ thuật số đã khai thác.

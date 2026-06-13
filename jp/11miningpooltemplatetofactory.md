@@ -1,10 +1,10 @@
-# 11\_Mining\_Pool\_TemplateとFactory構造
+﻿# 11\_Mining\_Pool\_TemplateとFactory構造
 
 12個のMining Pool Contractは、互いに異なるロジックを持つ別個の開発物ではない。すべてのプールは、同一の監査済みMining Pool Templateに基づいてデプロイされる。各プールは同一の核心ロジックを使用し、次のパラメータのみが異なる形で設定される。
 
 | パラメータ              | 説明                     |
 | ------------------ | ---------------------- |
-| stoneType          | 当該プールで採掘されるストーン種類      |
+| STONXType          | 当該プールで採掘されるストーン種類      |
 | maxSupply          | 当該ストーンの最大発行量           |
 | baseMiningInterval | 基本マイニング周期              |
 | targetPoolPower    | 基準マイニングパワー             |

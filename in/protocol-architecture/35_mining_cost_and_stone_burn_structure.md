@@ -1,37 +1,37 @@
-# 35\_mining\_cost\_and\_stone\_burn\_structure
+# 35 Struktur Burn STONX
 
-In CryptoStone, STONE is not merely a payment method, but a mining resource used to participate in digital gemstone mining. Just as mining equipment and energy are used in real-world mines and equipment depreciates over time, STONE deposited into mining pools in CryptoStone has a certain digital depreciation structure during the mining process.
+Dalam CryptoStone, STONX bukan sekadar metode pembayaran. STONX adalah resource mining yang digunakan untuk berpartisipasi dalam mining batu permata digital. Seperti peralatan dan energi mining dunia nyata dikonsumsi dan peralatan mengalami depresiasi seiring waktu, STONX yang disetor ke CryptoStone mining pool memiliki struktur depresiasi digital selama proses mining.
 
-The author views the STONE burn structure not as a mechanism to guarantee token price appreciation, but as a mechanism to express the resource consumption and scarcity structure required for digital gemstone mining.
+Pengembang melihat struktur burn STONX bukan sebagai mekanisme untuk menjamin apresiasi harga token, tetapi sebagai mekanisme untuk mengekspresikan konsumsi resource dan struktur kelangkaan yang diperlukan untuk mining batu permata digital.
 
-STONE burns in CryptoStone may occur mainly in two cases.
+Struktur burn STONX dasar CryptoStone dapat terjadi dalam dua kasus utama.
 
-| Burn Type     | Time of Occurrence                    | Purpose                                    |
-| ------------- | ------------------------------------- | ------------------------------------------ |
-| Claim Burn    | When claiming a Gem NFT               | Expression of mining cost and scarcity     |
-| Maturity Burn | When unstaking after lock-up maturity | Expression of mining resource depreciation |
+| Burn Type | Waktu Terjadi | Tujuan |
+| --------- | ------------- | ------ |
+| Claim Burn | Saat claim Gem NFT | Ekspresi biaya mining dan kelangkaan |
+| Maturity Burn | Saat unstake setelah lock-up maturity | Ekspresi depresiasi resource mining |
 
-The burn amount $B\_{claim,j}$ that occurs when claiming a Gem NFT is calculated by the following formula:
+Dua kasus ini membentuk struktur burn dasar CryptoStone. Seiring ekosistem berkembang, mekanisme burn STONX tambahan dapat diperkenalkan. Contohnya termasuk partial burn dari biaya Marketplace, entry fee atau settlement burn di Arena atau module game lain, dan execution-cost burn dalam Gem Refinement. Setiap mekanisme burn yang diperluas harus didefinisikan melalui contract dan aturan publik terpisah tanpa merusak aturan mining inti.
+
+Jumlah burn (B\_{claim,j}) yang terjadi saat claim Gem NFT dihitung dengan formula berikut:
 
 $$
 B_{claim,j} = \beta \times S_j
 $$
 
-Here, $\beta$ is the Base Claim Burn, and $S\_j$ is the Scarcity Multiplier of the corresponding stone.
+Di sini, (\beta) adalah Base Claim Burn, dan (S\_j) adalah Scarcity Multiplier dari stone terkait.
 
-The initial reference value is set as follows:
+Claim Burn bukan 2 STONX tetap untuk setiap pool. Nilai dasarnya adalah 2 STONX, tetapi jumlah burn aktual berubah sesuai Scarcity Multiplier setiap stone pool. Misalnya, pool pada zona 2x membakar 4 STONX per claim, sedangkan pool pada zona 4x membakar 8 STONX. Karena itu, Claim Burn adalah biaya burn dinamis yang mencerminkan progres mining dan difficulty tiap pool.
 
-$$
-\beta = 20 \text{ STONE}
-$$
+Nilai referensi awal:
 
 | Scarcity Multiplier | Claim Burn |
 | ------------------- | ---------- |
-| 1x                  | 20 STONE   |
-| 2x                  | 40 STONE   |
-| 4x                  | 80 STONE   |
-| 8x                  | 160 STONE  |
-| 16x                 | 320 STONE  |
-| 32x                 | 640 STONE  |
+| 1x | 2 STONX |
+| 2x | 4 STONX |
+| 4x | 8 STONX |
+| 8x | 16 STONX |
+| 16x | 32 STONX |
+| 32x | 64 STONX |
 
-The Base Claim Burn is a minimum consumption structure representing mining cost, not a mechanism designed to rapidly reduce total supply. Burned STONE is not paid to the operator or foundation, but permanently removed from circulation. Through this, STONE functions not merely as a deposited asset, but as a digital mining resource actually used and consumed within the CryptoStone ecosystem.
+Base Claim Burn merepresentasikan struktur konsumsi minimum dari biaya mining. Struktur ini tidak dirancang untuk mengurangi total supply secara cepat. STONX yang diburn tidak dibayarkan kepada operator atau foundation; STONX tersebut dihapus permanen dari sirkulasi. Melalui hal ini, STONX berfungsi bukan hanya sebagai aset yang disetor, tetapi sebagai resource mining digital yang benar-benar digunakan dan dikonsumsi dalam ekosistem CryptoStone.

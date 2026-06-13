@@ -1,4 +1,4 @@
-# 45\_significance\_of\_the\_project
+﻿# 45\_significance\_of\_the\_project
 
 The significance of CryptoStone can be summarized in three points.
 
@@ -12,4 +12,4 @@ In addition, CryptoStone proposes an ecosystem structure in which mined Gem NFTs
 
 CryptoStone does not claim to replace real gemstones. CryptoStone is a project that reinterprets the asset concept of gemstones in a digital environment.
 
-The author believes that such an attempt can contribute to blockchain technology expressing abstract values and attribute-based assets from the real world in a digital environment, beyond simple financial transactions.
+The developer believes that such an attempt can contribute to blockchain technology expressing abstract values and attribute-based assets from the real world in a digital environment, beyond simple financial transactions.

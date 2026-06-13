@@ -1,30 +1,30 @@
-# 38\_protocol\_finalization\_principles
+# 38 Nguyên tắc cố định giao thức
 
-For CryptoStone to aim for decentralized asset characteristics similar to Bitcoin, its core rules must not be arbitrarily changed after deployment.
+Để CryptoStone hướng tới đặc tính tài sản phi tập trung tương tự Bitcoin, các quy tắc cốt lõi không được thay đổi tùy ý sau khi triển khai.
 
-| Fixed Item                    | Description                                      |
-| ----------------------------- | ------------------------------------------------ |
-| Total STONE supply            | 1,200,000,000 STONE                              |
-| STONE circulation structure   | 100% public circulation                          |
-| Max Supply by stone           | Maximum NFT issuance quantity by each stone      |
-| Base Mining Interval by stone | Basic mining interval                            |
-| Target Pool Power             | Initial reference value of 40,000,000 Power      |
-| Base Mining Unit              | 100,000 STONE                                    |
-| Weight probability table      | Weight generation probability                    |
-| Color probability table       | Color grade generation probability               |
-| Clarity probability table     | Clarity grade generation probability             |
-| Cut probability table         | Cut grade generation probability                 |
-| Scarcity Multiplier           | Halving-based difficulty multiplier              |
-| Claim Burn formula            | Burn formula at claim                            |
-| Mining Power formula          | Staking-based Mining Power formula               |
-| PoM formula                   | Proof of Mining accumulation and claim condition |
-| Lock Multiplier               | Mining multiplier by lock-up period              |
-| Maturity Burn formula         | Depreciation burn formula at lock-up maturity    |
+| Fixed Item | Description |
+| ---------- | ----------- |
+| Total STONX supply | 1,200,000,000 STONX |
+| STONX circulation structure | Open Market Allocation |
+| Max Supply by stone | Số lượng phát hành NFT tối đa theo từng stone |
+| Base Mining Interval by stone | Chu kỳ mining cơ bản |
+| Target Pool Power | Giá trị tham chiếu ban đầu 40,000,000 Power |
+| Base Mining Unit | 1,000 STONX |
+| Weight probability table | Xác suất sinh Weight |
+| Color probability table | Xác suất sinh Color grade |
+| Clarity probability table | Xác suất sinh Clarity grade |
+| Cut probability table | Xác suất sinh Cut grade |
+| Scarcity Multiplier | Hệ số độ khó dựa trên halving |
+| Claim Burn formula | Công thức burn khi claim |
+| Mining Power formula | Công thức Mining Power dựa trên staking |
+| PoM formula | Tích lũy Proof of Mining và điều kiện claim |
+| Lock Multiplier | Hệ số mining theo thời gian lock-up |
+| Maturity Burn formula | Công thức burn khấu hao khi lock-up đáo hạn |
 
-Once initial settings are completed, the protocol should be finalized. After this, the operator must not be able to arbitrarily increase supply, change rarity probabilities, or manually issue NFTs to specific users.
+Sau khi thiết lập ban đầu hoàn tất, giao thức cần được finalized. Sau thời điểm đó, nhà vận hành không được tùy ý tăng nguồn cung, thay đổi xác suất rarity hoặc phát hành thủ công NFT cho người dùng cụ thể.
 
-The core contracts of CryptoStone should have source code publicly verified after deployment, and token supply, NFT supply, probability tables, mining formulas, and PoM threshold calculation structures must not be changeable after finalization.
+Các contract cốt lõi của CryptoStone cần được công khai và xác minh source code sau khi triển khai; nguồn cung token, nguồn cung NFT, bảng xác suất, công thức mining và cấu trúc tính ngưỡng PoM không được thay đổi sau finalization.
 
-If limited administrative functions are necessary before finalization, the list, purpose, removal timing, and control method of those functions must be clearly disclosed. After finalization, administrative authority related to core issuance quantity, probability tables, issuance rights, and PoM calculation method should be removed or disabled.
+Nếu trước finalization cần có chức năng quản trị giới hạn, danh sách, mục đích, thời điểm gỡ bỏ và phương thức kiểm soát của các chức năng đó phải được công bố rõ ràng. Sau finalization, quyền quản trị liên quan đến số lượng phát hành cốt lõi, bảng xác suất, quyền phát hành và phương thức tính PoM cần được gỡ bỏ hoặc vô hiệu hóa.
 
-Decentralization is not completed simply because something is deployed on a blockchain. Decentralization is formed through rules that the operator cannot change, code that anyone can verify, and structures in which anyone can participate.
+Phi tập trung không hoàn tất chỉ vì một hệ thống được triển khai trên blockchain. Phi tập trung được hình thành từ các quy tắc mà nhà vận hành không thể thay đổi, mã nguồn mà bất kỳ ai cũng có thể kiểm chứng, và cấu trúc mà bất kỳ ai cũng có thể tham gia.

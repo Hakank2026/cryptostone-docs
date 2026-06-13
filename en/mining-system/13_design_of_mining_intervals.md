@@ -1,8 +1,8 @@
-# 13\_design\_of\_mining\_intervals
+﻿# 13\_design\_of\_mining\_intervals
 
-Each stone has a different base mining interval.
+Each STONX has a different base mining interval.
 
-| Stone      | Base Mining Interval |
+| STONX      | Base Mining Interval |
 | ---------- | -------------------: |
 | Garnet     |          170,000 sec |
 | Amethyst   |          160,000 sec |
@@ -14,17 +14,17 @@ Each stone has a different base mining interval.
 | Spinel     |          140,000 sec |
 | Sapphire   |          190,000 sec |
 
-| Stone  | Base Mining Interval |
+| STONX  | Base Mining Interval |
 | ------ | -------------------: |
 | Opal   |          130,000 sec |
 | Topaz  |          120,000 sec |
 | Zircon |          110,000 sec |
 
-The longer the base mining interval, the more difficult it is to mine with the same Mining Power. Therefore, scarcity by stone is first formed by the following two elements.
+The longer the base mining interval, the more difficult it is to mine with the same Mining Power. Therefore, scarcity by STONX is first formed by the following two elements.
 
 | Element              | Description                                                       |
 | -------------------- | ----------------------------------------------------------------- |
-| Max Supply           | Total issuable quantity of that stone                             |
+| Max Supply           | Total issuable quantity of that STONX                             |
 | Base Mining Interval | Time required to mine one unit based on the reference mining unit |
 
 For example, Diamond has the smallest supply and the longest base mining interval. This is designed so that Diamond has the highest structural scarcity within the CryptoStone ecosystem.

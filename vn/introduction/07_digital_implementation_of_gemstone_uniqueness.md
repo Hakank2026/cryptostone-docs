@@ -1,15 +1,15 @@
-# 07\_digital\_implementation\_of\_gemstone\_uniqueness
+# 07 Triển khai tính độc nhất của đá quý trong môi trường số
 
-CryptoStone can consider various technical options to express the uniqueness of each gemstone. Fungible token structures, semi-fungible token structures, and composite token structures may all be possible, but the core objective of CryptoStone is for each gemstone to have a unique attribute combination and tokenId.
+CryptoStone có thể cân nhắc nhiều lựa chọn kỹ thuật để biểu đạt tính độc nhất của mỗi viên đá. Cấu trúc fungible token, semi-fungible token hoặc composite token đều có thể khả thi, nhưng mục tiêu cốt lõi của CryptoStone là để mỗi viên đá có một tổ hợp thuộc tính và tokenId riêng.
 
-Therefore, gemstones in CryptoStone are represented as Gem NFTs with unique tokenIds and attribute combinations. This choice is not intended to emphasize a specific technical standard, but is the result of implementing the following functions.
+Vì vậy, đá quý trong CryptoStone được biểu đạt dưới dạng Gem NFT có tokenId và tổ hợp thuộc tính độc nhất. Lựa chọn này không nhằm nhấn mạnh một tiêu chuẩn kỹ thuật cụ thể, mà là kết quả của việc triển khai các chức năng sau.
 
-| Implementation Requirement                              | Reason for Adopting NFT Structure                                           |
-| ------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Need for a unique tokenId for each gemstone             | NFT structure is suitable for representing assets based on unique tokenIds. |
-| Storage of different attributes for each gemstone       | tokenId-specific metadata and on-chain attribute structures are possible.   |
-| Need for ownership transfer records                     | Standard NFT transfer and ownership recording are possible.                 |
-| Representation of multiple stones within one collection | 12 stones can be distinguished through the stoneType attribute.             |
-| Tracking of rarity and transaction history              | Provenance and rarity tracking for each NFT are possible.                   |
+| Yêu cầu triển khai | Lý do áp dụng cấu trúc NFT |
+| ------------------ | -------------------------- |
+| Cần tokenId độc nhất cho từng viên đá | Cấu trúc NFT phù hợp để biểu đạt tài sản dựa trên tokenId độc nhất. |
+| Lưu trữ thuộc tính khác nhau cho từng viên đá | Có thể triển khai metadata theo tokenId và cấu trúc thuộc tính on-chain. |
+| Cần hồ sơ chuyển quyền sở hữu | Có thể ghi nhận chuyển nhượng và sở hữu theo chuẩn NFT. |
+| Biểu đạt nhiều loại đá trong một collection | 12 loại đá có thể được phân biệt bằng thuộc tính `stoneType`. |
+| Theo dõi độ hiếm và lịch sử giao dịch | Có thể theo dõi provenance và rarity của từng NFT. |
 
-In other words, the Gem NFT structure in CryptoStone is not a means of creating image NFTs. It is a technical container for expressing the uniqueness and attribute-based asset nature of digital gemstones.
+Nói cách khác, cấu trúc Gem NFT trong CryptoStone không phải phương tiện để tạo image NFT. Nó là một container kỹ thuật để biểu đạt tính độc nhất và bản chất tài sản dựa trên thuộc tính của đá quý kỹ thuật số.

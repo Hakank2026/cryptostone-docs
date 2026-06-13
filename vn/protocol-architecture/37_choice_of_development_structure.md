@@ -1,32 +1,51 @@
-# 37\_choice\_of\_development\_structure
+# 37 Cấu trúc phát triển
 
-CryptoStone adopts the following structure:
+CryptoStone áp dụng cấu trúc sau.
 
-* STONE Token
+* STONX Token
 * CryptoStone Gem NFT
 * 12 Mining Pool Contracts
 * Pool Factory
 
-This structure is designed to implement a digital gemstone protocol that is not dependent on a specific chain. Initially, an EVM-compatible smart contract network is used as the Launch Network.
+Cấu trúc này được thiết kế để triển khai giao thức đá quý kỹ thuật số không phụ thuộc vĩnh viễn vào một chain cụ thể. Ở giai đoạn đầu, một mạng smart contract tương thích EVM được dùng làm Launch Network.
 
-| Choice                | Reason                                                      |
-| --------------------- | ----------------------------------------------------------- |
-| STONE Token           | Provides a single mining resource and liquidity structure.  |
-| CryptoStone Gem NFT   | Expresses the uniqueness and attributes of each gemstone.   |
-| 12 Mining Pools       | Implements independent mine structures by stone.            |
-| Pool Factory          | Deploys pools using the same verified template.             |
-| Unified NFT Contract  | Concentrates collection identity and transaction data.      |
-| Verifiable Randomness | Enables attribute generation without operator manipulation. |
-| Finalize Mechanism    | Prevents changes to core rules.                             |
+## Current Deployment Status
 
-First, the roles of STONE and Gem NFT are separated. STONE is the token for Mining Power, and Gem NFT is the mining result.
+Bảng sau tóm tắt trạng thái triển khai testnet hiện tại và baseline của tài liệu giao thức. Nếu triển khai mainnet hoặc nâng cấp contract, địa chỉ và phiên bản sẽ được cập nhật trong tài liệu công khai riêng.
 
-Second, the uniqueness of gemstones is protected. Each Gem NFT has a tokenId and attribute combination, and attributes cannot be changed after issuance.
+| Item | Current Status | Notes |
+| ---- | -------------- | ----- |
+| Launch Network | Ethereum Sepolia | Baseline vận hành testnet |
+| STONX Token | `0xBd10DA40Dec511c11100dd2927dDf8c53A5248Ed` | Triển khai ERC-20 testnet |
+| GEMS NFT | `0x01CE9e3Ee0fb51B6b0cE1E5B3C72A5F981A50056` | Cấu trúc HTTPS metadata V5.3 |
+| Garnet Mining Pool | `0xd885D9865A1e7C9094EcD0982421bE9670Fabe16` | Pool đang live hiện tại |
+| Other 11 Mining Pools | Preparing | Mục tiêu mở mainnet hoặc mở tuần tự |
+| Refinery | `0xB7b55068163d6d8E4f8eD2e8B511e234520576DC` | Tính năng refinement testnet |
+| Marketplace | `0x673d64550c718A3770064ee3cDdC8b20093D0913` | Tính năng giao dịch NFT testnet |
+| Metadata Model | HTTPS API + watcher finalization + IPFS media | Tách thuộc tính cốt lõi khỏi lớp hiển thị media |
+| Randomness Standard | User entropy + multi-block entropy + `prevrandao` | Baseline cho pool mới và upgrade |
+| Mainnet Status | Preparing | Tiến hành sau khi hoàn tất security review, đồng bộ tài liệu và chính sách thanh khoản |
 
-Third, independence by stone is maintained. Each mining pool has independent supply, mining interval, and halving, making it suitable for digitally expressing the concept of individual real-world mines.
+## Rationale
 
-Fourth, the NFT collection is maintained as one collection. This concentrates the CryptoStone brand and market data, and allows integrated management of trading and rarity rankings.
+| Choice | Reason |
+| ------ | ------ |
+| STONX Token | Cung cấp tài nguyên mining và cấu trúc thanh khoản thống nhất |
+| CryptoStone Gem NFT | Biểu đạt tính độc nhất và thuộc tính của từng viên đá |
+| 12 Mining Pools | Triển khai mỏ kỹ thuật số độc lập cho từng stone |
+| Pool Factory | Triển khai pool từ cùng một template có thể kiểm chứng |
+| Unified NFT Contract | Tập trung nhận diện collection và dữ liệu giao dịch |
+| Verifiable Randomness | Cho phép sinh thuộc tính mà không bị nhà vận hành thao túng |
+| Finalize Mechanism | Ngăn thay đổi quy tắc cốt lõi |
 
-Fifth, future scalability is high. CryptoStone can start on an EVM-compatible Launch Network and expand into an independent Appchain or CryptoStone Mainnet in the long term.
+Thứ nhất, vai trò của STONX và Gem NFT được tách biệt. STONX là token cho Mining Power, còn Gem NFT là kết quả khai thác.
 
-Sixth, dependence on centralization is reduced. Mining and issuance are executed by contracts, not by servers, and anyone can verify the conditions.
+Thứ hai, tính độc nhất của đá quý được bảo vệ. Mỗi Gem NFT có tokenId và tổ hợp thuộc tính riêng, và thuộc tính của nó không thể thay đổi sau khi mint.
+
+Thứ ba, tính độc lập giữa các stone được duy trì. Mỗi mining pool có nguồn cung, chu kỳ mining và cấu trúc halving riêng, phù hợp để biểu đạt các mỏ riêng lẻ ngoài đời thực dưới dạng kỹ thuật số.
+
+Thứ tư, NFT collection vẫn thống nhất. Điều này tập trung thương hiệu và dữ liệu thị trường của CryptoStone, giúp quản lý thống nhất giao dịch và xếp hạng rarity.
+
+Thứ năm, cấu trúc có khả năng mở rộng cao trong tương lai. CryptoStone có thể bắt đầu trên Launch Network tương thích EVM và sau này mở rộng sang Appchain hoặc CryptoStone Mainnet độc lập.
+
+Thứ sáu, phụ thuộc tập trung được giảm bớt. Mining và minting được thực thi bởi contract thay vì server, và bất kỳ ai cũng có thể kiểm chứng điều kiện.

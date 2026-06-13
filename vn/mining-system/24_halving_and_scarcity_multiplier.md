@@ -1,38 +1,38 @@
-# 24\_halving\_and\_scarcity\_multiplier
+# 24 Halving và Scarcity Multiplier
 
-The halving structure of CryptoStone is applied independently for each stone, not across the entire collection.
+Cấu trúc halving của CryptoStone được áp dụng độc lập cho từng stone, không áp dụng theo toàn bộ collection.
 
-If the maximum supply of stone (j) is (N\_j), the quantity mined so far is (n\_j), and the mining progress ratio is (q\_j), then it is calculated as follows:
+Nếu nguồn cung tối đa của stone (j) là (N\_j), số lượng đã khai thác là (n\_j), và tỷ lệ tiến độ khai thác là (q\_j), thì được tính như sau:
 
 $$
 q_j = n_j \div N_j
 $$
 
-For example, if Diamond’s maximum supply is 110,000 and 55,000 have been mined so far:
+Ví dụ, nếu nguồn cung tối đa của Diamond là 110,000 và đã khai thác 55,000:
 
 $$
 q_{\text{Diamond}} = 55,000 \div 110,000 = 0.5
 $$
 
-This means that the Diamond Pool has reached the 50% mining stage.
+Điều này có nghĩa Diamond Pool đã đạt giai đoạn khai thác 50%.
 
-The scarcity multiplier (S\_j) of each stone increases according to the mining progress ratio (q\_j).
+Scarcity Multiplier (S\_j) của từng stone tăng theo tỷ lệ tiến độ khai thác (q\_j).
 
 | Mined Supply Ratio | Remaining Supply | Scarcity Multiplier |
 | ------------------ | ---------------- | ------------------- |
-| 0% \~ 50%          | 100% \~ 50%      | 1x                  |
-| 50% \~ 75%         | 50% \~ 25%       | 2x                  |
-| 75% \~ 87.5%       | 25% \~ 12.5%     | 4x                  |
-| 87.5% \~ 93.75%    | 12.5% \~ 6.25%   | 8x                  |
-| 93.75% \~ 96.875%  | 6.25% \~ 3.125%  | 16x                 |
-| 96.875% or more    | 3.125% or less   | 32x                 |
+| 0% \~ 50% | 100% \~ 50% | 1x |
+| 50% \~ 75% | 50% \~ 25% | 2x |
+| 75% \~ 87.5% | 25% \~ 12.5% | 4x |
+| 87.5% \~ 93.75% | 12.5% \~ 6.25% | 8x |
+| 93.75% \~ 96.875% | 6.25% \~ 3.125% | 16x |
+| 96.875% or more | 3.125% or less | 32x |
 
-This can be generalized as follows:
+Có thể tổng quát hóa như sau:
 
 $$
 S_j(q_j) = 2^{\min\left(5, \lfloor \log_2 \left( 1 \div (1 - q_j) \right) \rfloor \right)}
 $$
 
-However, when (q\_j) corresponds to the initial range, (S\_j(q\_j)) remains at a minimum of 1x. In actual smart contract implementation, rather than calculating the formula directly, it may be implemented based on a pre-disclosed range table.
+Tuy nhiên, khi (q\_j) thuộc vùng ban đầu, (S\_j(q\_j)) được giữ tối thiểu ở 1x. Trong triển khai smart contract thực tế, thay vì tính trực tiếp công thức trên, có thể triển khai dựa trên bảng khoảng giá trị đã công bố trước.
 
-This formula expresses a structure in which mining difficulty increases geometrically as the remaining supply of each stone decreases. This brings the real-world structure of mining costs and difficulty increasing as mine reserves decrease into the digital environment.
+Công thức này biểu đạt cấu trúc trong đó độ khó mining tăng theo cấp số nhân khi nguồn cung còn lại của từng stone giảm xuống. Nó đưa cấu trúc ngoài đời thực, nơi chi phí và độ khó khai thác tăng khi trữ lượng mỏ giảm, vào môi trường kỹ thuật số.

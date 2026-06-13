@@ -1,15 +1,15 @@
-# 07\_digital\_implementation\_of\_gemstone\_uniqueness
+# 07 Implementasi digital atas keunikan batu permata
 
-CryptoStone can consider various technical options to express the uniqueness of each gemstone. Fungible token structures, semi-fungible token structures, and composite token structures may all be possible, but the core objective of CryptoStone is for each gemstone to have a unique attribute combination and tokenId.
+CryptoStone dapat mempertimbangkan berbagai opsi teknis untuk mengekspresikan keunikan setiap batu. Struktur fungible token, semi-fungible token, dan composite token semuanya mungkin, tetapi tujuan inti CryptoStone adalah agar setiap batu memiliki kombinasi atribut dan tokenId yang unik.
 
-Therefore, gemstones in CryptoStone are represented as Gem NFTs with unique tokenIds and attribute combinations. This choice is not intended to emphasize a specific technical standard, but is the result of implementing the following functions.
+Karena itu, batu permata dalam CryptoStone direpresentasikan sebagai Gem NFT dengan tokenId dan kombinasi atribut unik. Pilihan ini tidak dimaksudkan untuk menekankan standar teknis tertentu, tetapi merupakan hasil dari penerapan fungsi berikut.
 
-| Implementation Requirement                              | Reason for Adopting NFT Structure                                           |
-| ------------------------------------------------------- | --------------------------------------------------------------------------- |
-| Need for a unique tokenId for each gemstone             | NFT structure is suitable for representing assets based on unique tokenIds. |
-| Storage of different attributes for each gemstone       | tokenId-specific metadata and on-chain attribute structures are possible.   |
-| Need for ownership transfer records                     | Standard NFT transfer and ownership recording are possible.                 |
-| Representation of multiple stones within one collection | 12 stones can be distinguished through the stoneType attribute.             |
-| Tracking of rarity and transaction history              | Provenance and rarity tracking for each NFT are possible.                   |
+| Kebutuhan Implementasi | Alasan Mengadopsi Struktur NFT |
+| ---------------------- | ------------------------------ |
+| Membutuhkan tokenId unik untuk setiap batu | Struktur NFT cocok untuk merepresentasikan aset berbasis tokenId unik. |
+| Penyimpanan atribut berbeda untuk setiap batu | Metadata spesifik tokenId dan struktur atribut on-chain memungkinkan hal ini. |
+| Membutuhkan catatan transfer kepemilikan | Transfer NFT standar dan pencatatan kepemilikan dimungkinkan. |
+| Representasi banyak stone dalam satu collection | 12 stone dapat dibedakan melalui atribut `stoneType`. |
+| Pelacakan rarity dan riwayat transaksi | Provenance dan rarity tiap NFT dapat dilacak. |
 
-In other words, the Gem NFT structure in CryptoStone is not a means of creating image NFTs. It is a technical container for expressing the uniqueness and attribute-based asset nature of digital gemstones.
+Dengan kata lain, struktur Gem NFT dalam CryptoStone bukan sarana untuk membuat image NFT. Struktur ini adalah wadah teknis untuk mengekspresikan keunikan dan sifat aset berbasis atribut dari batu permata digital.

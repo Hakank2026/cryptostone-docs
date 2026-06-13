@@ -1,18 +1,18 @@
-# 04\_protocol\_trust\_principles
+# 04 Nguyên tắc tin cậy của giao thức
 
-CryptoStone aims for a structure that does not rely on trust in a specific founder or operator. The trust of this protocol is based not on the identity of the founder, but on publicly disclosed code, fixed supply, immutable probability tables, a No Admin Mint structure, verifiable randomness, and on-chain data that anyone can inspect.
+CryptoStone hướng tới một cấu trúc không phụ thuộc vào niềm tin đối với một nhà sáng lập hay nhà vận hành cụ thể. Niềm tin của giao thức không dựa trên danh tính của nhà sáng lập, mà dựa trên mã nguồn công khai, nguồn cung cố định, bảng xác suất bất biến, cấu trúc No Admin Mint, randomness có thể kiểm chứng và dữ liệu on-chain mà bất kỳ ai cũng có thể kiểm tra.
 
-The operator must not be able to arbitrarily allocate rare NFTs to specific users, change the supply of each stone, or manipulate mining probabilities. The purpose of CryptoStone is to create a structure in which the scarcity of digital gemstones is formed by protocol rules rather than human authority.
+Nhà vận hành không được có khả năng tùy ý phân bổ NFT hiếm cho người dùng cụ thể, thay đổi nguồn cung của từng stone hoặc thao túng xác suất khai thác. Mục tiêu của CryptoStone là tạo ra một cấu trúc trong đó sự khan hiếm của đá quý kỹ thuật số được hình thành bởi quy tắc giao thức, không phải bởi quyền lực con người.
 
-| Trust Principle         | Description                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------- |
-| Fixed Supply            | The total STONE supply and maximum NFT supply by stone are fixed in advance.                      |
-| 100% Public Circulation | STONE follows a 100% public circulation structure.                                                |
-| No Admin Mint           | The operator must not be able to issue Gem NFTs arbitrarily.                                      |
-| Immutable Probability   | Gemstone attribute probability tables must be disclosed and cannot be changed after finalization. |
-| Verifiable Randomness   | Gemstone attributes must be determined by a verifiable randomness structure.                      |
-| On-chain Attributes     | Core attributes of Gem NFTs must be recorded as on-chain data.                                    |
-| Transparent Pools       | Mining volume, remaining quantity, and difficulty of each stone pool must be publicly verifiable. |
-| Open Verification       | Anyone must be able to verify the contracts and mining rules.                                     |
+| Nguyên tắc tin cậy | Mô tả |
+| ------------------ | ----- |
+| Fixed Supply | Tổng nguồn cung STONX và nguồn cung NFT tối đa theo từng stone được cố định trước. |
+| Open Market Allocation | STONX tuân theo cấu trúc phân bổ hướng ra thị trường. |
+| No Admin Mint | Nhà vận hành không được có khả năng phát hành Gem NFT tùy ý. |
+| Immutable Probability | Bảng xác suất thuộc tính đá quý phải được công bố và không thể thay đổi sau khi finalized. |
+| Verifiable Randomness | Thuộc tính đá quý phải được xác định bởi cấu trúc randomness có thể kiểm chứng. |
+| On-chain Attributes | Thuộc tính cốt lõi của Gem NFT phải được ghi dưới dạng dữ liệu on-chain. |
+| Transparent Pools | Khối lượng khai thác, lượng còn lại và độ khó của từng stone pool phải có thể kiểm chứng công khai. |
+| Open Verification | Bất kỳ ai cũng có thể kiểm chứng contract và quy tắc khai thác. |
 
-This structure shows that CryptoStone is a decentralized digital gemstone protocol operated by publicly disclosed rules and verifiable code, not by the discretion of a specific operator.
+Cấu trúc này cho thấy CryptoStone là một giao thức đá quý kỹ thuật số phi tập trung vận hành bằng quy tắc công khai và mã nguồn có thể kiểm chứng, không phải bằng quyết định tùy ý của một nhà vận hành cụ thể.

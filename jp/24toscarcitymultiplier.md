@@ -1,4 +1,4 @@
-# 24\_半減期とScarcity\_Multiplier
+﻿# 24\_半減期とScarcity\_Multiplier
 
 CryptoStone の半減期は、全体コレクション基準ではなく、各ストーン別に独立して適用される。
 

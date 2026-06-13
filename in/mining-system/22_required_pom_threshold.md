@@ -1,46 +1,49 @@
-# 22\_required\_pom\_threshold
+# 22 Ambang PoM yang Diperlukan
 
-The PoM threshold required to mine one gemstone is determined by the Base Mining Unit, the base mining interval of each stone, pool difficulty, and scarcity multiplier.
+Ambang PoM yang diperlukan untuk menambang satu batu permata ditentukan oleh Protocol Reference Power, Base Mining Interval tiap stone, Pool Difficulty, dan Scarcity Multiplier.
 
-If the base mining interval of stone (j) is (T\_j), the Base Mining Unit is (B), pool difficulty is (D\_j), and scarcity multiplier is (S\_j), then the required PoM threshold (R\_j) is defined as follows:
+Jika Base Mining Interval stone (j) adalah (T\_j), Protocol Reference Power adalah (M\_{ref}), Pool Difficulty adalah (D\_j), dan Scarcity Multiplier adalah (S\_j), maka ambang PoM yang diperlukan (R\_j) didefinisikan sebagai berikut:
 
 $$
-R_j = B \times T_j \times D_j \times S_j
+R_j = M_{ref} \times T_j \times D_j \times S_j
 $$
 
-The reference values of CryptoStone are as follows:
+Nilai referensi CryptoStone adalah sebagai berikut:
 
-* (B = 100{,}000) STONE
+* Base Mining Unit = 1,000 STONX
+* Protocol Reference Power = 100,000 Power
 * Target Pool Power = 40,000,000 Power
 
-For example, if the base mining interval of the Diamond Pool is 220,000 seconds and both Pool Difficulty and Scarcity Multiplier are 1x, the calculation is as follows:
+Base Mining Unit adalah unit partisipasi minimum, sedangkan Protocol Reference Power adalah power referensi yang digunakan untuk mengalibrasi kecepatan mining. Dengan memisahkan kedua nilai ini, CryptoStone dapat mempertahankan unit partisipasi yang mudah diakses sekaligus kontrol supply jangka panjang.
+
+Misalnya, jika Base Mining Interval Garnet Pool adalah 170,000 detik dan Pool Difficulty serta Scarcity Multiplier keduanya 1x, perhitungannya adalah sebagai berikut:
 
 $$
-R_{\text{Diamond}} = 100{,}000 \times 220{,}000 \times 1 \times 1
+R_{\text{Garnet}} = 100{,}000 \times 170{,}000 \times 1 \times 1
 $$
 
 $$
-R_{\text{Diamond}} = 22{,}000{,}000{,}000 \text{ PoM}
+R_{\text{Garnet}} = 17{,}000{,}000{,}000 \text{ PoM}
 $$
 
-When the Mining Power of user (i) is (P\_{i,j}), the estimated time required for that user to claim one NFT of stone (j) can be expressed as follows:
+Ketika Mining Power pengguna (i) adalah (P\_{i,j}), estimasi waktu yang diperlukan pengguna untuk claim satu NFT dari stone (j) dapat dinyatakan sebagai berikut:
 
 $$
 E[T_{i,j}] = R_j \div P_{i,j}
 $$
 
-For example, when a user stakes 100,000 STONE into the Diamond Pool under Flexible conditions:
+Misalnya, ketika pengguna stake 6,000 STONX ke Garnet Pool dengan kondisi Flexible:
 
 $$
-E[T_{i,\text{Diamond}}] = 22{,}000{,}000{,}000 \div 100{,}000
-$$
-
-$$
-= 220{,}000 \text{ seconds}
+E[T_{i,\text{Garnet}}] = 17{,}000{,}000{,}000 \div 6{,}000
 $$
 
 $$
-\approx 2.55 \text{ days}
+= 2{,}833{,}333 \text{ detik}
 $$
 
-In other words, under initial conditions, a user staking 100,000 STONE can claim approximately one Diamond NFT every 2.55 days.
+$$
+\approx 32.8 \text{ hari}
+$$
+
+Dengan kata lain, dalam kondisi awal, pengguna yang stake 6,000 STONX dapat claim sekitar satu Garnet NFT dalam kurang lebih satu bulan. Pengguna dengan stake lebih kecil mengakumulasi PoM lebih lambat, sedangkan pengguna dengan stake lebih besar dapat mencapai kondisi claim lebih cepat.

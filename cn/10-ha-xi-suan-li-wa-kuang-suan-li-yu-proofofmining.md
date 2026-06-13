@@ -1,4 +1,4 @@
-# 10\_哈希算力\_挖矿算力与\_Proof\_of\_Mining
+﻿# 10\_哈希算力\_挖矿算力与\_Proof\_of\_Mining
 
 在比特币中，矿工通过哈希算力获得生成区块的概率。哈希算力越高，发现区块的可能性越高，但哈希算力无法任意改变比特币整体的发行规则或难度结构。也就是说，哈希算力并不是改变网络规则的权限，而是在既定规则中获得更多挖矿机会的计算资源。
 
@@ -8,16 +8,16 @@ CryptoStone 将这一概念抽象为适用于数字宝石挖矿的结构。在 C
 | --------------------------- | ------------------------ |
 | Hash Power                  | Mining Power             |
 | Proof of Work               | Proof of Mining，PoM      |
-| ASIC / Mining Equipment     | Staked STONE             |
+| ASIC / Mining Equipment     | Staked STONX             |
 | Block Reward                | Gem NFT                  |
 | Network Difficulty          | Pool Difficulty          |
 | Halving Scarcity Multiplier |                          |
 | BTC Issuance                | Gem NFT Minting          |
-| Miner                       | STONE Staker / Gem Miner |
+| Miner                       | STONX Staker / Gem Miner |
 
 PoM 并不是可以单独转移或交易的代币。PoM 是合约根据用户的挖矿参与和时间流逝所记录的链上工作量指标。同时，PoM 也不是网络共识算法。CryptoStone 中的 PoM 是协议内部数值，用于判断用户是否已在特定宝石池中达到 claim Gem NFT 的条件。
 
-当用户 i 在特定宝石池 j 中质押的 STONE 数量为 s<sub>i,j</sub>，锁仓期限对应的倍率为 L<sub>i</sub> 时，用户的挖矿算力 P<sub>i,j</sub> 定义如下：
+当用户 i 在特定宝石池 j 中质押的 STONX 数量为 s<sub>i,j</sub>，锁仓期限对应的倍率为 L<sub>i</sub> 时，用户的挖矿算力 P<sub>i,j</sub> 定义如下：
 
 $$
 P_{i,j} = s_{i,j} \times L_i

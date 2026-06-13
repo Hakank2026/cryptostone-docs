@@ -1,26 +1,26 @@
-# 33\_formation\_of\_collectible\_value
+# 33 Hình thành giá trị sưu tầm
 
-Scarcity is an important factor in value formation in collectible markets. Pokémon cards, sports cards, limited-edition figures, artworks, and luxury watches are not priced solely by utility value. Price is formed through a combination of specific series, limited quantities, rare grades, preservation condition, market demand, and community perception.
+Sự khan hiếm là yếu tố quan trọng trong việc hình thành giá trị trên thị trường sưu tầm. Thẻ Pokémon, thẻ thể thao, figure giới hạn, tác phẩm nghệ thuật và đồng hồ xa xỉ không chỉ được định giá bằng giá trị sử dụng. Giá được hình thành từ sự kết hợp giữa series cụ thể, số lượng giới hạn, cấp độ hiếm, tình trạng bảo quản, nhu cầu thị trường và nhận thức cộng đồng.
 
-CryptoStone applies these principles of the collectibles economy to digital gemstones.
+CryptoStone áp dụng các nguyên tắc của kinh tế collectible này vào đá quý kỹ thuật số.
 
-| Element                      | Description                                                    |
-| ---------------------------- | -------------------------------------------------------------- |
-| Total supply by stone        | Supply differences between Diamond, Ruby, Sapphire, and others |
-| Pool difficulty              | Target Power and Difficulty of each pool                       |
-| Halving by stone             | Scarcity Multiplier increase as mined quantity grows           |
-| Weight probability           | Larger carats have lower probability                           |
-| Color probability            | Higher color grades have lower probability                     |
-| Clarity probability          | Higher clarity grades have lower probability                   |
-| Cut probability              | Higher cut grades have lower probability                       |
-| Low tokenId                  | Collectibility of early-mined gemstones                        |
-| Mining time                  | Significance of specific periods and halving stages            |
-| On-chain transaction history | Ownership and provenance records                               |
+| Yếu tố | Mô tả |
+| ------ | ----- |
+| Tổng nguồn cung theo stone | Khác biệt nguồn cung giữa Diamond, Ruby, Sapphire và các loại khác |
+| Pool difficulty | Target Power và Difficulty của từng pool |
+| Halving theo stone | Scarcity Multiplier tăng khi số lượng đã khai thác tăng |
+| Xác suất Weight | Carat lớn hơn có xác suất thấp hơn |
+| Xác suất Color | Cấp màu cao hơn có xác suất thấp hơn |
+| Xác suất Clarity | Cấp tinh khiết cao hơn có xác suất thấp hơn |
+| Xác suất Cut | Cấp giác cắt cao hơn có xác suất thấp hơn |
+| Low tokenId | Giá trị sưu tầm của đá được khai thác sớm |
+| Thời điểm mining | Ý nghĩa của các giai đoạn và kỳ halving cụ thể |
+| Lịch sử giao dịch on-chain | Hồ sơ sở hữu và provenance |
 
-| Element            | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| Refinement history | Refinement generation and supply compression records |
+| Yếu tố | Mô tả |
+| ------ | ----- |
+| Lịch sử refinement | Hồ sơ thế hệ refinement và nén nguồn cung |
 
-This structure allows users to collect unique digital gemstones mined within a publicly disclosed probability structure, rather than simply purchasing NFT images.
+Cấu trúc này cho phép người dùng sưu tầm đá quý kỹ thuật số độc nhất được khai thác trong một cấu trúc xác suất công khai, thay vì chỉ mua hình ảnh NFT.
 
-In CryptoStone, rarity is not a marketing phrase. Rarity is formed by supply quantities, probability tables, mining difficulty, and halving structures fixed in contracts.
+Trong CryptoStone, rarity không phải khẩu hiệu marketing. Rarity được hình thành bởi số lượng nguồn cung, bảng xác suất, độ khó mining và cấu trúc halving được cố định trong contract.

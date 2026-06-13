@@ -1,70 +1,136 @@
-# 31\_rarity\_score\_and\_probability\_rarity\_index
+# 31 Rarity Score dan Probability Rarity Index
 
-CryptoStone uses two indicators to quantify the rarity of each gemstone.
+CryptoStone menggunakan dua indikator untuk mengukur kelangkaan setiap batu.
 
-| Indicator                | Purpose                                                                |
-| ------------------------ | ---------------------------------------------------------------------- |
-| Rarity Score             | A user-friendly 0\~100 score that users can intuitively understand     |
-| Probability Rarity Index | A mathematical rarity indicator based on actual occurrence probability |
+| Indikator | Tujuan |
+| --------- | ------ |
+| Rarity Score | Skor 0~100 yang mudah dipahami pengguna |
+| Probability Rarity Index | Indikator kelangkaan matematis berdasarkan probabilitas kemunculan aktual |
 
 ## 31.1 Rarity Score
 
-**Rarity Score** is calculated as:
-
 $$
-\text{Rarity Score} = \text{Stone Scarcity Score} + \text{Weight Score} + \text{Color Score} + \text{Clarity Score} + \text{Cut Score}
-$$
-
-The score allocation is as follows.
-
-| Attribute      | Max Score |
-| -------------- | --------- |
-| Stone Scarcity | 20        |
-| Weight         | 25        |
-| Color          | 15        |
-| Clarity        | 20        |
-| Cut            | 20        |
-| Total          | 100       |
-
-Stone Scarcity Score is calculated based on the total supply of each stone.
-
-$$
-\text{Stone Scarcity Score} = 20 \times \frac{\text{MaxCollectionSupply} - \text{StoneMaxSupply}}{\text{MaxCollectionSupply} - \text{MinCollectionSupply}}
+\text{Rarity Score}
+=
+\text{Pool Supply Score}
++
+\text{Weight Score}
++
+\text{Color Score}
++
+\text{Clarity Score}
++
+\text{Cut Score}
 $$
 
-The reference values are as follows.
+Alokasi skor adalah sebagai berikut.
+
+| Atribut | Max Score |
+| ------- | --------: |
+| Pool Supply Score | 20 |
+| Weight | 20 |
+| Color | 20 |
+| Clarity | 20 |
+| Cut | 20 |
+| Total | 100 |
+
+Pool Supply Score dihitung berdasarkan Max Supply tiap stone. Item ini bukan bonus yang otomatis membuat satu stone lebih bernilai dari stone lain. Sebaliknya, pool dengan Max Supply lebih rendah menerima skor dasar lebih rendah, sehingga lebih sulit mencapai final tier tinggi dalam pool tersebut.
+
+$$
+\text{Pool Supply Score}
+=
+15 + 5 \times
+\frac{\text{StoneMaxSupply} - \text{MinCollectionSupply}}
+{\text{MaxCollectionSupply} - \text{MinCollectionSupply}}
+$$
+
+Nilai referensi:
 
 * MaxCollectionSupply = 220,000
 * MinCollectionSupply = 110,000
 
-For example, Diamond has a Max Supply of 110,000, so it has the highest Stone Scarcity Score. Zircon has a Max Supply of 220,000, so it has the lowest Stone Scarcity Score.
+Pool Supply Score digunakan sebagai nilai tetap antara 15 dan 20.
+
+| Stone | Max Supply | Pool Supply Score |
+| ----- | ---------: | ----------------: |
+| Diamond | 110,000 | 15.0 |
+| Emerald | 120,000 | 15.5 |
+| Ruby | 130,000 | 15.9 |
+| Sapphire | 140,000 | 16.4 |
+| Pearl | 150,000 | 16.8 |
+| Garnet | 160,000 | 17.3 |
+| Amethyst | 170,000 | 17.7 |
+| Aquamarine | 180,000 | 18.2 |
+| Spinel | 190,000 | 18.6 |
+| Opal | 200,000 | 19.1 |
+| Topaz | 210,000 | 19.5 |
+| Zircon | 220,000 | 20.0 |
+
+Misalnya, Diamond memiliki Max Supply 110,000 sehingga menerima Pool Supply Score terendah. Zircon memiliki Max Supply 220,000 sehingga menerima Pool Supply Score tertinggi. Akibatnya, memperoleh Epic, Legendary, atau Genesis di Diamond Pool lebih sulit. Namun, Diamond Gem NFT grade tinggi tersebut memenuhi dua kondisi sekaligus, yaitu supply rendah dan grade tinggi, sehingga dapat membentuk nilai koleksi yang lebih kuat di pasar.
+
+Struktur ini tidak dimaksudkan untuk memberi peringkat pool dengan skor sederhana. Struktur ini mencerminkan perbedaan supply antarpool dalam difficulty final tier. Pool dengan supply rendah membuat hasil tier tinggi lebih sulit, sedangkan pool dengan supply tinggi membuatnya relatif lebih mudah.
 
 ## 31.2 Probability Rarity Index
 
-While Rarity Score is a user-friendly comparison indicator, Probability Rarity Index is a mathematical rarity indicator based on the occurrence probability of each attribute.
+Sementara Rarity Score adalah indikator perbandingan yang ramah pengguna, Probability Rarity Index adalah indikator kelangkaan matematis berdasarkan probabilitas kemunculan setiap atribut.
 
-The probability (P(g)) that the attribute combination of Gem NFT ((g)) occurs is defined as follows:
+Probabilitas (P(g)) bahwa kombinasi atribut Gem NFT (`g`) muncul didefinisikan sebagai berikut:
 
 $$
 P(g) = P_{\text{stone}} \times P_{\text{weight}} \times P_{\text{color}} \times P_{\text{clarity}} \times P_{\text{cut}}
 $$
 
-Based on this, the probability-based rarity indicator is calculated.
+Berdasarkan ini, indikator rarity berbasis probabilitas dihitung.
 
 $$
 \text{Probability Rarity Index} = -\log_{10}(P(g))
 $$
 
-This indicator shows how statistically rare a specific Gem NFT’s combination is.
+Indikator ini menunjukkan seberapa langka kombinasi atribut Gem NFT tertentu secara statistik.
 
-For example, the following combination is extremely rare.
+Misalnya, kombinasi berikut sangat langka.
 
 * Diamond
-* 100.00 CT or higher
+* 100.00 CT atau lebih
 * D Color
 * FL Clarity
 * 6 Star Cut
 
-Such a combination receives a high Rarity Score and also has a very high Probability Rarity Index.
+Kombinasi seperti ini menerima Rarity Score tinggi dan juga memiliki Probability Rarity Index yang sangat tinggi.
 
-By using these two indicators together, CryptoStone provides both an intuitive score system that collectors can easily understand and a data-based rarity system that can be verified mathematically.
+Rarity Score digunakan sebagai dasar final tier yang ramah pengguna. Rentang tier dasar adalah:
+
+| Final Tier | Rarity Score Range | Peran |
+| ---------- | ------------------ | ----- |
+| Common | 0 ~ 34 | Kelompok batu paling umum, collectible dasar dan material refinement |
+| Rare | 35 ~ 50 | Collectible tingkat menengah yang lebih langka dari hasil mining biasa |
+| Epic | 51 ~ 74 | Rentang high-tier yang dapat dirasakan pengguna sebagai keberhasilan berarti |
+| Legendary | 75 ~ 89 | Rentang collectible sangat langka dan bernilai tinggi |
+| Genesis | 90 ~ 100 | Rentang tertinggi yang mencerminkan kombinasi atribut ekstrem dan skor tertinggi |
+
+Ketika Pool Supply Score 15~20 dan tabel skor Weight, Color, Clarity, dan Cut diterapkan bersama, rentang ini menargetkan ekspektasi rata-rata sekitar satu hasil Epic atau lebih tinggi per 36 NFT yang ditambang. Hasil aktual bervariasi tergantung kombinasi atribut acak dan penyesuaian supply berdasarkan pool.
+
+Target tersebut dapat dinyatakan dengan model ekspektasi berikut. Ketika `n` NFT ditambang dari pool tertentu `s`, jumlah ekspektasi hasil Epic atau lebih tinggi dihitung dengan menjumlahkan semua probabilitas atribut bersama Pool Supply Score pool tersebut.
+
+$$
+E_{\ge Epic}(n)
+=
+n \cdot
+\sum_{s \in S}
+\pi_s
+\sum_{w \in W}
+\sum_{c \in C}
+\sum_{q \in Q}
+\sum_{u \in U}
+\mathbf{1}
+\left[
+Score_s + Score_w + Score_c + Score_q + Score_u \ge 51
+\right]
+P_s(w)P_s(c)P_s(q)P_s(u)
+\approx
+\frac{n}{36}
+$$
+
+Di sini, `S` adalah himpunan stone pool, `π_s` adalah porsi partisipasi setiap pool, dan `W/C/Q/U` adalah himpunan atribut Weight, Color, Clarity, dan Cut. Formula ini tidak dimaksudkan untuk menjamin harga pasar. Formula ini adalah referensi desain protokol agar distribusi rarity tidak menjadi terlalu umum atau terlalu tertutup.
+
+Dengan menggunakan Rarity Score dan Probability Rarity Index bersama-sama, CryptoStone menyediakan sistem skor intuitif bagi collector sekaligus sistem rarity berbasis data yang dapat diverifikasi secara matematis.

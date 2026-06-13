@@ -1,18 +1,18 @@
-# 04\_protocol\_trust\_principles
+# 04 Prinsip Kepercayaan Protokol
 
-CryptoStone aims for a structure that does not rely on trust in a specific founder or operator. The trust of this protocol is based not on the identity of the founder, but on publicly disclosed code, fixed supply, immutable probability tables, a No Admin Mint structure, verifiable randomness, and on-chain data that anyone can inspect.
+CryptoStone bertujuan membangun struktur yang tidak bergantung pada kepercayaan terhadap pendiri atau operator tertentu. Kepercayaan protokol ini tidak didasarkan pada identitas pendiri, tetapi pada kode yang terbuka, supply tetap, tabel probabilitas yang tidak dapat diubah, struktur No Admin Mint, randomness yang dapat diverifikasi, dan data on-chain yang dapat diperiksa siapa pun.
 
-The operator must not be able to arbitrarily allocate rare NFTs to specific users, change the supply of each stone, or manipulate mining probabilities. The purpose of CryptoStone is to create a structure in which the scarcity of digital gemstones is formed by protocol rules rather than human authority.
+Operator tidak boleh dapat secara sewenang-wenang mengalokasikan NFT langka kepada pengguna tertentu, mengubah supply tiap stone, atau memanipulasi probabilitas mining. Tujuan CryptoStone adalah menciptakan struktur di mana kelangkaan batu permata digital dibentuk oleh aturan protokol, bukan oleh otoritas manusia.
 
-| Trust Principle         | Description                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------- |
-| Fixed Supply            | The total STONE supply and maximum NFT supply by stone are fixed in advance.                      |
-| 100% Public Circulation | STONE follows a 100% public circulation structure.                                                |
-| No Admin Mint           | The operator must not be able to issue Gem NFTs arbitrarily.                                      |
-| Immutable Probability   | Gemstone attribute probability tables must be disclosed and cannot be changed after finalization. |
-| Verifiable Randomness   | Gemstone attributes must be determined by a verifiable randomness structure.                      |
-| On-chain Attributes     | Core attributes of Gem NFTs must be recorded as on-chain data.                                    |
-| Transparent Pools       | Mining volume, remaining quantity, and difficulty of each stone pool must be publicly verifiable. |
-| Open Verification       | Anyone must be able to verify the contracts and mining rules.                                     |
+| Prinsip Kepercayaan | Deskripsi |
+| ------------------- | --------- |
+| Fixed Supply | Total supply STONX dan supply NFT maksimum berdasarkan stone ditetapkan sejak awal. |
+| Open Market Allocation | STONX mengikuti struktur alokasi yang menghadap pasar. |
+| No Admin Mint | Operator tidak boleh dapat menerbitkan Gem NFT secara sewenang-wenang. |
+| Immutable Probability | Tabel probabilitas atribut batu permata harus dipublikasikan dan tidak dapat diubah setelah finalization. |
+| Verifiable Randomness | Atribut batu permata harus ditentukan oleh struktur randomness yang dapat diverifikasi. |
+| On-chain Attributes | Atribut inti Gem NFT harus dicatat sebagai data on-chain. |
+| Transparent Pools | Volume mining, jumlah tersisa, dan difficulty tiap stone pool harus dapat diverifikasi publik. |
+| Open Verification | Siapa pun harus dapat memverifikasi contract dan aturan mining. |
 
-This structure shows that CryptoStone is a decentralized digital gemstone protocol operated by publicly disclosed rules and verifiable code, not by the discretion of a specific operator.
+Struktur ini menunjukkan bahwa CryptoStone adalah protokol batu permata digital terdesentralisasi yang dijalankan oleh aturan publik dan kode yang dapat diverifikasi, bukan oleh diskresi operator tertentu.

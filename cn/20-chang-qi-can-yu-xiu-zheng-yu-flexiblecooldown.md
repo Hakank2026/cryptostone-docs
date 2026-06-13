@@ -1,8 +1,8 @@
-# 20\_长期参与修正与\_Flexible\_Cooldown
+﻿# 20\_长期参与修正与\_Flexible\_Cooldown
 
 为了奖励长期参与者，可以根据质押期限适用 Lock Multiplier。
 
-| Lock Type   | Lock Period | Mining Multiplier | Maturity Burn | Returned STONE | Cooldown |
+| Lock Type   | Lock Period | Mining Multiplier | Maturity Burn | Returned STONX | Cooldown |
 | ----------- | ----------- | ----------------- | ------------- | -------------- | -------- |
 | Flexible    | 无           | 1.00x             | 0%            | 100%           | 7 days   |
 | Short Lock  | 90 天        | 1.05x             | 2.5%          | 97.5%          | 无        |
@@ -24,4 +24,4 @@ Flexible Lock 没有折旧销毁，但为了防止短期流动性过快进出，
 
 锁仓倍率最高限制为 1.25 倍。这是为了在合理奖励长期参与者的同时，防止特定大型参与者获得过度优势。
 
-在锁仓期间，只要用户的 PoM 值达到所需阈值，也可以 claim Gem NFT。也就是说，锁仓限制的是 STONE 可返还的时间，而不是禁止 Gem NFT 的 claim。
+在锁仓期间，只要用户的 PoM 值达到所需阈值，也可以 claim Gem NFT。也就是说，锁仓限制的是 STONX 可返还的时间，而不是禁止 Gem NFT 的 claim。

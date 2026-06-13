@@ -1,26 +1,26 @@
-# 33\_formation\_of\_collectible\_value
+# 33 Pembentukan nilai koleksi
 
-Scarcity is an important factor in value formation in collectible markets. Pokémon cards, sports cards, limited-edition figures, artworks, and luxury watches are not priced solely by utility value. Price is formed through a combination of specific series, limited quantities, rare grades, preservation condition, market demand, and community perception.
+Kelangkaan adalah faktor penting dalam pembentukan nilai di pasar koleksi. Kartu Pokémon, kartu olahraga, figur edisi terbatas, karya seni, dan jam tangan mewah tidak dihargai hanya berdasarkan nilai utilitas. Harga terbentuk melalui kombinasi seri tertentu, jumlah terbatas, grade langka, kondisi penyimpanan, permintaan pasar, dan persepsi komunitas.
 
-CryptoStone applies these principles of the collectibles economy to digital gemstones.
+CryptoStone menerapkan prinsip ekonomi collectibles ini pada batu permata digital.
 
-| Element                      | Description                                                    |
-| ---------------------------- | -------------------------------------------------------------- |
-| Total supply by stone        | Supply differences between Diamond, Ruby, Sapphire, and others |
-| Pool difficulty              | Target Power and Difficulty of each pool                       |
-| Halving by stone             | Scarcity Multiplier increase as mined quantity grows           |
-| Weight probability           | Larger carats have lower probability                           |
-| Color probability            | Higher color grades have lower probability                     |
-| Clarity probability          | Higher clarity grades have lower probability                   |
-| Cut probability              | Higher cut grades have lower probability                       |
-| Low tokenId                  | Collectibility of early-mined gemstones                        |
-| Mining time                  | Significance of specific periods and halving stages            |
-| On-chain transaction history | Ownership and provenance records                               |
+| Elemen | Deskripsi |
+| ------ | --------- |
+| Total supply berdasarkan stone | Perbedaan supply antara Diamond, Ruby, Sapphire, dan lainnya |
+| Pool difficulty | Target Power dan Difficulty tiap pool |
+| Halving berdasarkan stone | Kenaikan Scarcity Multiplier saat jumlah yang ditambang bertambah |
+| Probabilitas Weight | Carat lebih besar memiliki probabilitas lebih rendah |
+| Probabilitas Color | Grade warna lebih tinggi memiliki probabilitas lebih rendah |
+| Probabilitas Clarity | Grade clarity lebih tinggi memiliki probabilitas lebih rendah |
+| Probabilitas Cut | Grade cut lebih tinggi memiliki probabilitas lebih rendah |
+| Low tokenId | Collectibility dari batu yang ditambang lebih awal |
+| Mining time | Makna periode tertentu dan tahap halving |
+| Riwayat transaksi on-chain | Catatan kepemilikan dan provenance |
 
-| Element            | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| Refinement history | Refinement generation and supply compression records |
+| Elemen | Deskripsi |
+| ------ | --------- |
+| Riwayat refinement | Catatan generasi refinement dan supply compression |
 
-This structure allows users to collect unique digital gemstones mined within a publicly disclosed probability structure, rather than simply purchasing NFT images.
+Struktur ini memungkinkan pengguna mengoleksi batu permata digital unik yang ditambang dalam struktur probabilitas publik, bukan sekadar membeli gambar NFT.
 
-In CryptoStone, rarity is not a marketing phrase. Rarity is formed by supply quantities, probability tables, mining difficulty, and halving structures fixed in contracts.
+Dalam CryptoStone, rarity bukan slogan marketing. Rarity dibentuk oleh jumlah supply, tabel probabilitas, difficulty mining, dan struktur halving yang dikunci dalam contract.

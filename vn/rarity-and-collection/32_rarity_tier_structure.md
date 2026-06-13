@@ -1,17 +1,15 @@
-# 32\_rarity\_tier\_structure
+# 32 Cấu trúc Rarity Tier
 
-A perfect top-level combination can only be generated with an extremely low probability. This is an advantage from a scarcity perspective, but in a collectibles market, various upper tiers should exist to make trading and collecting activity more active.
+CryptoStone diễn giải Rarity Score thành hệ thống tier cuối.
 
-Therefore, CryptoStone may apply the following rarity tiers based on Rarity Score and Probability Rarity Index.
+| Tier | Rarity Score Range | Diễn giải | Vị trí |
+| ---- | ------------------ | --------- | ------ |
+| Common | 0 ~ 34 | Chủ yếu là thuộc tính phổ biến | Nhóm đá phổ biến nhất; collectible cơ bản và vật liệu refinement |
+| Rare | 35 ~ 50 | Bao gồm một số thuộc tính cao hơn | Collectible cấp trung hiếm hơn kết quả mining thông thường |
+| Epic | 51 ~ 74 | Hai thuộc tính mạnh trở lên hoặc tổ hợp điểm cao | Đá quý cấp cao được cảm nhận là thành công có ý nghĩa |
+| Legendary | 75 ~ 89 | Ba thuộc tính mạnh trở lên hoặc điểm cực cao | Đá quý rất hiếm và vùng collectible giá trị cao |
+| Genesis | 90 ~ 100 | Tổ hợp thuộc tính cực hiếm và điểm tối đa | Tài sản sưu tầm cao nhất; phát hành bổ sung và tạo mới qua refinement cần được giới hạn mạnh |
 
-| Tier      | Example Criteria                               | Meaning                              |
-| --------- | ---------------------------------------------- | ------------------------------------ |
-| Common    | Mostly ordinary attributes                     | Most common gemstone group           |
-| Rare      | At least one high-level attribute              | Generally rare gemstone              |
-| Epic      | At least two high-level attributes             | Gemstone with high collectible value |
-| Legendary | At least three high-level attributes           | Very rare gemstone                   |
-| Genesis   | Extreme combination or early mining uniqueness | Top-tier collectible asset           |
+Genesis Tier không được quyết định bởi một thuộc tính đơn lẻ. Nó nên được hiểu là tier cao nhất chỉ có thể đạt được khi các tổ hợp Weight, Color, Clarity và Cut có xác suất rất thấp tương tác với điều chỉnh nguồn cung theo từng pool.
 
-Genesis Tier may not be determined solely by score. Early mining time, low tokenId, extreme probability combinations, and scarcity of specific stones may be considered together.
-
-This structure is similar to how rare grades create collectible value in markets such as Pokémon cards, sports cards, limited-edition collectibles, and figures. However, in CryptoStone, rarity is calculated not by the subjective judgment of the operator, but by publicly disclosed probability tables and on-chain attribute values.
+Rarity được thống nhất thành năm tier cuối: Common, Rare, Epic, Legendary và Genesis. Mọi từ ngữ có tính rarity trong phần giải thích thuộc tính riêng lẻ cuối cùng đều nên được hiểu trong hệ thống Gem NFT năm tier này. Các final tier riêng như Mythic, Ancient hoặc Uncommon không được sử dụng.

@@ -1,30 +1,30 @@
-# 38\_protocol\_finalization\_principles
+# 38 Prinsip finalisasi protokol
 
-For CryptoStone to aim for decentralized asset characteristics similar to Bitcoin, its core rules must not be arbitrarily changed after deployment.
+Agar CryptoStone dapat mengarah pada karakteristik aset terdesentralisasi seperti Bitcoin, aturan intinya tidak boleh diubah secara sewenang-wenang setelah deployment.
 
-| Fixed Item                    | Description                                      |
-| ----------------------------- | ------------------------------------------------ |
-| Total STONE supply            | 1,200,000,000 STONE                              |
-| STONE circulation structure   | 100% public circulation                          |
-| Max Supply by stone           | Maximum NFT issuance quantity by each stone      |
-| Base Mining Interval by stone | Basic mining interval                            |
-| Target Pool Power             | Initial reference value of 40,000,000 Power      |
-| Base Mining Unit              | 100,000 STONE                                    |
-| Weight probability table      | Weight generation probability                    |
-| Color probability table       | Color grade generation probability               |
-| Clarity probability table     | Clarity grade generation probability             |
-| Cut probability table         | Cut grade generation probability                 |
-| Scarcity Multiplier           | Halving-based difficulty multiplier              |
-| Claim Burn formula            | Burn formula at claim                            |
-| Mining Power formula          | Staking-based Mining Power formula               |
-| PoM formula                   | Proof of Mining accumulation and claim condition |
-| Lock Multiplier               | Mining multiplier by lock-up period              |
-| Maturity Burn formula         | Depreciation burn formula at lock-up maturity    |
+| Fixed Item | Description |
+| ---------- | ----------- |
+| Total STONX supply | 1,200,000,000 STONX |
+| STONX circulation structure | Open Market Allocation |
+| Max Supply by stone | Jumlah penerbitan NFT maksimum tiap stone |
+| Base Mining Interval by stone | Interval mining dasar |
+| Target Pool Power | Nilai referensi awal 40,000,000 Power |
+| Base Mining Unit | 1,000 STONX |
+| Weight probability table | Probabilitas generasi Weight |
+| Color probability table | Probabilitas generasi Color grade |
+| Clarity probability table | Probabilitas generasi Clarity grade |
+| Cut probability table | Probabilitas generasi Cut grade |
+| Scarcity Multiplier | Difficulty multiplier berbasis halving |
+| Claim Burn formula | Formula burn saat claim |
+| Mining Power formula | Formula Mining Power berbasis staking |
+| PoM formula | Akumulasi Proof of Mining dan kondisi claim |
+| Lock Multiplier | Mining multiplier berdasarkan periode lock-up |
+| Maturity Burn formula | Formula depreciation burn saat lock-up maturity |
 
-Once initial settings are completed, the protocol should be finalized. After this, the operator must not be able to arbitrarily increase supply, change rarity probabilities, or manually issue NFTs to specific users.
+Setelah pengaturan awal selesai, protokol harus difinalisasi. Setelah itu, operator tidak boleh dapat menaikkan supply secara sewenang-wenang, mengubah probabilitas rarity, atau menerbitkan NFT secara manual kepada pengguna tertentu.
 
-The core contracts of CryptoStone should have source code publicly verified after deployment, and token supply, NFT supply, probability tables, mining formulas, and PoM threshold calculation structures must not be changeable after finalization.
+Core contract CryptoStone harus memiliki source code yang diverifikasi publik setelah deployment, dan supply token, supply NFT, tabel probabilitas, formula mining, serta struktur perhitungan ambang PoM tidak boleh dapat diubah setelah finalization.
 
-If limited administrative functions are necessary before finalization, the list, purpose, removal timing, and control method of those functions must be clearly disclosed. After finalization, administrative authority related to core issuance quantity, probability tables, issuance rights, and PoM calculation method should be removed or disabled.
+Jika fungsi administratif terbatas diperlukan sebelum finalization, daftar, tujuan, waktu penghapusan, dan metode kontrol fungsi tersebut harus dipublikasikan dengan jelas. Setelah finalization, authority administratif yang terkait dengan jumlah penerbitan inti, tabel probabilitas, hak penerbitan, dan metode perhitungan PoM harus dihapus atau dinonaktifkan.
 
-Decentralization is not completed simply because something is deployed on a blockchain. Decentralization is formed through rules that the operator cannot change, code that anyone can verify, and structures in which anyone can participate.
+Desentralisasi tidak selesai hanya karena sesuatu dideploy di blockchain. Desentralisasi terbentuk melalui aturan yang tidak dapat diubah operator, kode yang dapat diverifikasi siapa pun, dan struktur yang dapat diikuti siapa pun.

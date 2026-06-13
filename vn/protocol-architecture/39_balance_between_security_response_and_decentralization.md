@@ -1,28 +1,28 @@
-# 39\_balance\_between\_security\_response\_and\_decentralization
+# 39 Cân bằng giữa phản ứng bảo mật và phi tập trung
 
-CryptoStone takes No Admin Mint and No Central Server as core principles. However, during early development and deployment stages, a limited administrative structure may be necessary for security audits, testing, and vulnerability response.
+CryptoStone lấy No Admin Mint và No Central Server làm nguyên tắc cốt lõi. Tuy nhiên, trong giai đoạn phát triển và triển khai ban đầu, một cấu trúc quản trị giới hạn có thể cần thiết cho security audit, testing và phản ứng lỗ hổng.
 
-| Stage                      | Management Structure                                               |
-| -------------------------- | ------------------------------------------------------------------ |
-| Testnet and audit stage    | Limited administrative authority may exist                         |
-| Before official deployment | Parameter verification and security checks                         |
-| After official launch      | Removal of core issuance, supply, and probability change authority |
-| After finalization         | No Admin Mint, No Supply Change, No Probability Change             |
+| Giai đoạn | Cấu trúc quản lý |
+| --------- | ---------------- |
+| Testnet và audit stage | Có thể tồn tại quyền quản trị giới hạn |
+| Trước official deployment | Xác minh tham số và kiểm tra bảo mật |
+| Sau official launch | Gỡ bỏ quyền thay đổi phát hành, nguồn cung và xác suất cốt lõi |
+| Sau finalization | No Admin Mint, No Supply Change, No Probability Change |
 
-If an emergency pause function exists, it must only be used as a limited function to prevent security incidents, not as a function to manipulate issuance results or change supply. Emergency functions should also be restricted through publicly verifiable methods such as timelocks or multisignature structures, and must not become a means for the operator to arbitrarily change rarity or issuance quantity.
+Nếu có chức năng emergency pause, chức năng đó chỉ được dùng giới hạn để ngăn sự cố bảo mật, không được dùng để thao túng kết quả phát hành hoặc thay đổi nguồn cung. Chức năng khẩn cấp cũng nên bị ràng buộc bằng các phương thức có thể kiểm chứng công khai như timelock hoặc multisignature, và không được trở thành công cụ để nhà vận hành tùy ý thay đổi rarity hoặc số lượng phát hành.
 
-CryptoStone’s major contracts consist of the token contract, Gem NFT contract, Mining Pool Template, Pool Factory, and randomness generation structure. These contracts should preferably undergo security audits before and after deployment, and audit results and major vulnerability response records should be disclosed.
+Các contract chính của CryptoStone gồm token contract, Gem NFT contract, Mining Pool Template, Pool Factory và cấu trúc tạo randomness. Các contract này nên trải qua security audit trước và sau khi triển khai, đồng thời kết quả audit và hồ sơ phản ứng lỗ hổng lớn nên được công bố.
 
-The key verification elements to be disclosed are as follows.
+Các yếu tố kiểm chứng chính cần công bố như sau.
 
-| Verification Item            | Description                                                                       |
-| ---------------------------- | --------------------------------------------------------------------------------- |
-| Contract Source Verification | Disclosure and verification of deployed contract source code                      |
-| Audit Report                 | Audit report for major contracts and randomness structure                         |
-| Admin Function List          | Existence of administrative functions and removal plan                            |
-| Finalize Event               | Core parameter finalization time and event record                                 |
-| LP Lock / Burn Proof         | Initial liquidity-related LP handling records                                     |
-| Probability Table Hash       | Verification that probability tables match the values disclosed before deployment |
-| Metadata Freeze              | Whether core attributes are immutable after issuance                              |
+| Verification Item | Description |
+| ----------------- | ----------- |
+| Contract Source Verification | Công bố và xác minh source code contract đã triển khai |
+| Audit Report | Báo cáo audit cho contract chính và cấu trúc randomness |
+| Admin Function List | Sự tồn tại của chức năng quản trị và kế hoạch gỡ bỏ |
+| Finalize Event | Thời điểm finalization tham số cốt lõi và event record |
+| LP Lock / Burn Proof | Hồ sơ xử lý LP liên quan đến thanh khoản ban đầu |
+| Probability Table Hash | Xác minh bảng xác suất khớp với giá trị công bố trước triển khai |
+| Metadata Freeze | Thuộc tính cốt lõi có bất biến sau phát hành hay không |
 
-This structure is intended to balance practical security response and decentralized asset characteristics.
+Cấu trúc này nhằm cân bằng giữa phản ứng bảo mật thực tế và đặc tính tài sản phi tập trung.

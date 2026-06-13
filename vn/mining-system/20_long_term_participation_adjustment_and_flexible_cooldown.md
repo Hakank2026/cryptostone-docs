@@ -1,27 +1,27 @@
-# 20\_long\_term\_participation\_adjustment\_and\_flexible\_cooldown
+# 20 Điều chỉnh tham gia dài hạn và Flexible Cooldown
 
-A Lock Multiplier may be applied according to the staking period to reward long-term participants.
+Lock Multiplier có thể được áp dụng theo thời gian staking để thưởng cho người tham gia dài hạn.
 
-| Lock Type   | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONE | Cooldown |
-| ----------- | ----------- | ------------------------ | ------------- | -------------- | -------- |
-| Flexible    | None        | 1.00x                    | 0%            | 100%           | 7 days   |
-| Short Lock  | 90 days     | 1.05x                    | 2.5%          | 97.5%          | None     |
-| Medium Lock | 180 days    | 1.12x                    | 5%            | 95%            | None     |
-| Long Lock   | 365 days    | 1.25x                    | 10%           | 90%            | None     |
+| Lock Type | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONX | Cooldown |
+| --------- | ----------- | ------------------------ | ------------- | -------------- | -------- |
+| Flexible | None | 1.00x | 0% | 100% | 7 days |
+| Short Lock | 90 days | 1.05x | 2.5% | 97.5% | None |
+| Medium Lock | 180 days | 1.12x | 5% | 95% | None |
+| Long Lock | 365 days | 1.25x | 10% | 90% | None |
 
-Flexible Lock has no depreciation burn, but a 7-day cooldown period is applied after an unstake request to prevent short-term liquidity from entering and exiting too quickly.
+Flexible Lock không có depreciation burn, nhưng áp dụng thời gian cooldown 7 ngày sau yêu cầu unstake để ngăn thanh khoản ngắn hạn vào ra quá nhanh.
 
-Long-term lock-up is not mandatory. Users can choose the Flexible method without depreciation, and only choose longer lock-ups with depreciation if they want higher Mining Power.
+Lock-up dài hạn không bắt buộc. Người dùng có thể chọn Flexible nếu không muốn chịu depreciation, và chỉ chọn lock dài hơn với depreciation nếu muốn có Mining Power cao hơn.
 
-This structure seeks the following balance.
+Cấu trúc này tìm kiếm sự cân bằng sau.
 
-| Choice       | Benefit                             | Cost                        |
-| ------------ | ----------------------------------- | --------------------------- |
-| Flexible     | Free participation, no depreciation | 7-day return waiting period |
-| 90-day Lock  | Slightly higher Mining Power        | 2.5% depreciation           |
-| 180-day Lock | Medium-level Mining Power           | 5% depreciation             |
-| 365-day Lock | Highest Mining Power                | 10% depreciation            |
+| Lựa chọn | Lợi ích | Chi phí |
+| -------- | ------- | ------- |
+| Flexible | Tham gia tự do, không depreciation | Chờ hoàn trả 7 ngày |
+| 90-day Lock | Mining Power cao hơn nhẹ | 2.5% depreciation |
+| 180-day Lock | Mining Power mức trung bình | 5% depreciation |
+| 365-day Lock | Mining Power cao nhất | 10% depreciation |
 
-The lock-up multiplier is limited to a maximum of 1.25x. This is designed to provide reasonable compensation to long-term participants while preventing any specific large participant from gaining an excessively advantageous position.
+Lock-up multiplier được giới hạn tối đa ở 1.25x. Điều này nhằm cung cấp phần bù hợp lý cho người tham gia dài hạn, đồng thời ngăn một người tham gia lớn cụ thể có vị thế quá thuận lợi.
 
-Even during the lock-up period, a user can claim a Gem NFT once their PoM reaches the required threshold. In other words, lock-up limits the time at which STONE can be returned, but does not prohibit Gem NFT claims themselves.
+Ngay cả trong thời gian lock-up, người dùng vẫn có thể claim Gem NFT khi PoM đạt ngưỡng cần thiết. Nói cách khác, lock-up giới hạn thời điểm STONX có thể được hoàn trả, nhưng không cấm việc claim Gem NFT.

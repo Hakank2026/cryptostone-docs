@@ -1,32 +1,51 @@
-# 37\_choice\_of\_development\_structure
+# 37 Struktur pengembangan
 
-CryptoStone adopts the following structure:
+CryptoStone mengadopsi struktur berikut.
 
-* STONE Token
+* STONX Token
 * CryptoStone Gem NFT
 * 12 Mining Pool Contracts
 * Pool Factory
 
-This structure is designed to implement a digital gemstone protocol that is not dependent on a specific chain. Initially, an EVM-compatible smart contract network is used as the Launch Network.
+Struktur ini dirancang untuk menerapkan protokol batu permata digital yang tidak bergantung secara permanen pada chain tertentu. Pada tahap awal, jaringan smart contract yang kompatibel dengan EVM digunakan sebagai Launch Network.
 
-| Choice                | Reason                                                      |
-| --------------------- | ----------------------------------------------------------- |
-| STONE Token           | Provides a single mining resource and liquidity structure.  |
-| CryptoStone Gem NFT   | Expresses the uniqueness and attributes of each gemstone.   |
-| 12 Mining Pools       | Implements independent mine structures by stone.            |
-| Pool Factory          | Deploys pools using the same verified template.             |
-| Unified NFT Contract  | Concentrates collection identity and transaction data.      |
-| Verifiable Randomness | Enables attribute generation without operator manipulation. |
-| Finalize Mechanism    | Prevents changes to core rules.                             |
+## Current Deployment Status
 
-First, the roles of STONE and Gem NFT are separated. STONE is the token for Mining Power, and Gem NFT is the mining result.
+Tabel berikut merangkum status deployment testnet saat ini dan baseline dokumen protokol. Jika mainnet deployment atau contract upgrade dilakukan, alamat dan versi akan diperbarui dalam dokumentasi publik terpisah.
 
-Second, the uniqueness of gemstones is protected. Each Gem NFT has a tokenId and attribute combination, and attributes cannot be changed after issuance.
+| Item | Current Status | Notes |
+| ---- | -------------- | ----- |
+| Launch Network | Ethereum Sepolia | Baseline operasi testnet |
+| STONX Token | `0xBd10DA40Dec511c11100dd2927dDf8c53A5248Ed` | Deployment ERC-20 testnet |
+| GEMS NFT | `0x01CE9e3Ee0fb51B6b0cE1E5B3C72A5F981A50056` | Struktur HTTPS metadata V5.3 |
+| Garnet Mining Pool | `0xd885D9865A1e7C9094EcD0982421bE9670Fabe16` | Pool live saat ini |
+| Other 11 Mining Pools | Preparing | Target mainnet atau pembukaan bertahap |
+| Refinery | `0xB7b55068163d6d8E4f8eD2e8B511e234520576DC` | Fitur refinement testnet |
+| Marketplace | `0x673d64550c718A3770064ee3cDdC8b20093D0913` | Fitur perdagangan NFT testnet |
+| Metadata Model | HTTPS API + watcher finalization + IPFS media | Memisahkan atribut inti dari layer tampilan media |
+| Randomness Standard | User entropy + multi-block entropy + `prevrandao` | Baseline pool baru dan upgrade |
+| Mainnet Status | Preparing | Dilanjutkan setelah security review, penyelarasan dokumentasi, dan finalisasi kebijakan liquidity |
 
-Third, independence by stone is maintained. Each mining pool has independent supply, mining interval, and halving, making it suitable for digitally expressing the concept of individual real-world mines.
+## Rationale
 
-Fourth, the NFT collection is maintained as one collection. This concentrates the CryptoStone brand and market data, and allows integrated management of trading and rarity rankings.
+| Choice | Reason |
+| ------ | ------ |
+| STONX Token | Menyediakan resource mining dan struktur liquidity terpadu |
+| CryptoStone Gem NFT | Merepresentasikan keunikan dan atribut setiap batu |
+| 12 Mining Pools | Menerapkan tambang digital independen untuk setiap stone |
+| Pool Factory | Mendeploy pool dari template terverifikasi yang sama |
+| Unified NFT Contract | Mengonsentrasikan identitas collection dan data trading |
+| Verifiable Randomness | Memungkinkan generasi atribut tanpa manipulasi operator |
+| Finalize Mechanism | Mencegah perubahan aturan inti |
 
-Fifth, future scalability is high. CryptoStone can start on an EVM-compatible Launch Network and expand into an independent Appchain or CryptoStone Mainnet in the long term.
+Pertama, peran STONX dan Gem NFT dipisahkan. STONX adalah token untuk Mining Power, sedangkan Gem NFT adalah hasil mining.
 
-Sixth, dependence on centralization is reduced. Mining and issuance are executed by contracts, not by servers, and anyone can verify the conditions.
+Kedua, keunikan batu permata dilindungi. Setiap Gem NFT memiliki tokenId dan kombinasi atribut, dan atributnya tidak dapat diubah setelah minting.
+
+Ketiga, independensi antarstone dipertahankan. Setiap mining pool memiliki supply, mining interval, dan struktur halving sendiri, sehingga cocok untuk merepresentasikan tambang individual dunia nyata dalam bentuk digital.
+
+Keempat, NFT collection tetap terpadu. Ini mengonsentrasikan brand dan data pasar CryptoStone, memungkinkan pengelolaan trading dan ranking rarity secara terpadu.
+
+Kelima, struktur ini memiliki ekstensibilitas masa depan yang kuat. CryptoStone dapat mulai pada Launch Network kompatibel EVM dan kemudian berkembang menjadi Appchain atau CryptoStone Mainnet independen.
+
+Keenam, ketergantungan terpusat dikurangi. Mining dan minting dieksekusi oleh contract, bukan server, dan siapa pun dapat memverifikasi kondisinya.

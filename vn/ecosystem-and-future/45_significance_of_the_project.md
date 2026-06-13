@@ -1,15 +1,15 @@
-# 45\_significance\_of\_the\_project
+# 45 Ý nghĩa của dự án
 
-The significance of CryptoStone can be summarized in three points.
+Ý nghĩa của CryptoStone có thể được tóm tắt trong ba điểm.
 
-First, CryptoStone proposes that NFTs can move beyond ownership of external content and become attribute-based assets themselves. While many existing NFTs depend on images or platforms, CryptoStone seeks to strengthen the asset nature of NFTs by directly holding gemstone attributes as on-chain data.
+Thứ nhất, CryptoStone đề xuất rằng NFT có thể vượt khỏi quyền sở hữu nội dung bên ngoài và trở thành tài sản dựa trên thuộc tính của chính nó. Trong khi nhiều NFT hiện tại phụ thuộc vào hình ảnh hoặc nền tảng, CryptoStone tìm cách củng cố bản chất tài sản của NFT bằng cách trực tiếp nắm giữ thuộc tính đá quý dưới dạng dữ liệu on-chain.
 
-Second, CryptoStone brings gemstone scarcity and grading structures into the digital environment. In the real world, the value of gemstones differs according to weight, color, clarity, and cut. CryptoStone implements this through probability tables, mining difficulty, halving, and supply limits.
+Thứ hai, CryptoStone đưa cấu trúc khan hiếm và phân hạng của đá quý vào môi trường số. Trong thế giới thực, giá trị của đá quý khác nhau theo trọng lượng, màu sắc, độ tinh khiết và giác cắt. CryptoStone triển khai điều này thông qua bảng xác suất, độ khó mining, halving và giới hạn nguồn cung.
 
-Third, CryptoStone expands the concept of decentralized mining into a new asset domain after Bitcoin. If Bitcoin digitalized the scarcity of gold and Litecoin formed the narrative of digital silver, CryptoStone digitalizes the scarcity and collectibility of gemstones.
+Thứ ba, CryptoStone mở rộng khái niệm mining phi tập trung sau Bitcoin sang một lĩnh vực tài sản mới. Nếu Bitcoin số hóa sự khan hiếm của vàng và Litecoin hình thành câu chuyện bạc kỹ thuật số, CryptoStone số hóa sự khan hiếm và tính sưu tầm của đá quý.
 
-In addition, CryptoStone proposes an ecosystem structure in which mined Gem NFTs do not remain merely as holding assets, but can expand into refinement, trading, ranking, and collecting activities. This shows that NFT value can expand beyond simple images or rarity into usage history, refinement generation, supply compression history, and ecosystem utility.
+Ngoài ra, CryptoStone đề xuất một cấu trúc hệ sinh thái trong đó Gem NFT đã khai thác không chỉ dừng lại ở tài sản nắm giữ, mà có thể mở rộng sang refinement, giao dịch, ranking và hoạt động sưu tầm. Điều này cho thấy giá trị NFT có thể mở rộng vượt ra ngoài hình ảnh hoặc rarity đơn giản, sang lịch sử sử dụng, thế hệ refinement, lịch sử nén nguồn cung và utility hệ sinh thái.
 
-CryptoStone does not claim to replace real gemstones. CryptoStone is a project that reinterprets the asset concept of gemstones in a digital environment.
+CryptoStone không tuyên bố thay thế đá quý thật. CryptoStone là dự án tái diễn giải khái niệm tài sản đá quý trong môi trường số.
 
-The author believes that such an attempt can contribute to blockchain technology expressing abstract values and attribute-based assets from the real world in a digital environment, beyond simple financial transactions.
+Nhà phát triển tin rằng nỗ lực này có thể đóng góp vào việc công nghệ blockchain biểu đạt các giá trị trừu tượng và tài sản dựa trên thuộc tính từ thế giới thực trong môi trường số, vượt ra ngoài giao dịch tài chính đơn thuần.

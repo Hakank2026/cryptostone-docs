@@ -1,13 +1,13 @@
-# 17\_target\_pool\_power\_and\_long\_term\_mining\_period
+# 17 Target Pool Power dan periode mining jangka panjang
 
-CryptoStone’s Target Pool Power is calculated based not on the total STONE supply, but on the effective staking amount expected to actually participate in mining.
+Target Pool Power CryptoStone dihitung bukan berdasarkan total supply STONX, melainkan berdasarkan jumlah staking efektif yang diperkirakan benar-benar berpartisipasi dalam mining.
 
 * Target Pool Power = 40,000,000 Power per Pool
 * 12 Pools Total Target Power = 480,000,000 Power
 
-This reflects the assumption that approximately 40% of the total STONE supply of 1,200,000,000 may participate in the mining ecosystem over the long term.
+Ini mencerminkan asumsi bahwa sekitar 40% dari total supply STONX sebesar 1,200,000,000 dapat berpartisipasi dalam ekosistem mining dalam jangka panjang.
 
-If the total Mining Power of a specific pool (j) is (P\_j), and its Target Pool Power is (P\_j^\*), the total pool power is defined as follows.
+Jika total Mining Power dari pool tertentu (j) adalah (P\_j), dan Target Pool Power-nya adalah (P\_j^\*), total pool power didefinisikan sebagai berikut.
 
 $$
 P_j = \Sigma P_{i,j}
@@ -17,8 +17,8 @@ $$
 P_j^* = 40,000,000
 $$
 
-Assuming that participants increase by 10,000 each year, approximately 100,000 users participate after 10 years, and the average active stake is around 4,800 STONE, it may take approximately 8 to 9 years for about 90% of the total Gem NFT supply to be mined.
+Dengan asumsi peserta bertambah 10,000 orang setiap tahun, sekitar 100,000 pengguna berpartisipasi setelah 10 tahun, dan average active stake sekitar 4,800 STONX, dibutuhkan sekitar 8 hingga 9 tahun agar sekitar 90% total supply Gem NFT ditambang.
 
-Due to the halving structure, the mining speed after the 90% stage becomes even slower. Therefore, it may take more than 12 years for 100% of the total Gem NFT supply to be fully mined.
+Karena struktur halving, kecepatan mining setelah tahap 90% menjadi lebih lambat. Karena itu, mining 100% total supply Gem NFT dapat memerlukan lebih dari 12 tahun.
 
-This period estimate is not intended to predict any specific return rate or price. It is a model to explain that CryptoStone aims to be a decentralized mining ecosystem in which digital gemstones are gradually mined over a long period of time, rather than a short-term NFT minting event.
+Estimasi periode ini tidak dimaksudkan untuk memprediksi return rate atau harga tertentu. Ini adalah model untuk menjelaskan bahwa CryptoStone bertujuan menjadi ekosistem mining terdesentralisasi di mana batu permata digital ditambang secara bertahap dalam waktu panjang, bukan event minting NFT jangka pendek.

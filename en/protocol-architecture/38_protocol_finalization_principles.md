@@ -1,15 +1,15 @@
-# 38\_protocol\_finalization\_principles
+﻿# 38\_protocol\_finalization\_principles
 
 For CryptoStone to aim for decentralized asset characteristics similar to Bitcoin, its core rules must not be arbitrarily changed after deployment.
 
 | Fixed Item                    | Description                                      |
 | ----------------------------- | ------------------------------------------------ |
-| Total STONE supply            | 1,200,000,000 STONE                              |
-| STONE circulation structure   | 100% public circulation                          |
-| Max Supply by stone           | Maximum NFT issuance quantity by each stone      |
-| Base Mining Interval by stone | Basic mining interval                            |
+| Total STONX supply            | 1,200,000,000 STONX                              |
+| STONX circulation structure   | Open Market Allocation                          |
+| Max Supply by STONX           | Maximum NFT issuance quantity by each STONX      |
+| Base Mining Interval by STONX | Basic mining interval                            |
 | Target Pool Power             | Initial reference value of 40,000,000 Power      |
-| Base Mining Unit              | 100,000 STONE                                    |
+| Base Mining Unit              | 1,000 STONX                                      |
 | Weight probability table      | Weight generation probability                    |
 | Color probability table       | Color grade generation probability               |
 | Clarity probability table     | Clarity grade generation probability             |

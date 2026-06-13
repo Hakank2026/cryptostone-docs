@@ -1,8 +1,8 @@
-# 13\_挖矿周期的设计
+﻿# 13\_挖矿周期的设计
 
 各宝石具有不同的基础挖矿周期。
 
-| Stone      | Base Mining Interval |
+| STONX      | Base Mining Interval |
 | ---------- | -------------------: |
 | Garnet     |          170,000 sec |
 | Amethyst   |          160,000 sec |

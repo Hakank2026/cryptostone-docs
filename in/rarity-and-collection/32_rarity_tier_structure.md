@@ -1,17 +1,15 @@
-# 32\_rarity\_tier\_structure
+# 32 Struktur Rarity Tier
 
-A perfect top-level combination can only be generated with an extremely low probability. This is an advantage from a scarcity perspective, but in a collectibles market, various upper tiers should exist to make trading and collecting activity more active.
+CryptoStone menafsirkan Rarity Score sebagai sistem final tier.
 
-Therefore, CryptoStone may apply the following rarity tiers based on Rarity Score and Probability Rarity Index.
+| Tier | Rarity Score Range | Interpretasi | Posisi |
+| ---- | ------------------ | ------------ | ------ |
+| Common | 0 ~ 34 | Terutama atribut umum | Kelompok batu paling umum; collectible dasar dan material refinement |
+| Rare | 35 ~ 50 | Mencakup beberapa atribut lebih tinggi | Collectible tingkat menengah yang lebih langka dari hasil mining biasa |
+| Epic | 51 ~ 74 | Dua atau lebih atribut kuat atau kombinasi skor tinggi | Batu permata high-grade yang dirasakan sebagai keberhasilan berarti |
+| Legendary | 75 ~ 89 | Tiga atau lebih atribut kuat atau skor sangat tinggi | Batu sangat langka dan rentang collectible bernilai tinggi |
+| Genesis | 90 ~ 100 | Kombinasi atribut ekstrem dan skor tertinggi | Aset koleksi tertinggi; penerbitan tambahan dan penciptaan melalui refinement harus sangat dibatasi |
 
-| Tier      | Example Criteria                               | Meaning                              |
-| --------- | ---------------------------------------------- | ------------------------------------ |
-| Common    | Mostly ordinary attributes                     | Most common gemstone group           |
-| Rare      | At least one high-level attribute              | Generally rare gemstone              |
-| Epic      | At least two high-level attributes             | Gemstone with high collectible value |
-| Legendary | At least three high-level attributes           | Very rare gemstone                   |
-| Genesis   | Extreme combination or early mining uniqueness | Top-tier collectible asset           |
+Genesis Tier tidak ditentukan oleh satu atribut saja. Tier ini harus dipahami sebagai tier tertinggi yang hanya dapat dicapai ketika kombinasi Weight, Color, Clarity, dan Cut berprobabilitas sangat rendah berinteraksi dengan penyesuaian supply berdasarkan pool.
 
-Genesis Tier may not be determined solely by score. Early mining time, low tokenId, extreme probability combinations, and scarcity of specific stones may be considered together.
-
-This structure is similar to how rare grades create collectible value in markets such as Pokémon cards, sports cards, limited-edition collectibles, and figures. However, in CryptoStone, rarity is calculated not by the subjective judgment of the operator, but by publicly disclosed probability tables and on-chain attribute values.
+Rarity disatukan menjadi lima final tier: Common, Rare, Epic, Legendary, dan Genesis. Setiap istilah mirip rarity yang digunakan dalam penjelasan atribut individual pada akhirnya harus ditafsirkan dalam sistem final Gem NFT lima tier ini. Final tier terpisah seperti Mythic, Ancient, atau Uncommon tidak digunakan.

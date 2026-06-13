@@ -1,22 +1,22 @@
-# 21\_accumulation\_of\_proof\_of\_mining\_pom
+# 21 Tích lũy Proof of Mining, PoM
 
-CryptoStone uses a Proof of Mining, or PoM, model that abstracts Bitcoin’s Proof-of-Work concept into a digital gemstone mining structure, rather than a simple point or credit system.
+CryptoStone sử dụng mô hình Proof of Mining, hay PoM, trừu tượng hóa khái niệm Proof-of-Work của Bitcoin vào cấu trúc khai thác đá quý kỹ thuật số, thay vì một hệ thống điểm hoặc credit đơn giản.
 
-PoM refers to the mining work amount accumulated over time by a user staking STONE in a specific stone pool. PoM is not a separately transferable or tradable token, but an on-chain work amount indicator recorded by the contract based on the user’s mining participation and the passage of time.
+PoM là khối lượng công việc khai thác mà người dùng tích lũy theo thời gian khi stake STONX trong một stone pool cụ thể. PoM không phải token có thể chuyển nhượng hoặc giao dịch riêng, mà là chỉ số khối lượng công việc on-chain được contract ghi nhận dựa trên mức tham gia mining và thời gian trôi qua.
 
-The PoM value of user `(i)` for specific stone pool `(j)` accumulates over time as follows.
+Giá trị PoM của người dùng `(i)` đối với stone pool cụ thể `(j)` tích lũy theo thời gian như sau.
 
 $$
 PoM_{i,j}(t + \Delta t) = PoM_{i,j}(t) + P_{i,j} \times \Delta t
 $$
 
-For example, the Mining Power of a user who stakes 100,000 STONE into the Diamond Pool under Flexible conditions is as follows.
+Ví dụ, Mining Power của người dùng stake 100,000 STONX vào Diamond Pool theo điều kiện Flexible là như sau.
 
 $$
 P_{i,Diamond} = 100,000 \times 1.00 = 100,000
 $$
 
-If the user waits for 100,000 seconds, the accumulated PoM is as follows.
+Nếu người dùng chờ 100,000 giây, PoM tích lũy như sau.
 
 $$
 PoM = 100,000 \times 100,000
@@ -26,24 +26,24 @@ $$
 PoM = 10,000,000,000
 $$
 
-When the user’s accumulated PoM reaches or exceeds the required PoM threshold of the corresponding pool, the user can claim a Gem NFT.
+Khi PoM tích lũy của người dùng đạt hoặc vượt ngưỡng PoM cần thiết của pool tương ứng, người dùng có thể claim Gem NFT.
 
 $$
-PoM_{i,j}(t) \geq R_j
+PoM_{i,j}(t) \ge R_j
 $$
 
-When a Gem NFT is claimed, the required threshold `(R_j)` is deducted from the user’s PoM value in that pool.
+Khi Gem NFT được claim, ngưỡng cần thiết `(R_j)` được trừ khỏi giá trị PoM của người dùng trong pool đó.
 
 $$
 PoM_{i,j,new} = PoM_{i,j,old} - R_j
 $$
 
-This structure prevents excess PoM accumulated above the threshold from being unnecessarily lost. For example, if the required PoM threshold is 22,000,000,000 and the user holds 23,000,000,000 PoM when claiming a Gem NFT, then 1,000,000,000 PoM remains after the claim and is preserved for the next mining cycle.
+Cấu trúc này ngăn PoM vượt ngưỡng bị mất một cách không cần thiết. Ví dụ, nếu ngưỡng PoM cần thiết là 22,000,000,000 và người dùng có 23,000,000,000 PoM khi claim Gem NFT, thì 1,000,000,000 PoM còn lại sau claim sẽ được giữ cho chu kỳ mining tiếp theo.
 
-PoM accumulates independently for each stone pool. PoM accumulated in the Diamond Pool can only be used to claim Diamond NFTs, and cannot be converted into PoM for the Ruby Pool or Sapphire Pool. This structure protects the independence, scarcity, and mining difficulty of each stone pool.
+PoM tích lũy độc lập theo từng stone pool. PoM tích lũy trong Diamond Pool chỉ có thể dùng để claim Diamond NFT, không thể chuyển thành PoM của Ruby Pool hoặc Sapphire Pool. Cấu trúc này bảo vệ tính độc lập, sự khan hiếm và độ khó khai thác của từng stone pool.
 
-Even if a user unstakes STONE from a specific pool, the already accumulated PoM may remain recorded in that pool. However, after unstaking, the user’s Mining Power in that pool becomes 0, so no additional PoM accumulates. If the user stakes STONE again in the same pool, new PoM accumulates on top of the existing PoM.
+Ngay cả khi người dùng unstake STONX khỏi một pool cụ thể, PoM đã tích lũy có thể vẫn được ghi lại trong pool đó. Tuy nhiên, sau khi unstake, Mining Power của người dùng trong pool đó trở thành 0, nên không có PoM mới được tích lũy. Nếu người dùng stake STONX lại vào cùng pool, PoM mới sẽ tích lũy tiếp trên PoM hiện có.
 
-If a user stakes additional STONE in the same pool, the existing PoM remains, and only the Mining Power after the additional staking increases. Conversely, if the staking amount is reduced, the existing PoM remains, but the future accumulation speed decreases.
+Nếu người dùng stake thêm STONX vào cùng pool, PoM hiện có được giữ nguyên và chỉ Mining Power sau khi stake thêm tăng lên. Ngược lại, nếu giảm lượng stake, PoM hiện có vẫn giữ nguyên nhưng tốc độ tích lũy trong tương lai giảm xuống.
 
-PoM cannot be transferred externally or traded, and cannot be moved to another stone pool. This is because PoM is not an asset itself, but a work amount indicator accumulated by a specific user through actual mining participation in a specific pool.
+PoM không thể chuyển ra ngoài, giao dịch hoặc chuyển sang stone pool khác. Điều này vì PoM không phải tài sản độc lập, mà là chỉ số khối lượng công việc do một người dùng cụ thể tích lũy thông qua tham gia mining thực tế trong một pool cụ thể.

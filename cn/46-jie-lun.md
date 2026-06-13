@@ -1,55 +1,37 @@
-# 46\_结论
+# 46 结论
 
-CryptoStone 提出了一种名为数字宝石的新资产概念。
+CryptoStone 是一个在智能合约上实现数字宝石概念的协议。
 
-比特币并未直接保存现实黄金，却创造了数字黄金的概念；莱特币形成了数字白银的叙事。同样，CryptoStone 并不以现实宝石所有权作为担保，却试图在数字环境中实现宝石的核心属性，即稀缺性、可挖掘性、等级性和收藏性。
+CryptoStone 将 STONX 定义为挖矿资源，将 Gem NFT 定义为挖矿结果，并通过 Proof of Mining，即 PoM，将二者连接起来。用户将 STONX 投入挖矿池，随着时间累积 Mining Power 与 PoM，并在达到所需阈值后 claim Gem NFT。
 
-CryptoStone 被设计为一种不依赖特定链的数字宝石协议，初期使用 EVM 兼容智能合约网络作为 Launch Network。长期来看，它可以扩展为 Appchain 或 Mainnet，并发展为独立的数字宝石生态。
+## 核心结构
 
-CryptoStone 的结构可以总结如下。
+| 项目 | 结构 |
+| ---- | ---- |
+| Mining Resource | STONX |
+| Initial Supply | 1,200,000,000 STONX |
+| Mining Result | CryptoStone Gem NFT |
+| Stone Types | 12 个基于诞生石的矿池 |
+| Attribute Generation | Weight, Color, Clarity, Cut, Rarity |
+| Metadata | HTTPS metadata API + watcher finalization + IPFS media |
+| Rarity Standard | Rarity Score + Probability Rarity Index |
 
-| 核心结构                 | 内容                                                                           |
-| -------------------- | ---------------------------------------------------------------------------- |
-| 单一代币                 | STONE Token                                                                  |
-| 初始发行量                | 1,200,000,000 STONE                                                          |
-| 流通结构                 | 100% 公开流通                                                                    |
-| 访问方式                 | 通过公开 DEX 流动性进行市场访问                                                           |
-| NFT 结构               | 一个 Gem NFT 合约                                                                |
-| 挖矿池                  | 12 个独立宝石挖矿池                                                                  |
-| 矿池实现                 | 相同 Pool Template + Factory 结构                                                |
-| Base Mining Unit     | 100,000 STONE                                                                |
-| Target Pool Power    | 40,000,000 Power                                                             |
-| 12 个矿池总 Target Power | 480,000,000 Power                                                            |
-| PoM 结构               | 基于 Proof of Mining 的累积工作量模型                                                  |
-| Claim 条件             | 各矿池 PoM ≥ Required PoM Threshold                                             |
-| Claim Burn           | 20 STONE × Scarcity Multiplier                                               |
-| Lock Model           | Flexible、90 天、180 天、365 天                                                    |
-| 折旧                   | 根据锁仓期限发生 Maturity Burn                                                       |
-| 稀有度                  | Rarity Score + Probability Rarity Index                                      |
-| 减半机制                 | 各宝石 Scarcity Multiplier                                                      |
-| 随机性                  | 初期 VRF 或 Commit-then-Reveal，长期原生随机模块                                         |
-| 哈希算力对应概念             | 基于 STONE 的 Mining Power                                                      |
-| 去中心化                 | No Admin Mint、No Central Server、finalize 结构                                  |
-| 公开验证                 | 源码公开、审计报告、LP 处理记录、概率表验证                                                      |
-| 生态扩展                 | Marketplace、Gem Refinement、Ranking System、Collection Quest                   |
-| 用户工具                 | Mining Simulator、PoM Dashboard、Gem Explorer、Rarity Explorer、Refinery Console |
-| 长期方向                 | Appchain 或 Mainnet 扩展可能性                                                     |
+## 协议执行结构
 
-本文作者认为，CryptoStone 的目标并不是短期 NFT 销售。CryptoStone 的目标是证明，在数字环境中，宝石这一资产概念如何能够以去中心化方式被实现。
+| 阶段 | 说明 |
+| ---- | ---- |
+| Participation | 从 1,000 STONX 起参与挖矿池 |
+| Mining Power | 根据质押数量、锁仓期限与矿池参数计算 |
+| PoM | 随时间累积的挖矿工作量 |
+| Claim | 达到所需 PoM 阈值后 claim Gem NFT |
+| Claim Burn | 2 STONX x Scarcity Multiplier |
+| Maturity Burn | 根据锁仓期限产生折旧销毁 |
+| Randomness | 用户熵、近期多区块熵、`prevrandao`、claim 状态、合约固有值 |
+| Finalization | 核心属性在 claim 时确定，媒体由 watcher 后续更新 |
+| Open Verification | 源代码、审计报告、LP 处理记录、概率表验证 |
 
-CryptoStone 的信任并不来自创始人的权威、内部配额或中央运营权限，而是来自固定发行量、100% 公开流通结构、可验证 PoM 模型、不可变更的概率表、公开可验证合约，以及任何人都可以确认的链上数据。
+CryptoStone 的目的并不是把 NFT 与现实宝石所有权连接起来，而是将挖矿难度、稀缺性、个体属性和收藏价值这一宝石结构，重新解释为数字原生资产模型。
 
-CryptoStone 的生态循环可以如下扩展。
+本白皮书并不主张 CryptoStone 是伟大的发现或完全全新的发明。它是一种视角转换，也是一种新的尝试。不过，如果宝石属性、稀缺性和收藏性能够被市场认可为有意义的价值体系，CryptoStone 可能发展为“数字宝石”这一新类别。
 
-```
-Acquire STONE
-→ Mine Gem NFTs
-→ Explore / Trade Gems
-→ Refine Gems
-→ Improve NFT Utility
-→ Return to Mining / Marketplace / Refinery
-```
-
-如果说比特币是数字黄金，\
-莱特币是数字白银，\
-那么 CryptoStone 就是去中心化数字宝石。
+CryptoStone 应继续通过透明合约、可验证随机性、公开供应数据、安全元数据结构，以及让用户更容易理解和验证的工具来发展。

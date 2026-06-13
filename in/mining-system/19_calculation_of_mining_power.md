@@ -1,13 +1,13 @@
-# 19\_calculation\_of\_mining\_power
+# 19 Perhitungan Mining Power
 
-In CryptoStone, Mining Power determines the speed and opportunity with which a user can mine gemstones. Participants who stake more STONE acquire more Mining Power and can reach claim conditions more frequently.
+Dalam CryptoStone, Mining Power menentukan kecepatan dan peluang pengguna untuk menambang batu permata. Peserta yang stake lebih banyak STONX memperoleh Mining Power lebih tinggi dan dapat mencapai kondisi claim lebih sering.
 
-If user _(i)_’s staked amount is _(s\_{i,j})_, the lock-up multiplier is _(L\_i)_, and the user’s Mining Power is _(P\_{i,j})_, it is calculated as follows:
+Jika jumlah stake pengguna _(i)_ adalah _(s\_{i,j})_, lock-up multiplier adalah _(L\_i)_, dan Mining Power pengguna adalah _(P\_{i,j})_, maka dihitung sebagai berikut:
 
 $$
 P_{i,j} = s_{i,j} \times L_i
 $$
 
-Mining Power does not directly increase the probability of receiving a higher-grade gemstone. Mining Power only affects the speed at which PoM accumulates.
+Mining Power tidak secara langsung meningkatkan probabilitas menerima batu permata grade lebih tinggi. Mining Power hanya memengaruhi kecepatan akumulasi PoM.
 
-This is similar to Bitcoin mining. Participants with more mining equipment obtain more mining opportunities, but they cannot change the mining rules themselves. Likewise, in CryptoStone, participants who stake more STONE accumulate PoM faster, but cannot arbitrarily increase the probability of receiving better gemstones.
+Ini mirip dengan Bitcoin mining. Peserta dengan lebih banyak peralatan mining memperoleh lebih banyak peluang mining, tetapi mereka tidak dapat mengubah aturan mining. Demikian pula, dalam CryptoStone, peserta yang stake lebih banyak STONX mengakumulasi PoM lebih cepat, tetapi tidak dapat menaikkan probabilitas memperoleh gemstone yang lebih baik secara sewenang-wenang.

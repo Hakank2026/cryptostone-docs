@@ -1,73 +1,37 @@
-# 46\_conclusion
+# 46 Conclusion
 
-CryptoStone proposes a new asset concept called digital gemstones.
+CryptoStone is a protocol that implements the concept of digital gemstones on smart contracts.
 
-Bitcoin created the concept of digital gold without directly storing physical gold, and Litecoin formed the narrative of digital silver. In the same way, CryptoStone seeks to implement the core attributes of gemstones — scarcity, mineability, grading, and collectibility — in a digital environment without backing ownership of real gemstones.
+It defines STONX as a mining resource and Gem NFT as the mined result, connecting the two through Proof of Mining, or PoM. Users deposit STONX into mining pools, accumulate Mining Power and PoM over time, and claim Gem NFTs once the required threshold is reached.
 
-CryptoStone is designed as a digital gemstone protocol that is not dependent on a specific chain, and initially uses an EVM-compatible smart contract network as the Launch Network. In the long term, it can expand into an Appchain or Mainnet and develop into an independent digital gemstone ecosystem.
+## Core Structure
 
-The structure of CryptoStone can be summarized as follows.
+| Item | Structure |
+| ---- | --------- |
+| Mining Resource | STONX |
+| Initial Supply | 1,200,000,000 STONX |
+| Mining Result | CryptoStone Gem NFT |
+| Stone Types | 12 birthstone-based pools |
+| Attribute Generation | Weight, Color, Clarity, Cut, Rarity |
+| Metadata | HTTPS metadata API + watcher finalization + IPFS media |
+| Rarity Standard | Rarity Score + Probability Rarity Index |
 
-| Core Structure        | Content                                    |
-| --------------------- | ------------------------------------------ |
-| Single token          | STONE Token                                |
-| Initial supply        | 1,200,000,000 STONE                        |
-| Circulation structure | 100% public circulation                    |
-| Access method         | Market access through public DEX liquidity |
+## Protocol Execution Structure
 
-| Core Structure                 | Content                                                                                   |
-| ------------------------------ | ----------------------------------------------------------------------------------------- |
-| NFT structure                  | One Gem NFT contract                                                                      |
-| Mining pools                   | 12 independent gemstone mining pools                                                      |
-| Pool implementation            | Same Pool Template + Factory structure                                                    |
-| Base Mining Unit               | 100,000 STONE                                                                             |
-| Target Pool Power              | 40,000,000 Power                                                                          |
-| Total Target Power of 12 pools | 480,000,000 Power                                                                         |
-| PoM structure                  | Accumulated work amount model based on Proof of Mining                                    |
-| Claim condition                | PoM by pool ≥ Required PoM Threshold                                                      |
-| Claim Burn                     | 20 STONE × Scarcity Multiplier                                                            |
-| Lock Model                     | Flexible, 90 days, 180 days, 365 days                                                     |
-| Depreciation                   | Maturity Burn according to lock-up period                                                 |
-| Rarity                         | Rarity Score + Probability Rarity Index                                                   |
-| Halving                        | Scarcity Multiplier by stone                                                              |
-| Randomness                     | Initial VRF or Commit-then-Reveal, long-term native randomness module                     |
-| Hash power counterpart         | STONE-based Mining Power                                                                  |
-| Decentralization               | No Admin Mint, No Central Server, finalize structure                                      |
-| Public verification            | Source code disclosure, audit report, LP handling records, probability table verification |
-| Ecosystem expansion            | Marketplace, Gem Refinement, Ranking System, Collection Quest                             |
-| User tools                     | Mining Simulator, PoM Dashboard, Gem Explorer, Rarity Explorer, Refinery Console          |
-| Long-term direction            | Appchain or Mainnet expansion possibility                                                 |
+| Stage | Description |
+| ----- | ----------- |
+| Participation | Enter a mining pool from 1,000 STONX |
+| Mining Power | Calculated from staked amount, lock-up period, and pool parameters |
+| PoM | Mining work value accumulated over time |
+| Claim | Gem NFT claim after reaching the required PoM threshold |
+| Claim Burn | 2 STONX x Scarcity Multiplier |
+| Maturity Burn | Depreciation burn based on lock-up period |
+| Randomness | User entropy, recent multi-block entropy, `prevrandao`, claim state, and contract-specific values |
+| Finalization | Core attributes fixed at claim; media updated later by watcher |
+| Open Verification | Source code, audit reports, LP handling records, and probability tables |
 
-The author does not believe that the goal of CryptoStone is short-term NFT sales. The goal of CryptoStone is to prove how the asset concept of gemstones can be implemented in a decentralized manner in a digital environment.
+CryptoStone's purpose is not to connect NFTs to real gemstone ownership. It is to reinterpret the structure of gemstones as a digital-native asset model: mining difficulty, scarcity, individual attributes, and collectible value.
 
-The trust of CryptoStone is formed not by the authority of the founder, internal allocation, or central operational rights, but by fixed supply, 100% public circulation, a verifiable PoM model, immutable probability tables, publicly verifiable contracts, and on-chain data that anyone can check.
+This whitepaper does not claim that CryptoStone is a great discovery or a fundamentally new invention. It is a change of perspective and a new attempt. If gemstone attributes, scarcity, and collectibility are accepted by the market as a meaningful value system, CryptoStone may develop into a new category of digital gemstones.
 
-The CryptoStone ecosystem loop can expand as follows.
-
-{% stepper %}
-{% step %}
-Acquire STONE
-{% endstep %}
-
-{% step %}
-Mine Gem NFTs
-{% endstep %}
-
-{% step %}
-Explore / Trade Gems
-{% endstep %}
-
-{% step %}
-Refine Gems
-{% endstep %}
-
-{% step %}
-Improve NFT Utility
-{% endstep %}
-
-{% step %}
-Return to Mining / Marketplace / Refinery
-{% endstep %}
-{% endstepper %}
-
-If Bitcoin is digital gold, and Litecoin is digital silver, CryptoStone is decentralized digital gemstone.
+CryptoStone should continue to evolve with transparent contracts, verifiable randomness, public supply data, secure metadata structure, and user-facing tools that make the system easier to understand and verify.

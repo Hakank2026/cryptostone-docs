@@ -1,16 +1,16 @@
-# 06\_representation\_of\_gemstone\_attributes
+# 06 Ekspresi atribut batu permata
 
-The value of a gemstone is not determined merely by its type. Even among diamonds, market value differs depending on weight, color, clarity, and cut.
+Nilai batu permata tidak ditentukan hanya oleh jenisnya. Bahkan di antara diamond, nilai pasar berbeda tergantung pada weight, color, clarity, dan cut.
 
-To represent these gemstone attributes in a digital environment, CryptoStone assigns the following four core attributes to each Gem NFT.
+Untuk merepresentasikan atribut batu permata ini dalam lingkungan digital, CryptoStone menetapkan empat atribut inti berikut pada setiap Gem NFT.
 
-| Attribute | Meaning                           |
-| --------- | --------------------------------- |
-| Weight    | The weight of the gemstone        |
-| Color     | The color grade of the gemstone   |
-| Clarity   | The clarity grade of the gemstone |
-| Cut       | The cut grade of the gemstone     |
+| Atribut | Makna |
+| ------- | ----- |
+| Weight | Berat batu permata |
+| Color | Grade warna batu permata |
+| Clarity | Grade kejernihan batu permata |
+| Cut | Grade potongan batu permata |
 
-These four attributes are determined at the time of mining and cannot be changed after issuance. This digitally implements a structure similar to how real gemstones are evaluated based on individual attributes after appraisal.
+Keempat atribut ini ditentukan pada saat mining dan tidak dapat diubah setelah penerbitan. Ini menerapkan secara digital struktur yang mirip dengan cara batu permata nyata dinilai berdasarkan atribut individual setelah appraisal.
 
-In CryptoStone, each NFT is not merely a token pointing to an image file. It is a digital asset that directly holds gemstone attribute values. Images, 3D models, and visual card formats may serve as auxiliary elements for user experience, but the essence of a CryptoStone NFT lies in the attribute data recorded on-chain.
+Dalam CryptoStone, setiap NFT bukan sekadar token yang menunjuk ke file gambar. NFT tersebut adalah aset digital yang secara langsung memegang nilai atribut batu permata. Gambar, model 3D, dan format kartu visual dapat menjadi elemen pendukung pengalaman pengguna, tetapi esensi CryptoStone NFT berada pada data atribut yang dicatat on-chain.

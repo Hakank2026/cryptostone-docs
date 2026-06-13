@@ -1,28 +1,28 @@
-# 14\_calculation\_of\_the\_initial\_stone\_supply
+# 14 Tính nguồn cung ban đầu của STONX
 
-CryptoStone does not issue 12 separate tokens for each stone type. It uses one STONE Token.
+CryptoStone không phát hành 12 token riêng cho từng Stone Type. Giao thức sử dụng một STONX Token duy nhất.
 
-The initial total supply is set as follows.
+Nguồn cung ban đầu được đặt như sau.
 
-* STONE Initial Total Supply = 1,200,000,000 STONE
+* STONX Initial Total Supply = 1,200,000,000 STONX
 * Additional Mint = None
 
-The reason for setting STONE at 1,200,000,000 is not simply to expand the number of tokens. CryptoStone aims for a structure in which more than 100,000 users can participate in mining pools at various scales. For this, a unit structure is needed that allows small participants, medium-scale participants, and high-Mining Power participants to participate naturally.
+Lý do đặt nguồn cung STONX ở mức 1,200,000,000 không chỉ là để tăng số lượng token. CryptoStone hướng tới cấu trúc cho phép hơn 100,000 người dùng tham gia mining pool ở nhiều quy mô khác nhau. Để làm được điều đó, cần một cấu trúc đơn vị cho phép người tham gia nhỏ, người tham gia quy mô trung bình và người có Mining Power cao cùng tham gia một cách tự nhiên.
 
-With a structure of 1,200,000,000 STONE, even assuming more than 100,000 participants, a natural participation UX in units of several thousand STONE can be designed. This lowers the entry barrier for small participants, provides a practical mining participation unit for mid-scale participants, and enables long-term mining strategies for high-Mining Power participants.
+Với cấu trúc 1,200,000,000 STONX, ngay cả khi giả định hơn 100,000 người tham gia, UX tham gia theo đơn vị vài nghìn STONX vẫn có thể được thiết kế tự nhiên. Điều này hạ thấp rào cản gia nhập cho người tham gia nhỏ, cung cấp đơn vị tham gia thực tế cho nhóm trung bình và cho phép chiến lược khai thác dài hạn cho người có Mining Power cao.
 
-Therefore, the issuance of 1.2 billion tokens should be interpreted not as an indiscriminate increase in supply, but as a unit design to accommodate a broader user base and the Proof of Mining structure.
+Do đó, việc phát hành 1.2 tỷ token nên được hiểu không phải là tăng nguồn cung tùy tiện, mà là thiết kế đơn vị để phục vụ một cơ sở người dùng rộng hơn và cấu trúc Proof of Mining.
 
-Expected Active Mining Ratio = approximately 30% \~ 40%
-
-$$
-1,200,000,000 \ \text{STONE} \times 40\% = 480,000,000 \ \text{Active Mining STONE}
-$$
-
-Based on 100,000 participants, the average active stake is as follows.
+Expected Active Mining Ratio = khoảng 30% \~ 40%
 
 $$
-480,000,000 \ \text{STONE} \div 100,000 \ \text{users} = 4,800 \ \text{STONE per user}
+1,200,000,000 \ \text{STONX} \times 40\% = 480,000,000 \ \text{Active Mining STONX}
 $$
 
-In other words, the 1,200,000,000 STONE structure is designed to accommodate a large participant base while allowing small participants to access the mining ecosystem.
+Dựa trên 100,000 người tham gia, active stake trung bình như sau.
+
+$$
+480,000,000 \ \text{STONX} \div 100,000 \ \text{users} = 4,800 \ \text{STONX per user}
+$$
+
+Nói cách khác, cấu trúc 1,200,000,000 STONX được thiết kế để tiếp nhận một cơ sở người tham gia lớn trong khi vẫn cho phép người dùng nhỏ tiếp cận hệ sinh thái khai thác.

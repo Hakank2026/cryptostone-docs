@@ -1,12 +1,12 @@
-# 43\_future\_direction
+﻿# 43\_future\_direction
 
-CryptoStone should initially use an EVM-compatible smart contract network as the Launch Network and begin with a structure consisting of STONE Token, Gem NFT, and Mining Pool Contracts. At this stage, the focus should be on verifying the core elements of the protocol: staking, Mining Power calculation, PoM accumulation, stone-specific halving, gemstone attribute generation, and Gem NFT issuance.
+CryptoStone should initially use an EVM-compatible smart contract network as the Launch Network and begin with a structure consisting of STONX Token, Gem NFT, and Mining Pool Contracts. At this stage, the focus should be on verifying the core elements of the protocol: staking, Mining Power calculation, PoM accumulation, STONX-specific halving, gemstone attribute generation, and Gem NFT issuance.
 
-Afterward, it will be necessary to expand user-friendly tools such as a mining dashboard, Mining Simulator, PoM Dashboard, Gem Explorer, Rarity Explorer, Refinery Console, stone-specific transaction data, and NFT marketplace functions. The value of CryptoStone arises from market understanding of collectibility and data transparency, so a data layer where anyone can check gemstone rarity, transaction history, floor price by stone, and high-grade gemstone rankings is important.
+Afterward, it will be necessary to expand user-friendly tools such as a mining dashboard, Mining Simulator, PoM Dashboard, Gem Explorer, Rarity Explorer, Refinery Console, STONX-specific transaction data, and NFT marketplace functions. The value of CryptoStone arises from market understanding of collectibility and data transparency, so a data layer where anyone can check gemstone rarity, transaction history, floor price by STONX, and high-grade gemstone rankings is important.
 
 As the ecosystem grows, expansion modules such as Marketplace, Gem Refinement, Ranking System, and Collection Quest can be gradually introduced. Each expansion module must not damage the core mining structure, and must maintain the core Gem NFT supply and PoM-based mining principles.
 
-In the long term, CryptoStone can expand beyond a simple smart contract project into a dedicated Appchain or Mainnet. In that case, STONE can function beyond a simple mining token and become a gas token or native asset of the network, while Gem NFTs can become basic digital assets of the CryptoStone network.
+In the long term, CryptoStone can expand beyond a simple smart contract project into a dedicated Appchain or Mainnet. In that case, STONX can function beyond a simple mining token and become a gas token or native asset of the network, while Gem NFTs can become basic digital assets of the CryptoStone network.
 
 If CryptoStone expands into the CryptoStone Mainnet in the future, Gem NFTs will function as native digital gemstones of the CryptoStone ecosystem, beyond assets issued on an external network.
 

@@ -1,28 +1,35 @@
-# 15\_100\_public\_circulation\_structure\_of\_stone
+# 15 Struktur Alokasi STONX
 
-In CryptoStone, STONE is the single mining resource used to participate in digital gemstone mining. The author believes that the distribution structure of STONE should follow a public market structure where anyone can access it under the same conditions, rather than a structure that gives prior rights to specific insiders. This aligns with the philosophy of CryptoStone.
+Dalam CryptoStone, STONX adalah satu-satunya resource mining yang digunakan untuk berpartisipasi dalam mining batu permata digital. Pengembang percaya bahwa distribusi STONX harus mengikuti struktur pasar terbuka yang dapat diakses di bawah aturan transparan, bukan struktur yang memberi hak pre-allocation istimewa kepada insider tertentu.
 
-Therefore, STONE follows a 100% public circulation structure. This means that STONE is not pre-allocated to specific parties, but circulates through public DEX liquidity, allowing anyone to acquire it under the same public market conditions.
+Karena itu, STONX dirancang sebagai model alokasi yang menghadap pasar tanpa team allocation, founder reserve, atau hidden insider allocation. Total supply dialokasikan ke DEX liquidity, direct sale, strategic ecosystem partners, serta listing atau liquidity preparation.
 
-| Item                   | Structure                                                                                   |
-| ---------------------- | ------------------------------------------------------------------------------------------- |
-| Total Supply           | 1,200,000,000 STONE                                                                         |
-| Distribution Principle | 100% public circulation                                                                     |
-| Market Access          | Public DEX liquidity                                                                        |
-| Additional Mint        | None                                                                                        |
-| Access Rule            | Anyone can acquire under the same public market conditions                                  |
-| Primary Utility        | Participation in mining pools for Gem NFT mining                                            |
-| Mechanism              | Acquire STONE -> Stake -> Generate Mining Power -> Accumulate PoM -> Claim Gem NFT          |
-| Supply Trust           | Supply, pool structure, probability tables, and claim conditions are verifiable by contract |
+| Item | Struktur |
+| ---- | -------- |
+| Total Supply | 1,200,000,000 STONX |
+| Team Allocation | None |
+| Founder Reserve | None |
+| Hidden Insider Allocation | None |
+| Additional Mint | None |
+| Primary Utility | Partisipasi dalam mining pool untuk mining Gem NFT |
+| Mechanism | Acquire STONX -> Stake -> Generate Mining Power -> Accumulate PoM -> Claim Gem NFT |
+| Supply Trust | Supply, struktur pool, tabel probabilitas, dan kondisi claim dapat diverifikasi melalui contract dan data publik |
 
-Users can acquire STONE in the public market and deposit it into the stone mining pool of their choice. The user then generates Mining Power based on the staked STONE, and accumulates Proof of Mining, PoM, over time. Once the accumulated PoM reaches the required threshold of the corresponding pool, the user can claim a Gem NFT.
+## 15.1 Allocation
 
-In this structure, the DEX is the public entry path to access STONE, while the mining pools are the actual use case of STONE. In other words, the purpose of STONE is not simple holding or speculative circulation, but functioning as a protocol resource for participating in digital gemstone mining.
+| Allocation | Ratio | TGE Unlock | Lock / Vesting | Rationale |
+| ---------- | ----: | ---------- | -------------- | --------- |
+| DEX Liquidity Reserve | 50% | Disediakan bertahap hanya sejauh diperlukan untuk initial liquidity | LP lock atau burn jangka panjang; supply tersisa digunakan bertahap untuk ekspansi liquidity | Mengamankan jalur masuk on-chain publik terbesar |
+| Direct Sale Pool | 20% | Public sale dalam batas sale contract | Supply yang belum terjual tetap di pool dan dilepas bertahap | Memberi jalur langsung memperoleh STONX untuk partisipasi mining |
+| Strategic / VC Allocation | 10% | 0% atau initial unlock terbatas | 6-month cliff + 24-month linear vesting | Dicadangkan untuk exchange, infrastruktur, dan mitra strategis ekosistem |
+| Listing / Liquidity Reserve | 20% | Digunakan hanya bila diperlukan untuk listing preparation dan market making | Manajemen wallet publik, penggunaan terbatas tujuan, eksekusi bertahap | Mendukung liquidity CEX, kampanye, dan stabilitas pasar |
 
-The foundation or early ecosystem contributors may also acquire STONE under the same conditions in the public market, rather than through a separate pre-allocation. This approach minimizes privileged early control by specific entities and aligns the standard of protocol participation with the public market and on-chain rules.
+DEX Liquidity Reserve menerima alokasi terbesar karena STONX harus terutama dapat diakses melalui pasar publik. Direct Sale Pool membantu pengguna baru memperoleh STONX yang dibutuhkan untuk mining tanpa harus melalui jalur trading kompleks. Strategic / VC Allocation dibatasi untuk mitra ekspansi ekosistem, dan vesting jangka panjang digunakan untuk mengurangi tekanan jual jangka pendek. Listing / Liquidity Reserve adalah reserve berbasis tujuan untuk listing, market making, kampanye, dan stabilitas pasar.
 
-For a 100% public circulation structure to gain trust, the initial liquidity supply method, LP handling method, contract permissions, and impossibility of additional issuance must be clearly disclosed. Initial liquidity is formed through a public DEX pool, and it is desirable that the handling method of the initial LP tokens be publicly disclosed as long-term lock-up or burn. This reduces concerns about liquidity withdrawal and increases trust in the public market access structure of STONE.
+Pengguna dapat memperoleh STONX melalui pasar publik atau direct sale dan menyetorkannya ke stone mining pool pilihan mereka. Mereka kemudian menghasilkan Mining Power dari STONX yang distake dan mengakumulasi Proof of Mining, atau PoM, seiring waktu. Setelah PoM mencapai ambang yang diperlukan dari pool terkait, pengguna dapat claim Gem NFT.
 
-Even when the foundation or early contributors acquire STONE, they should do so under the same public market conditions without any separate pre-allocation, and major holding wallets should preferably be disclosed so that they can be verified on-chain. This structure does not deny the existence of a foundation. Rather, it expresses the principle that the foundation should also participate under the same rules as the public market, rather than through privileged allocation outside the protocol.
+Dalam struktur ini, DEX dan Direct Sale adalah jalur masuk publik menuju STONX, sementara mining pool adalah use case nyata STONX. Dengan kata lain, STONX tidak dirancang hanya untuk holding atau sirkulasi spekulatif; STONX berfungsi sebagai resource protokol untuk berpartisipasi dalam mining batu permata digital.
 
-The trust of CryptoStone is formed not by pre-allocated holdings of a specific party, but by fixed total supply, 100% public circulation, immutable mining rules, verifiable PoM structure, and transparency of on-chain data.
+Agar struktur alokasi terbuka ini memperoleh kepercayaan, metode penyediaan liquidity awal, metode penanganan LP, izin contract, ketidakmungkinan penerbitan tambahan, dan wallet reserve utama harus dipublikasikan dengan jelas. LP token awal sebaiknya dikunci jangka panjang atau diburn. Ini mengurangi kekhawatiran tentang penarikan liquidity dan memperkuat kepercayaan pada model akses pasar terbuka STONX.
+
+Kepercayaan CryptoStone dibentuk bukan oleh alokasi istimewa kepada pihak tertentu, tetapi oleh total supply tetap, tidak adanya team allocation, aturan mining yang immutable, struktur PoM yang dapat diverifikasi, dan transparansi on-chain.

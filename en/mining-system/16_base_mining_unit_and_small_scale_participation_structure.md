@@ -1,29 +1,30 @@
-# 16\_base\_mining\_unit\_and\_small\_scale\_participation\_structure
+# 16 Base Mining Unit
 
-The reference mining unit of CryptoStone is set as follows.
+CryptoStone sets the basic participation unit as follows.
 
-**Base Mining Unit = 100,000 STONE**
+**Base Mining Unit = 1,000 STONX**
 
-However, this is not the minimum participation amount. The Base Mining Unit is a reference unit used to calculate mining speed and difficulty.
+The Base Mining Unit is the minimum reference unit required for a user to participate in a mining pool. It prevents meaningless fragmentation caused by excessively small deposits while still allowing ordinary users to begin accumulating Proof of Mining, or PoM, at an accessible scale. The Base Mining Unit is not a promise of short-term claim availability.
 
-CryptoStone adopts a PoM accumulation structure so that as many users as possible can participate in mining. Users can participate in mining pools with less than 100,000 STONE, and PoM accumulates in proportion to the staked amount and time.
+CryptoStone adopts a PoM accumulation model so that many users can participate in mining. Users can enter a mining pool from 1,000 STONX and accumulate PoM in proportion to both staked amount and time.
 
-A user can claim a Gem NFT when the accumulated PoM value becomes equal to or greater than the required PoM threshold ((R\_j)) of that pool.
+Users can claim a Gem NFT when their accumulated PoM reaches or exceeds the required threshold (R\_j) of the corresponding pool.
 
 $$
 PoM_{i,j}(t) \ge R_j
 $$
 
-For example, assuming that both Pool Difficulty and Scarcity Multiplier are 1x in the initial condition of the Diamond Pool, the estimated mining time is as follows.
+Long-term supply speed is not determined by the Base Mining Unit alone. CryptoStone combines the 1,000 STONX participation unit with Target Pool Power, Protocol Reference Power, Pool Difficulty, and Scarcity Multiplier so that the total Gem NFT supply is mined gradually over a long period.
 
-| Active Stake  | Estimated Time to Mine 1 Diamond NFT |
-| ------------- | ------------------------------------ |
-| 100,000 STONE | about 2.55 days                      |
-| 10,000 STONE  | about 25.5 days                      |
-| 5,000 STONE   | about 51 days                        |
-| 1,000 STONE   | about 255 days                       |
-| 100 STONE     | about 6.98 years                     |
+Under the initial Garnet Pool model, assuming both Pool Difficulty and Scarcity Multiplier are 1x and Protocol Reference Power is 100,000 Power, the expected claim interval can be interpreted as follows.
 
-This structure gives high-Mining Power users faster mining opportunities while also allowing small participants to accumulate PoM over the long term and claim Gem NFTs.
+| Active Stake  | Estimated claim interval for 1 Garnet NFT |
+| ------------- | ----------------------------------------- |
+| 1,000 STONX   | About 197 days                            |
+| 4,800 STONX   | About 41 days                             |
+| 6,000 STONX   | About 32.8 days                           |
+| 100,000 STONX | About 1.97 days                           |
 
-The author considers this structure very important for the expansion of the CryptoStone ecosystem. NFT scarcity should be maintained through total supply, attribute probabilities, and halving structure, while user participation should be expanded through low entry barriers and PoM accumulation.
+This structure allows a 1,000 STONX participant to accumulate PoM, gives mid-sized participants a monthly mining experience, and gives high-mining-power users more frequent claim opportunities. Mining Power affects claim frequency only; it does not let users choose the grade or attributes of a Gem NFT.
+
+The developer considers this structure important for CryptoStone's ecosystem expansion. NFT scarcity should be preserved through total supply, attribute probability, and halving structure, while user participation should be expanded through a lower entry threshold and a PoM accumulation model.

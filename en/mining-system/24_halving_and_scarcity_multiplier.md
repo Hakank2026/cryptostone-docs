@@ -1,8 +1,8 @@
-# 24\_halving\_and\_scarcity\_multiplier
+﻿# 24\_halving\_and\_scarcity\_multiplier
 
-The halving structure of CryptoStone is applied independently for each stone, not across the entire collection.
+The halving structure of CryptoStone is applied independently for each STONX, not across the entire collection.
 
-If the maximum supply of stone (j) is (N\_j), the quantity mined so far is (n\_j), and the mining progress ratio is (q\_j), then it is calculated as follows:
+If the maximum supply of STONX (j) is (N\_j), the quantity mined so far is (n\_j), and the mining progress ratio is (q\_j), then it is calculated as follows:
 
 $$
 q_j = n_j \div N_j
@@ -16,7 +16,7 @@ $$
 
 This means that the Diamond Pool has reached the 50% mining stage.
 
-The scarcity multiplier (S\_j) of each stone increases according to the mining progress ratio (q\_j).
+The scarcity multiplier (S\_j) of each STONX increases according to the mining progress ratio (q\_j).
 
 | Mined Supply Ratio | Remaining Supply | Scarcity Multiplier |
 | ------------------ | ---------------- | ------------------- |
@@ -35,4 +35,4 @@ $$
 
 However, when (q\_j) corresponds to the initial range, (S\_j(q\_j)) remains at a minimum of 1x. In actual smart contract implementation, rather than calculating the formula directly, it may be implemented based on a pre-disclosed range table.
 
-This formula expresses a structure in which mining difficulty increases geometrically as the remaining supply of each stone decreases. This brings the real-world structure of mining costs and difficulty increasing as mine reserves decrease into the digital environment.
+This formula expresses a structure in which mining difficulty increases geometrically as the remaining supply of each STONX decreases. This brings the real-world structure of mining costs and difficulty increasing as mine reserves decrease into the digital environment.

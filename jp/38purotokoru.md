@@ -1,25 +1,25 @@
-# 38\_プロトコル固定原則
+# 38 プロトコル固定原則
 
 CryptoStoneがビットコインのような分散型資産性を志向するためには、デプロイ後に核心規則が恣意的に変更されてはならない。
 
-| 固定項目                      | 説明                          |
-| ------------------------- | --------------------------- |
-| STONE総発行量                 | 1,200,000,000 STONE         |
-| STONE流通構造                 | 100%公開流通                    |
-| ストーン別Max Supply           | 各ストーン別最大NFT発行量              |
-| ストーン別Base Mining Interval | 基本マイニング周期                   |
-| Target Pool Power         | 初期基準値40,000,000 Power       |
-| Base Mining Unit          | 100,000 STONE               |
-| Weight確率表                 | 重量生成確率                      |
-| Color確率表                  | 色等級生成確率                     |
-| Clarity確率表                | 透明度等級生成確率                   |
-| Cut確率表                    | カット等級生成確率                   |
-| Scarcity Multiplier       | 半減期ベース難易度倍率                 |
-| Claim Burn公式              | claim時バーン公式                 |
-| Mining Power公式            | ステーキングベースのマイニングパワー公式        |
-| PoM公式                     | Proof of Mining蓄積およびclaim条件 |
-| Lock Multiplier           | ロックアップ期間別マイニング倍率            |
-| Maturity Burn公式           | ロックアップ終了時の減価償却バーン公式         |
+| 固定項目 | 説明 |
+| -------- | ---- |
+| STONX総発行量 | 1,200,000,000 STONX |
+| STONX配分構造 | DEX 50%、Direct Sale Pool 20%、Strategic / VC 10%、Listing / Liquidity Reserve 20% |
+| ストーン別Max Supply | 各ストーン別最大NFT発行量 |
+| ストーン別Base Mining Interval | 基本マイニング周期 |
+| Target Pool Power | 初期基準値40,000,000 Power |
+| Base Mining Unit | 1,000 STONX |
+| Weight確率表 | 重量生成確率 |
+| Color確率表 | 色等級生成確率 |
+| Clarity確率表 | 透明度等級生成確率 |
+| Cut確率表 | カット等級生成確率 |
+| Scarcity Multiplier | 半減期ベース難易度倍率 |
+| Claim Burn公式 | claim時バーン公式 |
+| Mining Power公式 | ステーキングベースのマイニングパワー公式 |
+| PoM公式 | Proof of Mining蓄積およびclaim条件 |
+| Lock Multiplier | ロックアップ期間別マイニング倍率 |
+| Maturity Burn公式 | ロックアップ終了時の減価償却バーン公式 |
 
 初期設定が完了すると、プロトコルはfinalizeされなければならない。その後、運営者は恣意的に発行量を増やしたり、希少度確率を変更したり、特定ユーザーにNFTを手動発行したりできてはならない。
 

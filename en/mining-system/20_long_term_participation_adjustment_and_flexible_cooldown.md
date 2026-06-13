@@ -1,8 +1,8 @@
-# 20\_long\_term\_participation\_adjustment\_and\_flexible\_cooldown
+﻿# 20\_long\_term\_participation\_adjustment\_and\_flexible\_cooldown
 
 A Lock Multiplier may be applied according to the staking period to reward long-term participants.
 
-| Lock Type   | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONE | Cooldown |
+| Lock Type   | Lock Period | Mining Multiplier (L\_i) | Maturity Burn | Returned STONX | Cooldown |
 | ----------- | ----------- | ------------------------ | ------------- | -------------- | -------- |
 | Flexible    | None        | 1.00x                    | 0%            | 100%           | 7 days   |
 | Short Lock  | 90 days     | 1.05x                    | 2.5%          | 97.5%          | None     |
@@ -24,4 +24,4 @@ This structure seeks the following balance.
 
 The lock-up multiplier is limited to a maximum of 1.25x. This is designed to provide reasonable compensation to long-term participants while preventing any specific large participant from gaining an excessively advantageous position.
 
-Even during the lock-up period, a user can claim a Gem NFT once their PoM reaches the required threshold. In other words, lock-up limits the time at which STONE can be returned, but does not prohibit Gem NFT claims themselves.
+Even during the lock-up period, a user can claim a Gem NFT once their PoM reaches the required threshold. In other words, lock-up limits the time at which STONX can be returned, but does not prohibit Gem NFT claims themselves.
