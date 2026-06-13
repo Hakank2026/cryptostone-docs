@@ -1,49 +1,45 @@
-# 22 Ambang PoM yang Diperlukan
+# 22 Required PoM threshold
 
-Ambang PoM yang diperlukan untuk menambang satu batu permata ditentukan oleh Protocol Reference Power, Base Mining Interval tiap stone, Pool Difficulty, dan Scarcity Multiplier.
+एक Gem NFT claim करने के लिए required PoM threshold निम्न elements से निर्धारित हो सकता है:
 
-Jika Base Mining Interval stone (j) adalah (T\_j), Protocol Reference Power adalah (M\_{ref}), Pool Difficulty adalah (D\_j), dan Scarcity Multiplier adalah (S\_j), maka ambang PoM yang diperlukan (R\_j) didefinisikan sebagai berikut:
+* Protocol Reference Power
+* Base Mining Interval
+* Pool Difficulty
+* Scarcity Multiplier
+
+Formula:
 
 $$
 R_j = M_{ref} \times T_j \times D_j \times S_j
 $$
 
-Nilai referensi CryptoStone adalah sebagai berikut:
+जहाँ:
 
-* Base Mining Unit = 1,000 STONX
-* Protocol Reference Power = 100,000 Power
-* Target Pool Power = 40,000,000 Power
+| Symbol | Meaning |
+| --- | --- |
+| `R_j` | stone `(j)` का required PoM |
+| `M_{ref}` | Protocol Reference Power |
+| `T_j` | Base Mining Interval |
+| `D_j` | Pool Difficulty |
+| `S_j` | Scarcity Multiplier |
 
-Base Mining Unit adalah unit partisipasi minimum, sedangkan Protocol Reference Power adalah power referensi yang digunakan untuk mengalibrasi kecepatan mining. Dengan memisahkan kedua nilai ini, CryptoStone dapat mempertahankan unit partisipasi yang mudah diakses sekaligus kontrol supply jangka panjang.
+Baseline:
 
-Misalnya, jika Base Mining Interval Garnet Pool adalah 170,000 detik dan Pool Difficulty serta Scarcity Multiplier keduanya 1x, perhitungannya adalah sebagai berikut:
+| Parameter | Value |
+| --- | ---: |
+| Base Mining Unit | 1,000 STONX |
+| Protocol Reference Power | 100,000 Power |
 
-$$
-R_{\text{Garnet}} = 100{,}000 \times 170{,}000 \times 1 \times 1
-$$
-
-$$
-R_{\text{Garnet}} = 17{,}000{,}000{,}000 \text{ PoM}
-$$
-
-Ketika Mining Power pengguna (i) adalah (P\_{i,j}), estimasi waktu yang diperlukan pengguna untuk claim satu NFT dari stone (j) dapat dinyatakan sebagai berikut:
-
-$$
-E[T_{i,j}] = R_j \div P_{i,j}
-$$
-
-Misalnya, ketika pengguna stake 6,000 STONX ke Garnet Pool dengan kondisi Flexible:
+यदि Garnet Pool का Base Mining Interval 170,000 seconds है और Difficulty तथा Scarcity Multiplier दोनों 1x हैं:
 
 $$
-E[T_{i,\text{Garnet}}] = 17{,}000{,}000{,}000 \div 6{,}000
+R = 100,000 \times 170,000 = 17,000,000,000
 $$
 
-$$
-= 2{,}833{,}333 \text{ detik}
-$$
+यदि user Mining Power 6,000 है:
 
 $$
-\approx 32.8 \text{ hari}
+17,000,000,000 / 6,000 \approx 2,833,333 \; seconds
 $$
 
-Dengan kata lain, dalam kondisi awal, pengguna yang stake 6,000 STONX dapat claim sekitar satu Garnet NFT dalam kurang lebih satu bulan. Pengguna dengan stake lebih kecil mengakumulasi PoM lebih lambat, sedangkan pengguna dengan stake lebih besar dapat mencapai kondisi claim lebih cepat.
+यह लगभग 32.8 days है।

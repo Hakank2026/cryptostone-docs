@@ -1,16 +1,15 @@
-# 06 Ekspresi atribut batu permata
+# 06 रत्न attributes की अभिव्यक्ति
 
-Nilai batu permata tidak ditentukan hanya oleh jenisnya. Bahkan di antara diamond, nilai pasar berbeda tergantung pada weight, color, clarity, dan cut.
+वास्तविक gemstone market में weight, color, clarity और cut जैसे attributes महत्वपूर्ण होते हैं। CryptoStone इन्हें digital attributes में बदलता है।
 
-Untuk merepresentasikan atribut batu permata ini dalam lingkungan digital, CryptoStone menetapkan empat atribut inti berikut pada setiap Gem NFT.
+| Attribute | Digital expression |
+| --- | --- |
+| Weight | stone की digital weight grade |
+| Color | रंग की digital grade |
+| Clarity | पारदर्शिता या clarity grade |
+| Cut | cut quality grade |
+| Rarity | attribute scores और pool supply score से निकला tier |
 
-| Atribut | Makna |
-| ------- | ----- |
-| Weight | Berat batu permata |
-| Color | Grade warna batu permata |
-| Clarity | Grade kejernihan batu permata |
-| Cut | Grade potongan batu permata |
+इन attributes को केवल decoration के रूप में नहीं देखा जाता। ये Gem NFT की identity और rarity evaluation का आधार बनते हैं।
 
-Keempat atribut ini ditentukan pada saat mining dan tidak dapat diubah setelah penerbitan. Ini menerapkan secara digital struktur yang mirip dengan cara batu permata nyata dinilai berdasarkan atribut individual setelah appraisal.
-
-Dalam CryptoStone, setiap NFT bukan sekadar token yang menunjuk ke file gambar. NFT tersebut adalah aset digital yang secara langsung memegang nilai atribut batu permata. Gambar, model 3D, dan format kartu visual dapat menjadi elemen pendukung pengalaman pengguna, tetapi esensi CryptoStone NFT berada pada data atribut yang dicatat on-chain.
+उच्च attribute grades कम probability के साथ उत्पन्न होने चाहिए। इससे high-grade Gem NFT दुर्लभ रहता है और collection value अधिक स्पष्ट बनती है।

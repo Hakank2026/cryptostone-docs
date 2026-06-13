@@ -1,26 +1,17 @@
-# 33 Pembentukan nilai koleksi
+# 33 Collectible value formation
 
-Kelangkaan adalah faktor penting dalam pembentukan nilai di pasar koleksi. Kartu Pokémon, kartu olahraga, figur edisi terbatas, karya seni, dan jam tangan mewah tidak dihargai hanya berdasarkan nilai utilitas. Harga terbentuk melalui kombinasi seri tertentu, jumlah terbatas, grade langka, kondisi penyimpanan, permintaan pasar, dan persepsi komunitas.
+Gem NFT का collectible value कई layers से बनता है।
 
-CryptoStone menerapkan prinsip ekonomi collectibles ini pada batu permata digital.
+| Layer | Contribution |
+| --- | --- |
+| Stone Type | जन्मरत्न और category identity |
+| Attributes | weight, color, clarity, cut |
+| Rarity Tier | Common से Genesis तक |
+| Mining Record | किस pool और किस समय mined हुआ |
+| Ownership History | transfer और holder records |
+| Media | image और video representation |
+| Utility | marketplace, Arena, Refinery use |
 
-| Elemen | Deskripsi |
-| ------ | --------- |
-| Total supply berdasarkan stone | Perbedaan supply antara Diamond, Ruby, Sapphire, dan lainnya |
-| Pool difficulty | Target Power dan Difficulty tiap pool |
-| Halving berdasarkan stone | Kenaikan Scarcity Multiplier saat jumlah yang ditambang bertambah |
-| Probabilitas Weight | Carat lebih besar memiliki probabilitas lebih rendah |
-| Probabilitas Color | Grade warna lebih tinggi memiliki probabilitas lebih rendah |
-| Probabilitas Clarity | Grade clarity lebih tinggi memiliki probabilitas lebih rendah |
-| Probabilitas Cut | Grade cut lebih tinggi memiliki probabilitas lebih rendah |
-| Low tokenId | Collectibility dari batu yang ditambang lebih awal |
-| Mining time | Makna periode tertentu dan tahap halving |
-| Riwayat transaksi on-chain | Catatan kepemilikan dan provenance |
+Common tier भी worthless नहीं होना चाहिए। Common NFT refinement material, collection completion और entry-level ownership में उपयोगी हो सकता है।
 
-| Elemen | Deskripsi |
-| ------ | --------- |
-| Riwayat refinement | Catatan generasi refinement dan supply compression |
-
-Struktur ini memungkinkan pengguna mengoleksi batu permata digital unik yang ditambang dalam struktur probabilitas publik, bukan sekadar membeli gambar NFT.
-
-Dalam CryptoStone, rarity bukan slogan marketing. Rarity dibentuk oleh jumlah supply, tabel probabilitas, difficulty mining, dan struktur halving yang dikunci dalam contract.
+Higher tiers अधिक rare होते हैं, लेकिन market value हमेशा external demand, liquidity और community perception से प्रभावित होगी। Whitepaper price guarantee नहीं देता।

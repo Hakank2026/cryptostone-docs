@@ -1,24 +1,15 @@
-# 17 Target Pool Power dan periode mining jangka panjang
+# 17 Target Pool Power और दीर्घकालिक mining period
 
-Target Pool Power CryptoStone dihitung bukan berdasarkan total supply STONX, melainkan berdasarkan jumlah staking efektif yang diperkirakan benar-benar berpartisipasi dalam mining.
+Target Pool Power वह reference level है जिसके आसपास किसी pool की mining speed संतुलित मानी जाती है।
 
-* Target Pool Power = 40,000,000 Power per Pool
-* 12 Pools Total Target Power = 480,000,000 Power
+Baseline:
 
-Ini mencerminkan asumsi bahwa sekitar 40% dari total supply STONX sebesar 1,200,000,000 dapat berpartisipasi dalam ekosistem mining dalam jangka panjang.
+| Parameter | Value |
+| --- | ---: |
+| Pool count | 12 |
+| Target Pool Power per pool | 40,000,000 Power |
+| Total Target Pool Power | 480,000,000 Power |
 
-Jika total Mining Power dari pool tertentu (j) adalah (P\_j), dan Target Pool Power-nya adalah (P\_j^\*), total pool power didefinisikan sebagai berikut.
+यदि total Mining Power target से अधिक हो जाता है, तो Pool Difficulty बढ़ सकती है। इससे mining speed अनियंत्रित रूप से तेज़ नहीं होती।
 
-$$
-P_j = \Sigma P_{i,j}
-$$
-
-$$
-P_j^* = 40,000,000
-$$
-
-Dengan asumsi peserta bertambah 10,000 orang setiap tahun, sekitar 100,000 pengguna berpartisipasi setelah 10 tahun, dan average active stake sekitar 4,800 STONX, dibutuhkan sekitar 8 hingga 9 tahun agar sekitar 90% total supply Gem NFT ditambang.
-
-Karena struktur halving, kecepatan mining setelah tahap 90% menjadi lebih lambat. Karena itu, mining 100% total supply Gem NFT dapat memerlukan lebih dari 12 tahun.
-
-Estimasi periode ini tidak dimaksudkan untuk memprediksi return rate atau harga tertentu. Ini adalah model untuk menjelaskan bahwa CryptoStone bertujuan menjadi ekosistem mining terdesentralisasi di mana batu permata digital ditambang secara bertahap dalam waktu panjang, bukan event minting NFT jangka pendek.
+यह design long-term depletion को नियंत्रित करता है। लक्ष्य यह नहीं है कि सारी supply ठीक 10 वर्षों में mined हो जाए। प्रारंभिक वर्षों में अधिक activity हो सकती है, लेकिन अंतिम supply Scarcity Multiplier के कारण धीरे-धीरे mined होती है।

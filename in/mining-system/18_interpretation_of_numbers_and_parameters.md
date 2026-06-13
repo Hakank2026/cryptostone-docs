@@ -1,20 +1,16 @@
-# 18 Interpretasi angka dan parameter
+# 18 संख्याओं और parameters की व्याख्या
 
-Supply berdasarkan stone, Base Mining Interval, formula Mining Power, ambang PoM, halving multiplier, tabel probabilitas Weight·Color·Clarity·Cut, dan formula Rarity Score yang disajikan dalam whitepaper ini bukan standar absolut yang meniru ekosistem batu permata nyata secara sempurna.
+CryptoStone के parameters economic promise नहीं हैं। वे protocol behavior को समझाने और calibrate करने के लिए design values हैं।
 
-Angka-angka ini adalah parameter referensi awal yang dirancang untuk tujuan berikut.
+| Term | Meaning |
+| --- | --- |
+| Base Mining Unit | minimum participation unit |
+| Protocol Reference Power | mining speed calculation का reference power |
+| Target Pool Power | pool-level balance point |
+| Base Mining Interval | reference mining time |
+| Pool Difficulty | total Mining Power के अनुसार adjustment |
+| Scarcity Multiplier | supply depletion के अनुसार बढ़ने वाला multiplier |
 
-| Tujuan | Deskripsi |
-| ------ | --------- |
-| Ekspresi kelangkaan digital | Mengekspresikan kelangkaan batu permata dalam lingkungan on-chain |
-| Implementasi difficulty mining | Menerapkan difficulty mining dan batas supply melalui smart contract |
-| Pembeda kelangkaan relatif | Merancang perbedaan kelangkaan komparatif berdasarkan Stone Type |
-| Pembeda nilai koleksi | Meningkatkan pemahaman collectible melalui struktur rarity dan tier |
-| Kontrol supply jangka panjang | Mengelola kecepatan supply melalui halving dan peningkatan difficulty |
-| Skalabilitas partisipasi | Mengakomodasi peserta kecil maupun peserta berskala besar |
+यदि user participation बहुत बढ़ता है, तो difficulty बढ़ सकती है। यदि supply बहुत घटती है, तो Scarcity Multiplier mining को धीमा कर सकता है।
 
-Karena itu, nilai dalam whitepaper ini tidak dapat dianggap merefleksikan secara sempurna seluruh faktor pembentukan harga, standar appraisal, struktur distribusi, supply dan demand, nilai budaya, biaya penyimpanan fisik, atau model evaluasi lembaga appraisal dalam pasar batu permata nyata.
-
-CryptoStone tidak berupaya mereplikasi pasar batu permata nyata apa adanya. CryptoStone adalah proyek untuk menerapkan karakteristik inti batu permata - kelangkaan, grading, mineability, dan collectibility - dalam lingkungan digital terdesentralisasi.
-
-Pengembang menganggap nilai dalam whitepaper ini bukan angka sewenang-wenang, melainkan nilai referensi awal untuk menjelaskan dan bereksperimen dengan konsep batu permata digital terdesentralisasi. Nilai tersebut dapat berkembang menjadi model yang lebih halus melalui riset masa depan, respons pasar, tinjauan komunitas, verifikasi teknis, dan kajian hukum. Namun, setelah protokol resmi dideploy dan aturan inti difinalisasi, nilai inti yang telah ditentukan sebelumnya tidak boleh diubah secara sewenang-wenang oleh operator.
+इससे protocol का उद्देश्य short-term issuance नहीं, बल्कि दीर्घकालिक mining experience बनाना है।

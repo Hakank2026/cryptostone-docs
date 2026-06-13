@@ -1,20 +1,14 @@
-# 34 Struktur mining terdesentralisasi
+# 34 Decentralized mining structure
 
-Dalam CryptoStone, mining tidak dilakukan oleh server atas nama pengguna. Pengguna stake STONX ke stone pool pilihannya; setelah nilai PoM mencapai ambang yang diperlukan dari pool tersebut seiring waktu, pengguna langsung memanggil fungsi contract seperti `claimGem()` untuk menerima Gem NFT.
+CryptoStone में mining server द्वारा manually controlled नहीं होनी चाहिए। Core mining और claim conditions smart contract rules के आधार पर verify होने चाहिए।
 
-1. Pengguna memegang STONX.
-2. Pengguna memilih stone pool.
-3. Pengguna stake STONX.
-4. Mining Power dihasilkan.
-5. PoM terakumulasi seiring waktu.
-6. Ketika PoM mencapai ambang yang diperlukan, pengguna memanggil `claimGem()`.
-7. Contract memverifikasi apakah kondisi mining terpenuhi.
-8. Atribut dihasilkan menggunakan randomness yang dapat diverifikasi.
-9. Gem NFT diterbitkan.
-10. NFT ditransfer ke wallet pengguna.
+Decentralized mining structure के मुख्य तत्व:
 
-Dalam proses ini, tidak ada server pusat yang menerbitkan batu permata atau menetapkan atribut. Kondisi dan hasil mining ditentukan oleh kode.
+* public pool contracts
+* verifiable STONX participation
+* on-chain ownership records
+* deterministic claim conditions
+* transparent supply counters
+* no arbitrary admin mint
 
-Smart contract tidak berjalan sendiri secara otomatis. Namun, siapa pun dapat memanggil contract, dan contract memverifikasi serta mengeksekusi hasil sesuai kondisi yang telah ditentukan. Karena itu, struktur mining CryptoStone dapat beroperasi tanpa server pusat.
-
-Pengembang percaya bahwa poin penting dalam struktur ini bukan sekadar “tidak ada server”, tetapi bahwa “bahkan tanpa server, pengguna dapat memanggil contract secara langsung dan menerima hasil mining sesuai aturan yang telah ditentukan.”
+Frontend user experience को सरल बना सकता है, लेकिन asset issuance logic contract में होना चाहिए। Server या watcher metadata और media finalization में सहायता कर सकता है, लेकिन core ownership और mint logic को मनमाने तरीके से बदल नहीं सकता।

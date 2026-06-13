@@ -1,30 +1,20 @@
-# 44 Pernyataan hukum dan investasi
+# 44 Legal और investment disclaimers
 
-CryptoStone tidak memberikan hak kepemilikan, hak penukaran, atau hak jaminan atas batu permata nyata. CryptoStone Gem NFT bukan klaim terhadap batu permata nyata, melainkan aset batu permata digital yang ditambang on-chain.
+CryptoStone Gem NFT वास्तविक gemstone पर ownership, redemption right या collateral right नहीं देता। यह physical gemstone claim नहीं, बल्कि on-chain mined digital collectible asset है।
 
-Struktur staking dan lock-up CryptoStone tidak dirancang untuk memberikan pendapatan tetap, bunga, dividen, atau hasil investasi. Menyetor STONX ke mining pool adalah aktivitas partisipasi protokol untuk memperoleh peluang mining Gem NFT, dan tidak menjamin return rate atau apresiasi harga pasar tertentu.
+STONX staking या mining participation fixed return, interest, dividend या investment yield नहीं देता। Mining pool में STONX deposit करना Gem NFT mining opportunity के लिए protocol participation है।
 
-Memegang atau staking STONX tidak menjamin return, dividen, bunga, apresiasi harga, atau keuntungan penjualan kembali NFT tertentu. Gem NFT adalah aset digital collectible, dan nilai pasarnya dapat berubah sesuai evaluasi subjektif serta permintaan peserta pasar eksternal.
+Gem NFT का market value external demand, rarity perception, liquidity और user evaluation से बदल सकता है। CryptoStone price appreciation, resale profit या guaranteed return का दावा नहीं करता।
 
-PoM bukan aset investasi terpisah, obligasi, hak pendapatan, poin, atau token yang dapat diperdagangkan. PoM adalah indikator internal protokol yang menunjukkan apakah pengguna telah mengakumulasi kerja mining di stone pool tertentu, dan tidak dapat dikonversi antar pool atau ditransfer keluar.
+मुख्य risks:
 
-CryptoStone juga tidak menjanjikan return rate, apresiasi harga, jaminan pokok, atau liquidity pasar tertentu. Nilai CryptoStone dapat terbentuk berdasarkan permintaan koleksi, persepsi rarity, aktivitas trading, dan ekspansi ekosistem oleh peserta pasar.
+| Risk | Meaning |
+| --- | --- |
+| Smart contract risk | contract bug या exploit |
+| Liquidity risk | STONX या NFT market liquidity कम हो सकती है |
+| Metadata risk | API या media update delay |
+| Regulatory risk | jurisdiction-specific legal uncertainty |
+| Market risk | NFT value subjective और volatile हो सकती है |
+| Expansion risk | Marketplace, Arena, Refinery future design बदल सकता है |
 
-Angka dan formula dalam whitepaper ini adalah nilai desain awal untuk menerapkan konsep batu permata digital terdesentralisasi. Nilai tersebut tidak mengekspresikan secara sempurna seluruh elemen ekonomi, budaya, dan gemologi pasar batu permata nyata, dan tidak dapat dianggap sebagai model ekonomi lengkap dari ekosistem.
-
-| Risiko | Deskripsi |
-| ------ | --------- |
-| Smart contract vulnerability | Kemungkinan kesalahan kode atau hacking |
-| Randomness generation risk | Ketergantungan pada infrastruktur randomness atau kesalahan implementasi |
-| Insufficient NFT market demand | Kemungkinan permintaan koleksi tidak mencukupi |
-| Insufficient STONX liquidity | Kemungkinan liquidity exchange dan DEX tidak mencukupi |
-| Regulatory changes | Perubahan regulasi aset digital menurut yurisdiksi |
-| Mainnet expansion failure | Kemungkinan roadmap jangka panjang tidak terealisasi |
-| Uncertainty in rarity evaluation | Kemungkinan pasar mengevaluasi rarity secara berbeda |
-| Initial parameter risk | Kemungkinan parameter berfungsi berbeda dari permintaan pasar aktual |
-| Burn burden | Claim Burn dan Maturity Burn dapat menjadi beban bagi peserta |
-| Initial volatility in public circulation | Volatilitas harga pasar awal dapat tinggi dalam struktur alokasi yang menghadap pasar |
-| LP structure risk | Masalah kepercayaan dapat muncul terkait penyediaan liquidity awal dan penanganan LP |
-| Expansion module risk | Fungsi berikutnya seperti refinement, marketplace, ranking, dan collection quest dapat beroperasi berbeda dari desain yang dimaksudkan |
-
-Karena itu, CryptoStone harus diterapkan secara hati-hati melalui tinjauan teknis, ekonomi, dan hukum.
+Users को technical, economic और legal risks समझकर ही भाग लेना चाहिए।

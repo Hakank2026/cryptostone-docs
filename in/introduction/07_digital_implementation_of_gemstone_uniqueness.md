@@ -1,15 +1,16 @@
-# 07 Implementasi digital atas keunikan batu permata
+# 07 डिजिटल विशिष्टता का कार्यान्वयन
 
-CryptoStone dapat mempertimbangkan berbagai opsi teknis untuk mengekspresikan keunikan setiap batu. Struktur fungible token, semi-fungible token, dan composite token semuanya mungkin, tetapi tujuan inti CryptoStone adalah agar setiap batu memiliki kombinasi atribut dan tokenId yang unik.
+एक Gem NFT दूसरे Gem NFT जैसा नहीं होना चाहिए, भले ही दोनों एक ही stone type से हों। uniqueness कई layers से बनती है।
 
-Karena itu, batu permata dalam CryptoStone direpresentasikan sebagai Gem NFT dengan tokenId dan kombinasi atribut unik. Pilihan ini tidak dimaksudkan untuk menekankan standar teknis tertentu, tetapi merupakan hasil dari penerapan fungsi berikut.
+* tokenId
+* stone type
+* attribute combination
+* mining timestamp
+* mining pool
+* rarity tier
+* ownership history
+* media representation
 
-| Kebutuhan Implementasi | Alasan Mengadopsi Struktur NFT |
-| ---------------------- | ------------------------------ |
-| Membutuhkan tokenId unik untuk setiap batu | Struktur NFT cocok untuk merepresentasikan aset berbasis tokenId unik. |
-| Penyimpanan atribut berbeda untuk setiap batu | Metadata spesifik tokenId dan struktur atribut on-chain memungkinkan hal ini. |
-| Membutuhkan catatan transfer kepemilikan | Transfer NFT standar dan pencatatan kepemilikan dimungkinkan. |
-| Representasi banyak stone dalam satu collection | 12 stone dapat dibedakan melalui atribut `stoneType`. |
-| Pelacakan rarity dan riwayat transaksi | Provenance dan rarity tiap NFT dapat dilacak. |
+यह structure Gem NFT को non-fungible बनाता है। दो Garnet NFT एक ही collection में हो सकते हैं, लेकिन उनका weight, color, clarity, cut और mining record अलग हो सकता है।
 
-Dengan kata lain, struktur Gem NFT dalam CryptoStone bukan sarana untuk membuat image NFT. Struktur ini adalah wadah teknis untuk mengekspresikan keunikan dan sifat aset berbasis atribut dari batu permata digital.
+CryptoStone का लक्ष्य ऐसा digital gemstone asset बनाना है जिसे केवल देखने से नहीं, बल्कि उसके metadata और on-chain records से भी समझा जा सके।

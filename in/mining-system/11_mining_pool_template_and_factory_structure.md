@@ -1,24 +1,17 @@
-# 11 Mining Pool Template dan Factory
+# 11 Mining Pool Template और Factory
 
-12 Mining Pool Contract bukan pengembangan terpisah dengan logika berbeda. Semua pool dideploy berdasarkan Mining Pool Template yang sama dan telah diaudit. Setiap pool menggunakan logika inti yang sama, sementara hanya parameter berikut yang berbeda.
+12 Mining Pool Contracts अलग-अलग logic से नहीं बनाए जाने चाहिए। सभी pools एक समान audited Mining Pool Template से deploy किए जा सकते हैं।
 
-| Parameter | Deskripsi |
-| --------- | --------- |
-| stoneType | Stone Type yang ditambang dari pool tersebut |
-| maxSupply | Jumlah penerbitan maksimum stone tersebut |
-| baseMiningInterval | Interval mining dasar |
-| targetPoolPower | Mining Power referensi |
-| scarcitySchedule | Struktur halving berdasarkan stone |
-| poolAddress | Alamat penerbitan yang diizinkan oleh NFT contract |
+प्रत्येक pool में केवल parameters अलग होते हैं:
 
-Untuk tujuan ini, CryptoStone dapat menggunakan struktur Pool Factory. Pool Factory membuat 12 pool khusus stone berdasarkan Mining Pool Template yang sama dan mengunci parameter inti setiap pool setelah deployment.
+| Parameter | Meaning |
+| --- | --- |
+| stoneType | उस pool का gemstone type |
+| maxSupply | maximum Gem NFT supply |
+| baseMiningInterval | reference mining time |
+| targetPoolPower | target total Mining Power |
+| burnMultiplier | claim burn calculation के लिए difficulty |
 
-| Keunggulan | Deskripsi |
-| ---------- | --------- |
-| Konsistensi kode | Semua 12 pool menggunakan logika yang sama. |
-| Efisiensi audit | Audit keamanan dapat fokus pada satu Pool Template. |
-| Pengurangan risiko | Mengurangi kemungkinan bug pengecualian akibat kode berbeda pada tiap pool. |
-| Transparansi parameter | Perbedaan antarpool hanya berasal dari nilai tetap yang dipublikasikan. |
-| Skalabilitas | Struktur yang sama dapat digunakan saat menambah stone pool baru di masa depan. |
+Pool Factory 12 stone-specific pools को एक ही template के आधार पर बना सकता है। इससे code consistency, audit efficiency और transparency बढ़ती है।
 
-Dengan demikian, CryptoStone mempertahankan struktur ekonomi “12 tambang independen” sambil meningkatkan stabilitas dan transparansi melalui smart contract template yang sama dan dapat diverifikasi.
+इस structure से CryptoStone “12 independent mines” की economic logic को बनाए रखते हुए smart contract stability को मजबूत कर सकता है।

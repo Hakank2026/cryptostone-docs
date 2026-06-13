@@ -1,14 +1,14 @@
-# 28 Atribut Clarity
+# 28 Clarity attribute
 
-Clarity merepresentasikan grade kejernihan batu permata.
+Clarity gemstone की transparency और internal quality को व्यक्त करता है। Digital gemstone में इसे metadata grade के रूप में दर्ज किया जा सकता है।
 
-| Clarity Grade | Probability | Score |
-| ------------- | ----------: | ----: |
-| FL | 0.5% | 20 |
-| IF | 1.0% | 18 |
-| VVS1 | 2.0% | 16 |
-| VVS2 | 4.0% | 13 |
-| VS1 | 8.0% | 10 |
-| VS2 | 14.0% | 7 |
-| SI1 | 25.0% | 4 |
-| SI2 | 45.5% | 1 |
+High clarity stones कम probability से उत्पन्न होने चाहिए।
+
+| Clarity Grade | Score | Meaning |
+| --- | ---: | --- |
+| Included | 5 | common |
+| Clear | 10 | moderate |
+| Very Clear | 15 | rare |
+| Flawless | 20 | very rare |
+
+Clarity visual image से अलग core attribute है। यदि image generation delayed हो, तब भी clarity metadata NFT की पहचान का हिस्सा रहना चाहिए।

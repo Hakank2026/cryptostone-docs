@@ -1,13 +1,27 @@
-# 19 Perhitungan Mining Power
+# 19 Mining Power की गणना
 
-Dalam CryptoStone, Mining Power menentukan kecepatan dan peluang pengguna untuk menambang batu permata. Peserta yang stake lebih banyak STONX memperoleh Mining Power lebih tinggi dan dapat mencapai kondisi claim lebih sering.
+Mining Power उपयोगकर्ता की STONX participation और lock-up condition से निकाला जाता है।
 
-Jika jumlah stake pengguna _(i)_ adalah _(s\_{i,j})_, lock-up multiplier adalah _(L\_i)_, dan Mining Power pengguna adalah _(P\_{i,j})_, maka dihitung sebagai berikut:
+सरल रूप:
 
 $$
 P_{i,j} = s_{i,j} \times L_i
 $$
 
-Mining Power tidak secara langsung meningkatkan probabilitas menerima batu permata grade lebih tinggi. Mining Power hanya memengaruhi kecepatan akumulasi PoM.
+जहाँ:
 
-Ini mirip dengan Bitcoin mining. Peserta dengan lebih banyak peralatan mining memperoleh lebih banyak peluang mining, tetapi mereka tidak dapat mengubah aturan mining. Demikian pula, dalam CryptoStone, peserta yang stake lebih banyak STONX mengakumulasi PoM lebih cepat, tetapi tidak dapat menaikkan probabilitas memperoleh gemstone yang lebih baik secara sewenang-wenang.
+| Symbol | Meaning |
+| --- | --- |
+| `P_{i,j}` | user `(i)` का pool `(j)` में Mining Power |
+| `s_{i,j}` | pool में stake किया गया STONX |
+| `L_i` | lock-up multiplier |
+
+उदाहरण:
+
+यदि उपयोगकर्ता 6,000 STONX stake करता है और multiplier 1.0 है:
+
+$$
+P = 6,000 \times 1.0 = 6,000
+$$
+
+यदि lock-up multiplier अधिक है, तो Mining Power बढ़ सकता है। फिर भी उच्च Mining Power का अर्थ बेहतर grade की guarantee नहीं है। यह केवल claim threshold तक पहुँचने की speed को प्रभावित करता है।

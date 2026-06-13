@@ -1,11 +1,9 @@
-# CRYPTO STONE WP v3.0 IN
+# CryptoStone व्हाइटपेपर v3.0 हिन्दी संस्करण
 
-Bitcoin membentuk konsep aset baru yang dikenal sebagai emas digital melalui pasokan terbatas, aturan mining yang terbuka, jaringan terdesentralisasi, dan struktur transaksi yang dapat diverifikasi oleh siapa pun, meskipun tidak didukung langsung oleh emas fisik. Makna utama Bitcoin adalah bahwa kelangkaan dan kepemilikan digital dapat diwujudkan melalui kode dan jaringan tanpa bergantung pada penerbit atau lembaga pusat tertentu.
+विकेंद्रीकृत वातावरण में डिजिटल रत्न संपत्तियों पर अध्ययन
 
-Pengembang memperluas gagasan ini ke batu permata. Di dunia nyata, batu permata memiliki cadangan terbatas, dan setiap batu memiliki tingkat kelangkaan serta nilai yang berbeda menurut atribut seperti weight, color, clarity, dan cut. Bahkan batu dari jenis yang sama dapat memiliki nilai berbeda ketika atribut individualnya berbeda. Dalam arti ini, batu permata secara alami bersifat non-fungible dan cocok direpresentasikan sebagai aset unik dalam lingkungan digital.
+Bitcoin ने सीमित आपूर्ति, खुले mining नियम, विकेंद्रीकृत नेटवर्क और किसी के भी द्वारा सत्यापित की जा सकने वाली transaction संरचना के माध्यम से digital gold की अवधारणा बनाई। Bitcoin का मुख्य अर्थ यह है कि scarcity और ownership को किसी केंद्रीय issuer या संस्था पर निर्भर किए बिना code और network के माध्यम से व्यक्त किया जा सकता है।
 
-CryptoStone adalah protokol batu permata digital terdesentralisasi yang dirancang untuk mengekspresikan kemampuan mining, kelangkaan, grading, dan collectibility batu permata sebagai data on-chain yang dapat diverifikasi secara publik. Gem NFT ditambang dalam lingkungan digital tanpa intervensi sewenang-wenang dari server pusat atau operator. Setiap batu direpresentasikan sebagai Gem NFT unik, dan atribut seperti stone type, weight, color, clarity, cut, mining time, dan mining pool dicatat serta ditampilkan melalui protokol.
+CryptoStone इसी विचार को रत्नों की दिशा में आगे बढ़ाता है। वास्तविक दुनिया में रत्नों की मात्रा सीमित होती है, और weight, color, clarity तथा cut जैसे attributes के कारण समान प्रकार के रत्नों का मूल्य भी अलग हो सकता है। इस दृष्टि से रत्न स्वाभाविक रूप से non-fungible होते हैं और digital unique asset के रूप में व्यक्त किए जा सकते हैं।
 
-Proyek ini tidak bertujuan memberikan hak kepemilikan, hak jaminan, atau hak penukaran atas batu permata fisik. Whitepaper ini mengusulkan studi dan eksperimen untuk menerapkan karakteristik struktural batu permata nyata - pasokan terbatas, mineability, grading, scarcity, dan collectibility - sebagai aset langka yang berdiri sendiri dalam lingkungan digital.
-
-Jika Bitcoin menciptakan narasi emas digital, dan Litecoin pernah disebut perak digital, CryptoStone menghadirkan kategori aset baru: batu permata digital yang ditambang dan direfinement melalui smart contract.
+CryptoStone एक decentralized digital gemstone protocol है, जिसका उद्देश्य mining, scarcity, grading और collectibility को public verifiable on-chain data के रूप में व्यक्त करना है। Gem NFT डिजिटल वातावरण में mined होते हैं, और प्रत्येक stone type, weight, color, clarity, cut, mining time तथा mining pool जैसे attributes protocol record में दिखाई देते हैं।

@@ -1,30 +1,18 @@
-# 38 Prinsip finalisasi protokol
+# 38 Protocol finalization principles
 
-Agar CryptoStone dapat mengarah pada karakteristik aset terdesentralisasi seperti Bitcoin, aturan intinya tidak boleh diubah secara sewenang-wenang setelah deployment.
+Protocol finalization का अर्थ है कि core issuance और rarity rules operator द्वारा मनमाने तरीके से बदले न जा सकें।
 
-| Fixed Item | Description |
-| ---------- | ----------- |
-| Total STONX supply | 1,200,000,000 STONX |
-| STONX circulation structure | Open Market Allocation |
-| Max Supply by stone | Jumlah penerbitan NFT maksimum tiap stone |
-| Base Mining Interval by stone | Interval mining dasar |
-| Target Pool Power | Nilai referensi awal 40,000,000 Power |
-| Base Mining Unit | 1,000 STONX |
-| Weight probability table | Probabilitas generasi Weight |
-| Color probability table | Probabilitas generasi Color grade |
-| Clarity probability table | Probabilitas generasi Clarity grade |
-| Cut probability table | Probabilitas generasi Cut grade |
-| Scarcity Multiplier | Difficulty multiplier berbasis halving |
-| Claim Burn formula | Formula burn saat claim |
-| Mining Power formula | Formula Mining Power berbasis staking |
-| PoM formula | Akumulasi Proof of Mining dan kondisi claim |
-| Lock Multiplier | Mining multiplier berdasarkan periode lock-up |
-| Maturity Burn formula | Formula depreciation burn saat lock-up maturity |
+Finalization से पहले जिन items को स्पष्ट करना आवश्यक है:
 
-Setelah pengaturan awal selesai, protokol harus difinalisasi. Setelah itu, operator tidak boleh dapat menaikkan supply secara sewenang-wenang, mengubah probabilitas rarity, atau menerbitkan NFT secara manual kepada pengguna tertentu.
+| Item | Meaning |
+| --- | --- |
+| Supply limits | token और NFT supply rules |
+| Probability table | rarity और attribute probability |
+| PoM formula | mining work calculation |
+| Claim condition | NFT claim threshold |
+| Admin function list | कौन से functions temporary हैं |
+| Removal plan | admin authority कब और कैसे हटेगी |
 
-Core contract CryptoStone harus memiliki source code yang diverifikasi publik setelah deployment, dan supply token, supply NFT, tabel probabilitas, formula mining, serta struktur perhitungan ambang PoM tidak boleh dapat diubah setelah finalization.
+Finalization के बाद operator को supply बढ़ाने, rarity probability बदलने, या 특정 user को manually high-grade NFT देने की शक्ति नहीं होनी चाहिए।
 
-Jika fungsi administratif terbatas diperlukan sebelum finalization, daftar, tujuan, waktu penghapusan, dan metode kontrol fungsi tersebut harus dipublikasikan dengan jelas. Setelah finalization, authority administratif yang terkait dengan jumlah penerbitan inti, tabel probabilitas, hak penerbitan, dan metode perhitungan PoM harus dihapus atau dinonaktifkan.
-
-Desentralisasi tidak selesai hanya karena sesuatu dideploy di blockchain. Desentralisasi terbentuk melalui aturan yang tidak dapat diubah operator, kode yang dapat diverifikasi siapa pun, dan struktur yang dapat diikuti siapa pun.
+Decentralization code verification, public rules और immutable core parameters से मजबूत होती है।

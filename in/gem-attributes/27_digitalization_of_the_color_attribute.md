@@ -1,14 +1,14 @@
-# 27 Atribut Color
+# 27 Color attribute
 
-Color merepresentasikan grade warna batu permata. Grade yang lebih tinggi dihasilkan dengan probabilitas lebih rendah.
+Color gemstone identity और market perception में महत्वपूर्ण role निभाता है। CryptoStone में Color को digital grade के रूप में record किया जा सकता है।
 
-| Color Grade | Probability | Score |
-| ----------- | ----------- | ----- |
-| D | 1% | 15 |
-| E | 2% | 13 |
-| F | 4% | 11 |
-| G | 8% | 8 |
-| H | 15% | 5 |
-| I | 20% | 3 |
-| J | 25% | 1 |
-| K | 25% | 1 |
+Higher color grades lower probability के साथ generate होने चाहिए ताकि rare color combinations की value स्पष्ट रहे।
+
+| Color Grade | Score | Meaning |
+| --- | ---: | --- |
+| Standard | 5 | common color quality |
+| Fine | 10 | improved color quality |
+| Vivid | 15 | rare color quality |
+| Exceptional | 20 | highest color quality |
+
+Color score अकेले final rarity तय नहीं करता। यह Weight, Clarity, Cut और Pool Supply Score के साथ मिलकर overall Rarity Score बनाता है।

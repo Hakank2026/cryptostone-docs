@@ -1,15 +1,11 @@
-# 45 Signifikansi proyek
+# 45 Project significance
 
-Signifikansi CryptoStone dapat diringkas dalam tiga poin.
+CryptoStone का महत्व यह है कि यह NFT को केवल external image ownership से आगे ले जाकर attribute-based digital asset के रूप में प्रस्तुत करता है।
 
-Pertama, CryptoStone mengusulkan bahwa NFT dapat melampaui kepemilikan konten eksternal dan menjadi aset berbasis atribut itu sendiri. Sementara banyak NFT yang ada bergantung pada gambar atau platform, CryptoStone berupaya memperkuat sifat aset NFT dengan langsung memegang atribut batu permata sebagai data on-chain.
+पहला, CryptoStone gemstone attributes को asset metadata का core बनाता है। Weight, color, clarity, cut और rarity केवल decoration नहीं, बल्कि asset differentiation का आधार हैं।
 
-Kedua, CryptoStone membawa struktur kelangkaan dan grading batu permata ke lingkungan digital. Di dunia nyata, nilai batu permata berbeda menurut weight, color, clarity, dan cut. CryptoStone menerapkan hal ini melalui tabel probabilitas, mining difficulty, halving, dan batas supply.
+दूसरा, CryptoStone mining और scarcity को digital gemstone structure से जोड़ता है। यदि Bitcoin ने gold scarcity को digitize किया, तो CryptoStone gemstone scarcity और collectibility को digitize करने का प्रयास करता है।
 
-Ketiga, CryptoStone memperluas konsep mining terdesentralisasi setelah Bitcoin ke domain aset baru. Jika Bitcoin mendigitalisasi kelangkaan emas dan Litecoin membentuk narasi perak digital, CryptoStone mendigitalisasi kelangkaan dan collectibility batu permata.
+तीसरा, ecosystem modules Gem NFT को holding asset से आगे ले जाते हैं। Marketplace trading, Refinery supply compression और Arena gameplay usage history बना सकते हैं।
 
-Selain itu, CryptoStone mengusulkan struktur ekosistem di mana Gem NFT yang ditambang tidak hanya menjadi aset holding, tetapi dapat berkembang ke refinement, trading, ranking, dan aktivitas koleksi. Ini menunjukkan bahwa nilai NFT dapat melampaui gambar atau rarity sederhana menuju usage history, refinement generation, supply compression history, dan utility ekosistem.
-
-CryptoStone tidak mengklaim menggantikan batu permata nyata. CryptoStone adalah proyek yang menafsirkan kembali konsep aset batu permata dalam lingkungan digital.
-
-Pengembang percaya bahwa upaya seperti ini dapat berkontribusi pada kemampuan teknologi blockchain untuk mengekspresikan nilai abstrak dan aset berbasis atribut dari dunia nyata dalam lingkungan digital, melampaui transaksi finansial sederhana.
+CryptoStone यह दावा नहीं करता कि यह महान खोज या पूरी तरह नया आविष्कार है। यह दृष्टिकोण का परिवर्तन है: gemstone attributes को digital asset value system के रूप में देखना। यदि market इस attribute, scarcity और collectibility structure को स्वीकार करता है, तो CryptoStone digital gemstone category बन सकता है।

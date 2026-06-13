@@ -1,18 +1,15 @@
-# 04 Prinsip Kepercayaan Protokol
+# 04 प्रोटोकॉल विश्वास सिद्धांत
 
-CryptoStone bertujuan membangun struktur yang tidak bergantung pada kepercayaan terhadap pendiri atau operator tertentu. Kepercayaan protokol ini tidak didasarkan pada identitas pendiri, tetapi pada kode yang terbuka, supply tetap, tabel probabilitas yang tidak dapat diubah, struktur No Admin Mint, randomness yang dapat diverifikasi, dan data on-chain yang dapat diperiksa siapa pun.
+CryptoStone का trust model किसी central issuer की घोषणा पर नहीं, बल्कि public rules और verifiable records पर आधारित होना चाहिए।
 
-Operator tidak boleh dapat secara sewenang-wenang mengalokasikan NFT langka kepada pengguna tertentu, mengubah supply tiap stone, atau memanipulasi probabilitas mining. Tujuan CryptoStone adalah menciptakan struktur di mana kelangkaan batu permata digital dibentuk oleh aturan protokol, bukan oleh otoritas manusia.
+प्रमुख सिद्धांत:
 
-| Prinsip Kepercayaan | Deskripsi |
-| ------------------- | --------- |
-| Fixed Supply | Total supply STONX dan supply NFT maksimum berdasarkan stone ditetapkan sejak awal. |
-| Open Market Allocation | STONX mengikuti struktur alokasi yang menghadap pasar. |
-| No Admin Mint | Operator tidak boleh dapat menerbitkan Gem NFT secara sewenang-wenang. |
-| Immutable Probability | Tabel probabilitas atribut batu permata harus dipublikasikan dan tidak dapat diubah setelah finalization. |
-| Verifiable Randomness | Atribut batu permata harus ditentukan oleh struktur randomness yang dapat diverifikasi. |
-| On-chain Attributes | Atribut inti Gem NFT harus dicatat sebagai data on-chain. |
-| Transparent Pools | Volume mining, jumlah tersisa, dan difficulty tiap stone pool harus dapat diverifikasi publik. |
-| Open Verification | Siapa pun harus dapat memverifikasi contract dan aturan mining. |
+| Principle | Meaning |
+| --- | --- |
+| Public Rules | mining, claim, rarity और supply rules publicly documented होने चाहिए |
+| On-chain Records | ownership, tokenId और key protocol actions blockchain पर verify होने चाहिए |
+| Limited Supply | प्रत्येक stone type की maximum supply तय और सार्वजनिक होनी चाहिए |
+| No Arbitrary Mint | operator को मनमाने तरीके से Gem NFT mint करने की शक्ति नहीं होनी चाहिए |
+| Metadata Transparency | NFT metadata wallets और marketplaces के लिए readable और consistent होना चाहिए |
 
-Struktur ini menunjukkan bahwa CryptoStone adalah protokol batu permata digital terdesentralisasi yang dijalankan oleh aturan publik dan kode yang dapat diverifikasi, bukan oleh diskresi operator tertentu.
+Decentralization केवल blockchain पर deploy करने से पूरी नहीं होती। यह तब मजबूत होती है जब operator core supply, rarity और issuance rules को मनमाने तरीके से बदल नहीं सकता।
