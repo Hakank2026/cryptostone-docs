@@ -1,6 +1,6 @@
-# Table of contents
+# 目录
 
-* [CRYPTOSTONE WHITEPAPER v3.0 CN](README.md)
+* [CryptoStone 白皮书 v3.0 中文版](README.md)
 * [目录](index.md)
 
 ## 介绍

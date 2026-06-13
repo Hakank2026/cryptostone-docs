@@ -1,3 +1,3 @@
-# CRYPTO STONE WP v3.0 JP
+# CryptoStone ホワイトペーパー v3.0 日本語版
 
 分散型環境におけるデジタル宝石資産に関する研究

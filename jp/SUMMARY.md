@@ -1,9 +1,9 @@
-# Table of contents
+# 目次
 
-* [CRYPTO STONE WP v3.0 JP](README.md)
-* [INDEX](index.md)
+* [CryptoStone ホワイトペーパー v3.0 日本語版](README.md)
+* [目次](index.md)
 
-## INTRODUCTION
+## 序章
 
 * [要旨](00-yao-zhi.md)
 * [1. はじめに](01hajimeni.md)
