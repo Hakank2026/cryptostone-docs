@@ -12,10 +12,10 @@
 * [05 디지털 보석 자산의 기본 개념](introduction/05_-_-_-_-_.md)
 * [06 보석의 속성 표현](introduction/06_-_-_.md)
 * [07 보석 고유성의 디지털 구현](introduction/07_-_-_-_.md)
-* [08 단일 컬렉션과 12개 스톤의 공존](introduction/08_-_-_12-_-_.md)
 
 ## Mining System
 
+* [08 단일 컬렉션과 12개 스톤의 공존](mining-system/08_-_-_12-_-_.md)
 * [09 디지털 광산의 구성](mining-system/09_-_-_.md)
 * [10 해시파워 마이닝파워 Proof of Mining](mining-system/10_-_-_proof_of_mining.md)
 * [11 Mining Pool Template과 Factory 구조](mining-system/11_mining_pool_template-_factory_.md)
