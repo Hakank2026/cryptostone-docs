@@ -14,7 +14,7 @@
 * [6. 宝石属性の表現](06no.md)
 * [7. デジタル固有性の実装](07nodejitaru.md)
 
-## MINING SYSTEM
+## マイニングシステム
 
 * [8. 単一コレクション構造](08korekushonto12nosutnno.md)
 * [9. デジタル鉱山構造](09dejitaruno.md)
@@ -35,7 +35,7 @@
 * [24. 半減期とScarcity Multiplier](24toscarcitymultiplier.md)
 * [25. 供給枯渇構造](25mainingutono.md)
 
-## GEM ATTRIBUTES
+## GEMS属性
 
 * [26. Weight属性](26weightnodejitaru.md)
 * [27. Color属性](27colornodejitaru.md)
@@ -43,13 +43,13 @@
 * [29. Cut属性](29cutnodejitaru.md)
 * [30. 属性生成とランダム性](30torandamuno.md)
 
-## RARITY & COLLECTION
+## 希少性とコレクション
 
 * [31. Rarity ScoreとProbability Index](31rarityscoretoprobabilityrarityindex.md)
 * [32. 希少度ティア構造](32tia.md)
 * [33. 収集価値の形成](33korekushonno.md)
 
-## PROTOCOL ARCHITECTURE
+## プロトコルアーキテクチャ
 
 * [34. 分散型マイニング構造](34mainingu.md)
 * [35. STONXバーン構造](35mainingukosutotostonebn.md)
@@ -59,7 +59,7 @@
 * [39. セキュリティと分散性](39sekyurititonobaransu.md)
 * [40. メタデータ構造](40tometadtanodzuke.md)
 
-## ECOSYSTEM & FUTURE
+## エコシステムと今後の展開
 
 * [41. エコシステム拡張と精錬](41ekoshisutemumojrutogemrefinement.md)
 * [42. ユーザーツール](42websaitoshimyurtekusupurrno.md)
