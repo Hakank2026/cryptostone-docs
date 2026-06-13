@@ -25,4 +25,4 @@
 | 10.00 \~ 49.99 CT  | 3.50%       | Legendary      |
 | 50.00 \~ 200.00 CT | 0.50%       | Genesis        |
 
-위 표의 Attribute Tier는 최종 Gem NFT 등급을 직접 확정하는 값이 아니라, Rarity Score와 Probability Rarity Index를 계산하기 위한 무게 속성의 희귀도 구간이다. 최종 Gem NFT 등급은 스톤 희소성, Weight, Color, Clarity, Cut의 조합을 종합하여 Common, Rare, Epic, Legendary, Genesis의 5개 등급으로 산정한다.
+위 표의 Attribute Tier는 최종 Gem NFT 등급을 직접 확정하는 값이 아니라, Rarity Score와 Probability Rarity Index를 계산하기 위한 무게 속성의 희귀도 구간이다. 최종 Gem NFT 등급은 Pool Supply Score, Weight, Color, Clarity, Cut의 조합을 종합하여 Common, Rare, Epic, Legendary, Genesis의 5개 등급으로 산정한다.
