@@ -1,5 +1,8 @@
 # Table of contents
 
+* [CRYPTO STONE WP v3.0 JP](README.md)
+* [INDEX](index.md)
+
 ## INTRODUCTION
 
 * [要旨](00-yao-zhi.md)
