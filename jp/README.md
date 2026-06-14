@@ -1,76 +1,11 @@
----
-description: 分散型環境におけるデジタル宝石資産に関する研究
----
+# CRYPTO STONE WP v3.0 JP
 
-# CryptoStone ホワイトペーパー v3.0 日本語版
+Bitcoinは、物理的な金によって直接裏付けられていないにもかかわらず、限定された供給量、公開されたマイニングルール、分散型ネットワーク、そして誰でも検証できる取引構造によって、デジタルゴールドと呼ばれる新しい資産概念を形成しました。Bitcoinの本質的な意義は、特定の発行者や中央機関に依存せず、コードとネットワークだけでデジタル上の希少性と所有権を実装できることを示した点にあります。
 
-CryptoStoneは、宝石が持つ採掘性、希少性、等級性、収集性をオンチェーンデータとして表現する分散型デジタル宝石プロトコルです。
+開発者は、この考え方を宝石へ拡張します。現実世界の宝石には限られた埋蔵量があり、それぞれの宝石は重量、色、透明度、カットといった属性によって異なる希少性と価値を持ちます。同じ種類の宝石であっても、個別の属性が異なれば価値も変わります。この意味で、宝石は本質的に非代替的であり、デジタル環境において固有の資産として表現するのに適しています。
 
-本ホワイトペーパーは、STONX、GEMS NFT、Proof of Mining、属性生成、希少度、メタデータ構造、マーケットプレイス、Arena、精錬システムまでを一つの経済圏として整理します。
+CryptoStoneは、宝石の採掘性、希少性、等級性、収集性をオンチェーンかつ公開検証可能なデータとして表現するために設計された分散型デジタル宝石プロトコルです。Gem NFTは、中央サーバーや運営者による任意の介入なしに、デジタル環境で採掘されます。各宝石は固有のGem NFTとして表現され、ストーンの種類、重量、色、透明度、カット、採掘時点、マイニングプールといった属性がプロトコルを通じて記録・公開されます。
 
-## 目次
+本プロジェクトは、現実の宝石に対する所有権、担保権、または交換請求権を提供することを目的としていません。本ホワイトペーパーが提案するものは、現実の宝石が持つ構造的特徴、すなわち限定供給、採掘性、等級性、希少性、収集性を、デジタル環境における独立した希少資産として実装するための研究であり実験です。
 
-### 序章
-
-* [00. 要旨](00-yao-zhi.md)
-* [01. はじめに](01hajimeni.md)
-* [02. CryptoStone概要](02cryptostonewosurumoshinpuruna.md)
-* [03. 研究目的](03-yan-jiu-mu-di.md)
-* [04. プロトコル信頼原則](04purotokoruno.md)
-* [05. デジタル宝石の概念](05dejitaruno.md)
-* [06. 宝石属性の表現](06no.md)
-* [07. デジタル固有性の実装](07nodejitaru.md)
-
-### マイニングシステム
-
-* [08. 単一コレクション構造](08korekushonto12nosutnno.md)
-* [09. デジタル鉱山構造](09dejitaruno.md)
-* [10. Proof of Mining](10hasshupawmainingupawproofofmining.md)
-* [11. Pool TemplateとFactory](11miningpooltemplatetofactory.md)
-* [12. ストーン別供給量](12sutn.md)
-* [13. 採掘周期](13maininguno.md)
-* [14. STONX初期供給量](14stoneno.md)
-* [15. STONX配分構造](15stoneno100psento.md)
-* [16. Base Mining Unit](16baseminingunitto.md)
-* [17. Target Pool Power](17targetpoolpowertomainingu.md)
-* [18. パラメータ解釈](18toparamtano.md)
-* [19. Mining Power計算](19mainingupawno.md)
-* [20. 長期参加補正](20toflexiblecooldown.md)
-* [21. PoM蓄積](21proofofminingpomno.md)
-* [22. 必要PoM閾値](22-bi-yao-pom-yu-zhi.md)
-* [23. プール難易度調整](23pruno.md)
-* [24. 半減期とScarcity Multiplier](24toscarcitymultiplier.md)
-* [25. 供給枯渇構造](25mainingutono.md)
-
-### GEMS属性
-
-* [26. Weight属性](26weightnodejitaru.md)
-* [27. Color属性](27colornodejitaru.md)
-* [28. Clarity属性](28claritynodejitaru.md)
-* [29. Cut属性](29cutnodejitaru.md)
-* [30. 属性生成とランダム性](30torandamuno.md)
-
-### 希少性とコレクション
-
-* [31. Rarity ScoreとProbability Index](31rarityscoretoprobabilityrarityindex.md)
-* [32. 希少度ティア構造](32tia.md)
-* [33. 収集価値の形成](33korekushonno.md)
-
-### プロトコルアーキテクチャ
-
-* [34. 分散型マイニング構造](34mainingu.md)
-* [35. STONXバーン構造](35mainingukosutotostonebn.md)
-* [36. ロックアップと返還構造](36rokkuappuoyobi.md)
-* [37. 開発構造](37no.md)
-* [38. プロトコル固定原則](38purotokoru.md)
-* [39. セキュリティと分散性](39sekyurititonobaransu.md)
-* [40. メタデータ構造](40tometadtanodzuke.md)
-
-### エコシステムと今後の展開
-
-* [41. エコシステム拡張と精錬](41ekoshisutemumojrutogemrefinement.md)
-* [42. ユーザーツール](42websaitoshimyurtekusupurrno.md)
-* [43. 今後の方向性](43no.md)
-* [44. 法的および投資上の留意事項](44oyobino.md)
-* [45. プロジェクトの意義](45purojekutono.md)
-* [46. 結論](46-jie-lun.md)
+Bitcoinがデジタルゴールドという物語を生み、Litecoinがデジタルシルバーと呼ばれたのであれば、CryptoStoneはスマートコントラクト上で採掘され、精錬されるデジタル宝石という新しい資産カテゴリーを提示します。

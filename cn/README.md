@@ -1,76 +1,11 @@
----
-description: 去中心化环境下的数字宝石资产研究
----
+# CRYPTO STONE WP v3.0 CN
 
-# CryptoStone 白皮书 v3.0 中文版
+Bitcoin 并未由现实中的黄金直接背书，但它通过有限供应、公开的挖矿规则、去中心化网络，以及任何人都可以验证的交易结构，形成了被称为数字黄金的新资产概念。Bitcoin 的核心意义在于，它证明了数字稀缺性和数字所有权可以不依赖特定发行方或中央机构，而是通过代码和网络来实现。
 
-CryptoStone 是一个去中心化数字宝石协议，用链上数据表达宝石的可开采性、稀缺性、等级属性与收藏价值。
+开发者将这一思想扩展到宝石。现实世界中的宝石储量有限，每一颗宝石都会因重量、颜色、净度、切工等属性而具有不同的稀缺性与价值。即使是同一种宝石，只要个体属性不同，其价值也可能不同。从这个意义上说，宝石天然具有非同质化特征，也非常适合在数字环境中被表示为独立且唯一的资产。
 
-本白皮书围绕 STONX、GEMS NFT、Proof of Mining、属性生成、稀有度、元数据结构、Marketplace、Arena 与精炼系统，说明 CryptoStone 如何形成一个可验证的数字宝石经济体系。
+CryptoStone 是一个去中心化数字宝石协议，旨在将宝石的可开采性、稀缺性、等级属性和收藏性表达为链上且公开可验证的数据。Gem NFT 在数字环境中被开采，不依赖中央服务器或运营方的任意干预。每一颗宝石都被表示为一个独立的 Gem NFT，石种、重量、颜色、净度、切工、开采时间、开采矿池等属性都会通过协议被记录和公开。
 
-## 目录
+本项目并不旨在提供现实宝石的所有权、担保权或兑换权。本白皮书提出的是一项研究与实验，目标是将现实宝石所具有的结构性特征，即有限供应、可开采性、等级属性、稀缺性和收藏性，在数字环境中实现为独立的稀缺资产。
 
-### 介绍
-
-* [00. 摘要](00-zhai-yao.md)
-* [01. 引言](01-yin-yan.md)
-* [02. CryptoStone 概要](02-li-jie-cryptostone-de-zui-jian-dan-fang-shi.md)
-* [03. 研究目的](03-yan-jiu-mu-di.md)
-* [04. 协议信任原则](04-xie-yi-xin-ren-yuan-ze.md)
-* [05. 数字宝石概念](05-shu-zi-bao-shi-zi-chan-de-ji-ben-gai-nian.md)
-* [06. 宝石属性表达](06-bao-shi-shu-xing-de-biao-da.md)
-* [07. 数字唯一性实现](07-bao-shi-wei-yi-xing-de-shu-zi-hua-shi-xian.md)
-
-### 挖矿系统
-
-* [08. 单一集合结构](08-dan-yi-ji-he-yu-12-zhong-bao-shi-de-gong-cun.md)
-* [09. 数字矿山结构](09-shu-zi-kuang-shan-de-gou-cheng.md)
-* [10. Proof of Mining](10-ha-xi-suan-li-wa-kuang-suan-li-yu-proofofmining.md)
-* [11. Pool Template 与 Factory](11miningpooltemplate-yu-factory-jie-gou.md)
-* [12. 各宝石供应量](12-ge-bao-shi-de-xian-ding-gong-ying-liang.md)
-* [13. 挖矿周期](13-wa-kuang-zhou-qi-de-she-ji.md)
-* [14. STONX 初始供应量](14stone-chu-shi-gong-ying-liang-de-ji-suan.md)
-* [15. STONX 分配结构](15stone-de-100-gong-kai-liu-tong-jie-gou.md)
-* [16. Base Mining Unit](16baseminingunit-yu-xiaoecan-yu-jie-gou.md)
-* [17. Target Pool Power](17targetpoolpower-yu-chang-qi-wa-kuang-zhou-qi.md)
-* [18. 参数解释](18-shu-zhi-yu-can-shu-de-jie-shi.md)
-* [19. Mining Power 计算](19-wa-kuang-suan-li-de-ji-suan.md)
-* [20. 长期参与修正](20-chang-qi-can-yu-xiu-zheng-yu-flexiblecooldown.md)
-* [21. PoM 累积](21proofofminingpom-de-lei-ji.md)
-* [22. 所需 PoM 阈值](22-suo-xu-pom-yu-zhi.md)
-* [23. 矿池难度调整](23-kuang-chi-nan-du-de-tiao-zheng.md)
-* [24. 减半与 Scarcity Multiplier](24-jian-ban-ji-zhi-yu-scarcitymultiplier.md)
-* [25. 供应耗尽结构](25-wa-kuang-su-du-yu-gong-ying-hao-jin-de-fei-xian-xing-jie-gou.md)
-
-### 宝石属性
-
-* [26. Weight 属性](26weight-shu-xing-de-shu-zi-hua.md)
-* [27. Color 属性](27color-shu-xing-de-shu-zi-hua.md)
-* [28. Clarity 属性](28clarity-shu-xing-de-shu-zi-hua.md)
-* [29. Cut 属性](29cut-shu-xing-de-shu-zi-hua.md)
-* [30. 属性生成与随机性](30-shu-xing-sheng-cheng-yu-sui-ji-xing-yan-zheng.md)
-
-### 稀有度与收藏
-
-* [31. Rarity Score 与 Probability Index](31rarityscore-yu-probabilityrarityindex.md)
-* [32. 稀有度等级结构](32-xi-you-du-deng-ji-jie-gou.md)
-* [33. 收藏价值形成](33-shou-cang-jia-zhi-de-xing-cheng.md)
-
-### 协议架构
-
-* [34. 去中心化挖矿结构](34-qu-zhong-xin-hua-wa-kuang-jie-gou.md)
-* [35. STONX 销毁结构](35-wa-kuang-cheng-ben-yu-stone-xiao-hui-jie-gou.md)
-* [36. 锁仓与返还结构](36-suo-cang-zhe-jiu-yu-fan-huan-jie-gou.md)
-* [37. 开发结构](37-kai-fa-jie-gou-de-xuan-ze.md)
-* [38. 协议固定原则](38-xie-yi-gu-ding-yuan-ze.md)
-* [39. 安全与去中心化](39-an-quan-ying-dui-yu-qu-zhong-xin-hua-zhi-jian-de-ping-heng.md)
-* [40. 元数据结构](40-tu-xiang-yu-yuan-shu-ju-de-wei-zhi.md)
-
-### 生态系统与未来
-
-* [41. 生态扩展与精炼](41-sheng-tai-kuo-zhan-mo-kuai-yu-gemrefinement.md)
-* [42. 用户工具](42-guan-wang-mo-ni-qi-yu-liu-lan-qi-de-bi-yao-xing.md)
-* [43. 未来方向](43-wei-lai-fa-zhan-fang-xiang.md)
-* [44. 法律及投资风险提示](44-falji-tou-zi-feng-xian-ti-shi.md)
-* [45. 项目意义](45-xiang-mu-di-yi-yi.md)
-* [46. 结论](46-jie-lun.md)
+如果说 Bitcoin 创造了数字黄金的叙事，Litecoin 曾被称为数字白银，那么 CryptoStone 提出的是一种新的资产类别：在智能合约上被开采并被精炼的数字宝石。
